@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mầm Xanh - Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Miama&family=Manrope:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-alt">
+    <!-- Top Navbar -->
+    <header class="top-navbar">
+      <div class="top-navbar-inner">
+        <div class="nav-logo-group">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-bg-shape"></div>
+            <div class="nav-logo-subtitle">Mầm Xanh</div>
+            <div class="nav-logo-icon-wrap">
+              <img
+                src="assets/figma/ffa71a92-4aa9-4c9a-885b-ef6879b7d9fc.png"
+                alt="Logo Icon"
+              />
+            </div>
+          </a>
+          <h1 class="nav-brand-name">Mầm Xanh</h1>
+        </div>
+
+        <nav class="nav-center">
+          <a href="index.html" class="nav-link">Trang chủ</a>
+          <a href="category.html" class="nav-link active">Cửa hàng</a>
+          <a href="consulting.html" class="nav-link">Tư vấn</a>
+          <a href="news.html" class="nav-link">Tin tức</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="search.html" class="nav-action-btn" aria-label="Tìm kiếm">
+            <img
+              src="assets/figma/04444616-6d23-4a3a-84c9-2fa926e97541.svg"
+              alt="Search"
+            />
+          </a>
+          <a
+            href="cart.html"
+            class="nav-action-btn cart-btn"
+            aria-label="Giỏ hàng"
+          >
+            <img
+              src="assets/figma/2890b619-1087-4116-ba0a-61805245dc35.svg"
+              alt="Cart"
+            />
+          </a>
+          <a href="profile.html" class="nav-action-btn" aria-label="Tài khoản">
+            <img
+              src="assets/figma/8681f0ce-1e27-4586-898e-675842daf101.svg"
+              alt="User"
+            />
+          </a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span></button>
+      </div>
+    </header>
+    <div class="mobile-nav-overlay"></div>
+
+    <div class="page-wrapper">
+      <main class="container detail-container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+          <a href="category.html">Cửa hàng</a>
+          <span class="sep" aria-hidden="true">›</span>
+          <a href="#">Cây trong nhà</a>
+          <span class="sep" aria-hidden="true">›</span>
+          <span class="current" id="breadcrumb-name">Cây Bàng Singapore</span>
+        </div>
+
+        <!-- Product Hero Section -->
+        <div class="product-hero-layout">
+          <!-- Gallery Bento -->
+          <div class="detail-gallery-bento">
+            <div class="gallery-main-card">
+              <img
+                id="main-image"
+                src="assets/figma/7362ee9c-83cb-4db8-b1a7-3bef2b33f6cc.png"
+                alt="Bàng Singapore Main"
+              />
+            </div>
+            <div class="gallery-sub-card">
+              <img
+                src="assets/figma/3f292c4e-d2c6-42b1-91be-3bb29474fc9e.png"
+                alt="Detail 1"
+              />
+            </div>
+            <div class="gallery-sub-card">
+              <img
+                src="assets/figma/2dea73f1-b725-40d7-aa23-0a487132542b.png"
+                alt="Detail 2"
+              />
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="detail-info">
+            <span class="detail-badge-pink">HÀNG TUYỂN CHỌN</span>
+            <h1 class="detail-name" id="product-name">Cây Bàng Singapore</h1>
+            <p class="detail-latin" id="product-latin">Ficus Lyrata</p>
+
+            <div class="detail-price-row">
+              <span class="detail-price-current" id="product-price">600.000₫</span>
+              <span class="detail-price-old">1.200.000₫</span>
+            </div>
+
+            <p class="detail-desc" id="product-desc">
+              Được biết đến với những tán lá rộng hình đàn violin đầy ấn tượng,
+              Bàng Singapore là điểm nhấn nghệ thuật tối thượng cho không gian
+              nội thất hiện đại. Các mẫu cây của chúng tôi được tuyển chọn kỹ
+              lưỡng về sức khỏe và cấu trúc cành tán.
+            </p>
+
+            <div class="detail-actions">
+              <button class="btn btn-primary detail-add-btn" id="btn-add-cart">
+                <img
+                  src="assets/figma/f10e1c13-713b-47b0-af39-c74411cfa977.svg"
+                  alt="Cart"
+                  class="detail-add-icon"
+                />
+                Thêm vào giỏ hàng
+              </button>
+              <button class="btn btn-outline detail-wishlist-btn">
+                Thêm vào danh sách yêu thích
+              </button>
+            </div>
+
+            <!-- Care Icons At a Glance -->
+            <div class="care-glance-card">
+              <div class="care-glance-item">
+                <img
+                  src="assets/figma/0d28648a-ce44-4f8d-b68f-4ca4f1222082.svg"
+                  alt="Light"
+                  class="care-glance-icon"
+                />
+                <span class="care-glance-label">Ánh sáng</span>
+                <span class="care-glance-value" id="care-light-value">Sáng gián tiếp</span>
+              </div>
+              <div class="care-glance-item divider-left">
+                <img
+                  src="assets/figma/6c04938f-9df9-42de-864f-fb8f2182b4b3.svg"
+                  alt="Water"
+                  class="care-glance-icon"
+                />
+                <span class="care-glance-label">Tưới nước</span>
+                <span class="care-glance-value" id="care-water-value">Mỗi 1-2 tuần</span>
+              </div>
+              <div class="care-glance-item divider-left">
+                <img
+                  src="assets/figma/6080d88a-9bd9-4772-9808-828b4cca823a.svg"
+                  alt="Pet"
+                  class="care-glance-icon"
+                />
+                <span class="care-glance-label">Thú cưng</span>
+                <span class="care-glance-value">Không an toàn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Care Guide Section -->
+        <section class="detail-care-section">
+          <h2 class="detail-section-title">Hướng dẫn chăm sóc</h2>
+          <div class="detail-care-grid">
+            <div class="care-card">
+              <div class="care-card-icon-wrap">
+                <img
+                  src="assets/figma/cb9cd81e-4cdb-4316-a8dd-adb9db0ab3e9.svg"
+                  alt="Light"
+                />
+              </div>
+              <h3>Yêu cầu ánh sáng</h3>
+              <p>
+                Ficus lyrata phát triển tốt nhất trong điều kiện ánh sáng gián
+                tiếp rất sáng. Cây thậm chí có thể chịu được một chút nắng sáng
+                trực tiếp. Hãy xoay cây hàng tuần để đảm bảo tất cả các lá đều
+                nhận được lượng sáng như nhau và phát triển cân đối.
+              </p>
+            </div>
+            <div class="care-card">
+              <div class="care-card-icon-wrap">
+                <img
+                  src="assets/figma/c6a13052-b7ba-4dca-bdaf-808a243acf42.svg"
+                  alt="Water"
+                />
+              </div>
+              <h3>Lịch tưới nước</h3>
+              <p>
+                Chỉ tưới khi lớp đất bề mặt (sâu khoảng 5-7cm) đã khô hoàn toàn.
+                Tưới quá nhiều là nguyên nhân phổ biến nhất khiến cây chết; hãy
+                đảm bảo chậu cây thoát nước cực tốt. Sử dụng nước lọc ở nhiệt độ
+                phòng nếu có thể.
+              </p>
+            </div>
+            <div class="care-card">
+              <div class="care-card-icon-wrap">
+                <img
+                  src="assets/figma/45fad599-f222-4b13-8743-237120f08a6b.svg"
+                  alt="Soil"
+                />
+              </div>
+              <h3>Đất & Dinh dưỡng</h3>
+              <p>
+                Sử dụng hỗn hợp đất thoát nước tốt và giàu chất hữu cơ. Bón phân
+                lỏng cân đối mỗi tháng một lần trong mùa sinh trưởng (Xuân và
+                Hạ).
+              </p>
+            </div>
+          </div>
+          <div class="text-right mt-16">
+            <a href="care_guide.html" class="detail-care-link"
+              >Hướng dẫn chi tiết >></a
+            >
+          </div>
+        </section>
+
+        <!-- Technical Specs Section -->
+        <section class="detail-specs-section">
+          <div class="specs-card-dark">
+            <div class="specs-content">
+              <h2>Thông số kỹ thuật</h2>
+              <ul class="specs-list">
+                <li>
+                  <span class="spec-label">CHIỀU CAO TỔNG THỂ</span>
+                  <span class="spec-value">1.4 - 1.7 Mét</span>
+                </li>
+                <li>
+                  <span class="spec-label">ĐƯỜNG KÍNH CHẬU</span>
+                  <span class="spec-value">30 Centimét</span>
+                </li>
+                <li>
+                  <span class="spec-label">ĐỘ RỘNG TÁN LÁ</span>
+                  <span class="spec-value">60 - 75 Centimét</span>
+                </li>
+                <li>
+                  <span class="spec-label">NGUỒN GỐC</span>
+                  <span class="spec-value">Tây Phi</span>
+                </li>
+              </ul>
+            </div>
+            <div class="specs-media">
+              <img
+                src="assets/figma/1fea9490-3c10-4536-bbc2-c03d723046ab.png"
+                alt="Specs Model"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="detail-reviews-section">
+          <div class="reviews-header">
+            <div class="reviews-stats">
+              <h2>Đánh giá từ khách hàng</h2>
+              <div class="stars-row">
+                <div class="stars-icons">
+                  <img
+                    src="assets/figma/e4fd1121-eb5f-4bab-bd4a-5a7ac674445a.svg"
+                    alt="Star"
+                    style="width: 20px"
+                  />
+                  <img
+                    src="assets/figma/e4fd1121-eb5f-4bab-bd4a-5a7ac674445a.svg"
+                    alt="Star"
+                    style="width: 20px"
+                  />
+                  <img
+                    src="assets/figma/e4fd1121-eb5f-4bab-bd4a-5a7ac674445a.svg"
+                    alt="Star"
+                    style="width: 20px"
+                  />
+                  <img
+                    src="assets/figma/e4fd1121-eb5f-4bab-bd4a-5a7ac674445a.svg"
+                    alt="Star"
+                    style="width: 20px"
+                  />
+                  <img
+                    src="assets/figma/e4fd1121-eb5f-4bab-bd4a-5a7ac674445a.svg"
+                    alt="Star"
+                    style="width: 20px"
+                  />
+                </div>
+                <span class="stars-text">4.9 / 5.0 Dựa trên 124 đánh giá</span>
+              </div>
+            </div>
+            <button class="btn btn-outline-dark">Viết đánh giá</button>
+          </div>
+
+          <div class="reviews-grid">
+            <div class="review-card">
+              <div class="review-user">
+                <div class="avatar-tan">EM</div>
+                <div>
+                  <p class="user-name">Nguyễn Mai</p>
+                  <p class="user-verified">NGƯỜI MUA ĐÃ XÁC THỰC</p>
+                </div>
+              </div>
+              <p class="review-text">
+                "Cây được giao đến trong tình trạng hoàn hảo. Cách đóng gói thực
+                sự chuyên nghiệp—dịch vụ chăm sóc khách hàng rất tận tâm. Nó đã
+                trở thành điểm nhấn chính trong phòng khách của tôi."
+              </p>
+              <div class="stars-mini">
+                <img
+                  src="assets/figma/af8df074-1650-4304-be91-65be4c908886.svg"
+                  alt="*"
+                  style="width: 12px"
+                />
+                <img
+                  src="assets/figma/af8df074-1650-4304-be91-65be4c908886.svg"
+                  alt="*"
+                  style="width: 12px"
+                />
+                <img
+                  src="assets/figma/af8df074-1650-4304-be91-65be4c908886.svg"
+                  alt="*"
+                  style="width: 12px"
+                />
+                <img
+                  src="assets/figma/af8df074-1650-4304-be91-65be4c908886.svg"
+                  alt="*"
+                  style="width: 12px"
+                />
+                <img
+                  src="assets/figma/af8df074-1650-4304-be91-65be4c908886.svg"
+                  alt="*"
+                  style="width: 12px"
+                />
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-user">
+                <div class="avatar-green">JD</div>
+                <div>
+                  <p class="user-name">Minh Tâm</p>
+                  <p class="user-verified">NGƯỜI MUA ĐÃ XÁC THỰC</p>
+                </div>
+              </div>
+              <p class="review-text">
+                "Là một kiến trúc sư cảnh quan, tôi rất kén chọn về sức khỏe của
+                cây mẫu. Cây bàng này có cấu trúc và phân cành tuyệt vời. Hoàn
+                toàn xứng đáng với chất lượng nhận được."
+              </p>
+              <div class="stars-mini">
+                <img
+                  src="assets/figma/af8df074-1650-4304-be91-65be4c908886.svg"
+                  alt="*"
+                  style="width: 12px"
+                />
+                <img
+                  src="assets/figma/af8df074-1650-4304-be91-65be4c908886.svg"
+                  alt="*"
+                  style="width: 12px"
+                />
+                <img
+                  src="assets/figma/af8df074-1650-4304-be91-65be4c908886.svg"
+                  alt="*"
+                  style="width: 12px"
+                />
+                <img
+                  src="assets/figma/af8df074-1650-4304-be91-65be4c908886.svg"
+                  alt="*"
+                  style="width: 12px"
+                />
+                <img
+                  src="assets/figma/af8df074-1650-4304-be91-65be4c908886.svg"
+                  alt="*"
+                  style="width: 12px"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-col">
+            <h4 class="footer-brand">Mầm Xanh</h4>
+            <p>Kiến tạo không gian sống xanh và bền vững từ tâm hồn.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Chính sách</h5>
+            <a href="policy_shipping.html">Chính sách giao hàng</a>
+            <a href="policy_warranty.html">Chính sách bảo hành</a>
+          </div>
+          <div class="footer-col">
+            <h5>Khám phá</h5>
+            <a href="index.html">Giới thiệu</a>
+            <a href="policy_privacy.html">Quyền riêng tư</a>
+          </div>
+          <div class="footer-col">
+            <h5>Liên hệ</h5>
+            <p>Sdt: 0867235467</p>
+            <p>Email: mamxanh@gmail.com</p>
+            <p>Địa chỉ: Số 1 Định Công, Hoàng Mai, Hà Nội</p>
+            <div class="footer-socials">
+              <img
+                src="assets/figma/8eca9a4d-0966-4284-8ca1-5a9dd180a039.svg"
+                alt="Social Icon 1"
+              />
+              <img
+                src="assets/figma/52dc52a9-90ac-463c-96e7-0c1e4287e0c9.svg"
+                alt="Social Icon 2"
+              />
+              <img
+                src="assets/figma/6eb5663f-87be-47c4-87ad-8ce2e9e6d282.svg"
+                alt="Social Icon 3"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="toast-container" id="toast-container"></div>
+    <script src="js/store.js"></script>
+
+    <script src="js/cart_badge.js"></script>
+    <script src="js/product_detail.js"></script>
+    <script src="js/mobile-nav.js"></script>
+  </body>
+</html>

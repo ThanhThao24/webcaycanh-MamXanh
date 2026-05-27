@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mầm Xanh - Tư vấn</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/consulting.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;600;700&family=Manrope:wght@600;700;800&family=Miama&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: #fafaf5">
+    <!-- Top Navbar -->
+    <header class="top-navbar">
+      <div class="top-navbar-inner">
+        <div class="nav-logo-group">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-bg-shape"></div>
+            <div class="nav-logo-subtitle">Mầm Xanh</div>
+            <div class="nav-logo-icon-wrap">
+              <img
+                src="assets/figma/ffa71a92-4aa9-4c9a-885b-ef6879b7d9fc.png"
+                alt="Logo Icon"
+              />
+            </div>
+          </a>
+          <h1 class="nav-brand-name">Mầm Xanh</h1>
+        </div>
+
+        <nav class="nav-center">
+          <a href="index.html" class="nav-link">Trang chủ</a>
+          <a href="category.html" class="nav-link">Cửa hàng</a>
+          <a href="consulting.html" class="nav-link active">Tư vấn</a>
+          <a href="news.html" class="nav-link">Tin tức</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="search.html" class="nav-action-btn" aria-label="Tìm kiếm">
+            <img
+              src="assets/figma/04444616-6d23-4a3a-84c9-2fa926e97541.svg"
+              alt="Search"
+            />
+          </a>
+          <a
+            href="cart.html"
+            class="nav-action-btn cart-btn"
+            aria-label="Giỏ hàng"
+          >
+            <img
+              src="assets/figma/2890b619-1087-4116-ba0a-61805245dc35.svg"
+              alt="Cart"
+            />
+          </a>
+          <a href="profile.html" class="nav-action-btn" aria-label="Tài khoản">
+            <img
+              src="assets/figma/8681f0ce-1e27-4586-898e-675842daf101.svg"
+              alt="User"
+            />
+          </a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span></button>
+      </div>
+    </header>
+    <div class="mobile-nav-overlay"></div>
+
+    <main
+      class="consulting-container"
+      style="
+        max-width: 1536px;
+        margin: 0 auto;
+        display: flex;
+        height: calc(100vh - 80px);
+      "
+    >
+      <!-- Left Column: Chat Area -->
+      <div
+        class="consulting-chat-col"
+        style="
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          background-color: #fafaf5;
+          position: relative;
+        "
+      >
+        <!-- Chat Header -->
+        <div
+          class="consulting-chat-header"
+          style="
+            height: 64px;
+            background-color: rgba(244, 244, 239, 0.5);
+            backdrop-filter: blur(6px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 32px;
+            border-bottom: 1px solid rgba(194, 201, 187, 0.1);
+          "
+        >
+          <div
+            class="expert-info"
+            style="display: flex; align-items: center; gap: 12px"
+          >
+            <div
+              class="expert-avatar-wrap"
+              style="
+                width: 32px;
+                height: 32px;
+                background-color: #a7f3d0;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                src="assets/figma/26ed2487-9964-4a9b-9ceb-bf6251575652.svg"
+                alt="Support Icon"
+                style="width: 18px"
+              />
+            </div>
+            <div
+              class="expert-status"
+              style="display: flex; flex-direction: column"
+            >
+              <span
+                class="expert-name"
+                style="
+                  font-family: &quot;Inter&quot;, sans-serif;
+                  font-weight: 600;
+                  font-size: 14px;
+                  color: #1a1c19;
+                "
+                >Hỗ trợ Chuyên gia: Lan Anh</span
+              >
+              <div
+                class="status-indicator"
+                style="display: flex; align-items: center; gap: 4px"
+              >
+                <span
+                  class="dot-online"
+                  style="
+                    width: 6px;
+                    height: 6px;
+                    background-color: #10b981;
+                    border-radius: 50%;
+                  "
+                ></span>
+                <span
+                  class="status-text"
+                  style="
+                    font-family: &quot;Inter&quot;, sans-serif;
+                    font-size: 10px;
+                    color: #047857;
+                  "
+                  >Trực tuyến</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="chat-actions" style="display: flex; gap: 16px">
+            <button
+              class="action-btn"
+              style="
+                background: none;
+                border: none;
+                padding: 8px;
+                cursor: pointer;
+              "
+            >
+              <img
+                src="assets/figma/f8dcc591-248a-4786-8d1a-2b9f129f6dc4.svg"
+                alt="Call"
+                style="width: 18px"
+              />
+            </button>
+            <button
+              class="action-btn"
+              style="
+                background: none;
+                border: none;
+                padding: 8px;
+                cursor: pointer;
+              "
+            >
+              <img
+                src="assets/figma/069ae2b3-cf6a-4239-b012-ed53870b9dfd.svg"
+                alt="Video"
+                style="width: 20px"
+              />
+            </button>
+            <button
+              class="action-btn"
+              style="
+                background: none;
+                border: none;
+                padding: 8px;
+                cursor: pointer;
+              "
+            >
+              <img
+                src="assets/figma/b5a4cb7b-f57b-4111-8c86-73e75009e43d.svg"
+                alt="More"
+                style="width: 4px"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Chat Body -->
+        <div
+          class="consulting-chat-body"
+          style="
+            flex: 1;
+            overflow-y: auto;
+            padding: 55.2px 32px 140px 32px;
+            scroll-behavior: smooth;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            height: calc(100vh - 80px - 64px);
+          "
+        >
+          <div
+            class="chat-date-separator"
+            style="display: flex; justify-content: center"
+          >
+            <span
+              style="
+                background-color: #e8e8e3;
+                color: #42493e;
+                font-size: 10px;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 4px 16px;
+                border-radius: 9999px;
+              "
+              >HÔM NAY</span
+            >
+          </div>
+
+          <!-- Expert Message -->
+          <div
+            class="chat-message received"
+            style="display: flex; gap: 16px; max-width: 672px"
+          >
+            <div
+              class="chat-avatar"
+              style="
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: #e8e8e3;
+              "
+            >
+              <img
+                src="assets/figma/39ce1dc7-e848-4955-a03e-421c98b8ef05.png"
+                alt="Lan Anh"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: top center;"
+              />
+            </div>
+            <div
+              class="message-content"
+              style="display: flex; flex-direction: column; gap: 8px"
+            >
+              <div
+                class="message-bubble"
+                style="
+                  background-color: white;
+                  border-radius: 0 16px 16px 16px;
+                  padding: 18px 20px;
+                  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+                "
+              >
+                <p
+                  style="
+                    font-family: &quot;Inter&quot;, sans-serif;
+                    font-size: 14px;
+                    color: #1a1c19;
+                    line-height: 1.6;
+                    margin: 0;
+                  "
+                >
+                  Chào bạn, mình thấy bạn đang quan tâm đến cây Trầu Bà. Cây này
+                  rất dễ chăm sóc và có khả năng lọc không khí cực tốt cho không
+                  gian sống của bạn.
+                </p>
+              </div>
+              <div
+                class="message-bubble"
+                style="
+                  background-color: white;
+                  border-radius: 16px;
+                  padding: 20px;
+                  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+                "
+              >
+                <p
+                  style="
+                    font-family: &quot;Inter&quot;, sans-serif;
+                    font-size: 14px;
+                    color: #1a1c19;
+                    line-height: 1.6;
+                    margin: 0;
+                  "
+                >
+                  Bạn có gặp khó khăn gì cụ thể như lá bị vàng hay khô héo
+                  không? Gửi cho mình ảnh cây nếu có thể nhé!
+                </p>
+              </div>
+              <span
+                class="message-time"
+                style="font-size: 10px; color: #72796e; margin-left: 4px"
+                >10:42 AM</span
+              >
+            </div>
+          </div>
+
+          <!-- User Message -->
+          <div
+            class="chat-message sent"
+            style="align-self: flex-end; max-width: 612px"
+          >
+            <div
+              class="message-content"
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 8px;
+              "
+            >
+              <div
+                class="message-bubble"
+                style="
+                  background-color: #2d5a27;
+                  border-radius: 16px 16px 0 16px;
+                  padding: 20px;
+                  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+                "
+              >
+                <p
+                  style="
+                    font-family: &quot;Inter&quot;, sans-serif;
+                    font-size: 14px;
+                    color: white;
+                    line-height: 1.6;
+                    margin: 0;
+                  "
+                >
+                  Chào Lan Anh, đúng rồi ạ. Cây Trầu Bà của mình dạo này lá cứ
+                  bị rũ xuống dù mình vẫn tưới nước đều đặn 2 ngày 1 lần. Có
+                  phải mình tưới hơi nhiều không?
+                </p>
+              </div>
+              <span class="message-time" style="font-size: 10px; color: #72796e"
+                >10:45 AM</span
+              >
+            </div>
+          </div>
+
+          <!-- Expert Message 2 -->
+          <div
+            class="chat-message received"
+            style="display: flex; gap: 16px; max-width: 672px"
+          >
+            <div
+              class="chat-avatar"
+              style="
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: #e8e8e3;
+              "
+            >
+              <img
+                src="assets/figma/39ce1dc7-e848-4955-a03e-421c98b8ef05.png"
+                alt="Lan Anh"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: top center;"
+              />
+            </div>
+            <div
+              class="message-content"
+              style="display: flex; flex-direction: column; gap: 8px"
+            >
+              <div
+                class="message-bubble"
+                style="
+                  background-color: white;
+                  border-radius: 0 16px 16px 16px;
+                  padding: 16px;
+                  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+                "
+              >
+                <p
+                  style="
+                    font-family: &quot;Inter&quot;, sans-serif;
+                    font-size: 14px;
+                    color: #1a1c19;
+                    line-height: 1.4;
+                    margin: 0;
+                  "
+                >
+                  Khả năng cao là bị úng rễ rồi bạn ạ. Trầu Bà thích đất ẩm
+                  nhưng không chịu được sũng nước. Bạn nên giãn cách việc tưới
+                  ra khoảng 5-7 ngày/lần tùy môi trường nhé.
+                </p>
+              </div>
+              <span
+                class="message-time"
+                style="font-size: 10px; color: #72796e; margin-left: 4px"
+                >10:48 AM</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="input-overlay"></div>
+        <!-- Chat Input -->
+        <div
+          class="consulting-chat-input"
+          style="
+            background-color: rgba(244, 244, 239, 0.3);
+            backdrop-filter: blur(6px);
+            padding: 24px 48px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-top: 1px solid rgba(194, 201, 187, 0.1);
+          "
+        >
+          <div
+            class="input-wrapper"
+            style="
+              background-color: white;
+              border: 1px solid rgba(194, 201, 187, 0.2);
+              border-radius: 9999px;
+              padding: 9px;
+              display: flex;
+              align-items: center;
+              gap: 16px;
+              box-shadow: 0px 10px 15px -3px rgba(26, 28, 25, 0.05);
+            "
+          >
+            <button
+              class="attach-btn"
+              style="
+                background: none;
+                border: none;
+                padding: 8px;
+                cursor: pointer;
+              "
+            >
+              <img
+                src="assets/figma/1359a440-0373-417d-a90d-0454684d41c0.svg"
+                alt="Attach"
+                style="width: 12px"
+              />
+            </button>
+            <button
+              class="attach-btn"
+              style="
+                background: none;
+                border: none;
+                padding: 8px;
+                cursor: pointer;
+              "
+            >
+              <img
+                src="assets/figma/47679d58-9d60-4320-806f-5fcb3491f185.svg"
+                alt="Image"
+                style="width: 18px"
+              />
+            </button>
+            <input
+              type="text"
+              placeholder="Nhập tin nhắn..."
+              style="
+                flex: 1;
+                background: none;
+                border: none;
+                font-family: &quot;Inter&quot;, sans-serif;
+                font-size: 14px;
+                color: #1a1c19;
+                outline: none;
+                padding: 12px 0;
+              "
+            />
+            <button
+              class="send-btn"
+              style="
+                width: 48px;
+                height: 48px;
+                background-color: #2d5a27;
+                border: none;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+              "
+            >
+              <img
+                src="assets/figma/555bbca6-0edc-4de1-8c51-16638df162a1.svg"
+                alt="Send"
+                style="width: 19px"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Expert Profile & Context -->
+      <aside
+        class="consulting-sidebar"
+        style="
+          width: 320px;
+          background-color: #d9d9d9;
+          padding: 32px;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          border-left: 1px solid #000;
+          overflow-y: auto;
+        "
+      >
+        <!-- Expert Profile -->
+        <div
+          class="expert-profile-card"
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          <div
+            class="expert-avatar-large"
+            style="
+              width: 96px;
+              height: 96px;
+              border-radius: 50%;
+              padding: 4px;
+              background: linear-gradient(45deg, #10b981, #e7e5e4);
+              margin-bottom: 16px;
+            "
+          >
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: #e8e8e3;
+              "
+            >
+              <img
+                src="assets/figma/36fa8a97-f2cb-4b7c-926f-d8cd7c7fbde4.png"
+                alt="Lan Anh"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: top center;"
+              />
+            </div>
+          </div>
+          <h2
+            style="
+              font-family: &quot;Inter&quot;, sans-serif;
+              font-weight: 600;
+              font-size: 18px;
+              color: #154212;
+              margin: 0;
+            "
+          >
+            Lan Anh
+          </h2>
+          <span
+            class="expert-title"
+            style="
+              font-family: &quot;Inter&quot;, sans-serif;
+              font-weight: 400;
+              font-size: 12px;
+              color: #42493e;
+              letter-spacing: 0.6px;
+              text-transform: uppercase;
+              margin-top: 4px;
+            "
+            >CHUYÊN GIA THỰC VẬT</span
+          >
+          <div
+            class="expert-rating"
+            style="display: flex; gap: 4px; margin-top: 8px"
+          >
+            <img
+              src="assets/figma/036d42b6-972a-484a-8a24-834d7186bfde.svg"
+              alt="Star"
+              style="width: 11px"
+            />
+            <img
+              src="assets/figma/036d42b6-972a-484a-8a24-834d7186bfde.svg"
+              alt="Star"
+              style="width: 11px"
+            />
+            <img
+              src="assets/figma/036d42b6-972a-484a-8a24-834d7186bfde.svg"
+              alt="Star"
+              style="width: 11px"
+            />
+            <img
+              src="assets/figma/036d42b6-972a-484a-8a24-834d7186bfde.svg"
+              alt="Star"
+              style="width: 11px"
+            />
+            <img
+              src="assets/figma/036d42b6-972a-484a-8a24-834d7186bfde.svg"
+              alt="Star"
+              style="width: 11px"
+            />
+          </div>
+        </div>
+
+        <!-- Discussing Product -->
+        <div
+          class="sidebar-section"
+          style="display: flex; flex-direction: column; gap: 16px"
+        >
+          <span
+            class="section-label"
+            style="
+              font-family: &quot;Inter&quot;, sans-serif;
+              font-weight: 600;
+              font-size: 10px;
+              color: #42493e;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+            "
+            >ĐANG THẢO LUẬN</span
+          >
+          <div
+            class="discussing-card"
+            style="
+              background-color: white;
+              border-radius: 24px;
+              padding: 16px;
+              box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+            "
+          >
+            <div
+              class="discussing-img"
+              style="
+                height: 128px;
+                border-radius: 16px;
+                overflow: hidden;
+              "
+            >
+              <img
+                src="assets/figma/c88e96d3-c4d0-47d2-a312-7be8534ac5c5.png"
+                alt="Trầu Bà"
+                style="width: 220%; height: auto; transform: translate(-25%, -20%);"
+              />
+            </div>
+            <h3
+              style="
+                font-family: &quot;Inter&quot;, sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                color: #064e3b;
+                margin: 0;
+              "
+            >
+              Cây Trầu Bà (Pothos)
+            </h3>
+            <a
+              href="care_guide.html"
+              class="btn-outline"
+              style="
+                border: 1px solid rgba(21, 66, 18, 0.2);
+                border-radius: 9999px;
+                padding: 9px;
+                text-align: center;
+                text-decoration: none;
+                font-family: &quot;Inter&quot;, sans-serif;
+                font-weight: 600;
+                font-size: 12px;
+                color: #154212;
+              "
+              >Xem hướng dẫn</a
+            >
+          </div>
+        </div>
+
+        <!-- Quick Notes -->
+        <div
+          class="sidebar-section"
+          style="display: flex; flex-direction: column; gap: 16px"
+        >
+          <span
+            class="section-label"
+            style="
+              font-family: &quot;Inter&quot;, sans-serif;
+              font-weight: 600;
+              font-size: 10px;
+              color: #42493e;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+            "
+            >GHI CHÚ NHANH</span
+          >
+          <div
+            class="notes-card"
+            style="
+              background-color: rgba(96, 35, 62, 0.1);
+              border-radius: 24px;
+              padding: 16px;
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+            "
+          >
+            <div
+              class="note-item"
+              style="display: flex; gap: 8px; align-items: flex-start"
+            >
+              <img
+                src="assets/figma/33baff83-809b-4f87-aa47-1f76ba679b03.svg"
+                alt="Water"
+                style="width: 10px; margin-top: 2px"
+              />
+              <p
+                style="
+                  font-family: &quot;Inter&quot;, sans-serif;
+                  font-size: 12px;
+                  color: #1a1c19;
+                  line-height: 1.3;
+                  margin: 0;
+                "
+              >
+                Cần tưới nước khi đất khô 2-3cm trên bề mặt.
+              </p>
+            </div>
+            <div
+              class="note-item"
+              style="display: flex; gap: 8px; align-items: flex-start"
+            >
+              <img
+                src="assets/figma/4e3430e5-0efe-4167-aac0-36c436631779.svg"
+                alt="Sun"
+                style="width: 13px; margin-top: 1px"
+              />
+              <p
+                style="
+                  font-family: &quot;Inter&quot;, sans-serif;
+                  font-size: 12px;
+                  color: #1a1c19;
+                  line-height: 1.3;
+                  margin: 0;
+                "
+              >
+                Ánh sáng gián tiếp, tránh nắng gắt trực tiếp.
+              </p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div
+        class="footer-container"
+        style="
+          max-width: 1280px;
+          margin: 0 auto;
+          padding: 80px 32px 40px 32px;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 48px;
+        "
+      >
+        <div class="footer-col">
+          <h3
+            class="footer-brand"
+            style="
+              font-weight: 600;
+              font-size: 18px;
+              color: #064e3b;
+              margin-bottom: 15px;
+            "
+          >
+            Mầm Xanh
+          </h3>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; line-height: 1.6"
+          >
+            Kiến tạo không gian sống xanh và bền<br />vững từ tâm hồn.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4
+            class="footer-title"
+            style="
+              font-weight: 600;
+              font-size: 14px;
+              color: #064e3b;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+            "
+          >
+            Chính sách
+          </h4>
+          <ul
+            class="footer-links"
+            style="
+              list-style: none;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+            "
+          >
+            <li>
+              <a
+                href="policy_shipping.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Chính sách giao hàng</a
+              >
+            </li>
+            <li>
+              <a
+                href="policy_warranty.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Chính sách bảo hành</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4
+            class="footer-title"
+            style="
+              font-weight: 600;
+              font-size: 14px;
+              color: #064e3b;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+            "
+          >
+            Khám phá
+          </h4>
+          <ul
+            class="footer-links"
+            style="
+              list-style: none;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+            "
+          >
+            <li>
+              <a
+                href="index.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Giới thiệu</a
+              >
+            </li>
+            <li>
+              <a
+                href="policy_privacy.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Quyền riêng tư</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4
+            class="footer-title"
+            style="
+              font-weight: 600;
+              font-size: 14px;
+              color: #064e3b;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+            "
+          >
+            Liên hệ
+          </h4>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; margin-bottom: 4px"
+          >
+            Sdt: 0867235467
+          </p>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; margin-bottom: 4px"
+          >
+            Email: mamxanh@gmail.com
+          </p>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; margin-bottom: 16px"
+          >
+            Địa chỉ: Số 1 Định Công, Hoàng Mai, Hà Nội
+          </p>
+          <div class="footer-socials" style="display: flex; gap: 16px">
+            <a href="#" aria-label="Facebook"
+              ><img
+                src="assets/figma/8cb61996-a766-4390-9014-1f3e6541ce82.svg"
+                alt="FB"
+                style="width: 18px"
+            /></a>
+            <a href="#" aria-label="Instagram"
+              ><img
+                src="assets/figma/84b6cbf6-6a79-42ba-b8ab-1ae501aea22d.svg"
+                alt="IG"
+                style="width: 16px"
+            /></a>
+            <a href="#" aria-label="YouTube"
+              ><img
+                src="assets/fallback/youtube.svg"
+                alt="YT"
+                style="width: 19px; height: 19px; object-fit: contain"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/store.js"></script>
+    <script src="js/cart_badge.js"></script>
+    <script src="js/consulting.js"></script>
+    <script src="js/mobile-nav.js"></script>
+  </body>
+</html>

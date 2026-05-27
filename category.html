@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mầm Xanh - Cửa hàng</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@700&family=Roboto:wght@400;700&family=Miama&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-alt">
+    <!-- Top Navbar -->
+    <header class="top-navbar">
+      <div class="top-navbar-inner">
+        <div class="nav-logo-group">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-bg-shape"></div>
+            <div class="nav-logo-subtitle">Mầm Xanh</div>
+            <div class="nav-logo-icon-wrap">
+              <img
+                src="assets/figma/ffa71a92-4aa9-4c9a-885b-ef6879b7d9fc.png"
+                alt="Logo Icon"
+              />
+            </div>
+          </a>
+          <h1 class="nav-brand-name">Mầm Xanh</h1>
+        </div>
+
+        <nav class="nav-center">
+          <a href="index.html" class="nav-link">Trang chủ</a>
+          <a href="category.html" class="nav-link active">Cửa hàng</a>
+          <a href="consulting.html" class="nav-link">Tư vấn</a>
+          <a href="news.html" class="nav-link">Tin tức</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="search.html" class="nav-action-btn" aria-label="Tìm kiếm">
+            <img
+              src="assets/figma/04444616-6d23-4a3a-84c9-2fa926e97541.svg"
+              alt="Search"
+            />
+          </a>
+          <a
+            href="cart.html"
+            class="nav-action-btn cart-btn"
+            aria-label="Giỏ hàng"
+          >
+            <img
+              src="assets/figma/2890b619-1087-4116-ba0a-61805245dc35.svg"
+              alt="Cart"
+            />
+          </a>
+          <a href="profile.html" class="nav-action-btn" aria-label="Tài khoản">
+            <img
+              src="assets/figma/8681f0ce-1e27-4586-898e-675842daf101.svg"
+              alt="User"
+            />
+          </a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span></button>
+      </div>
+    </header>
+    <div class="mobile-nav-overlay"></div>
+
+    <div class="page-wrapper">
+      <div class="container shop-breadcrumb">
+        <div class="breadcrumbs">
+          <a href="index.html">Trang chủ</a>
+          <span class="sep" aria-hidden="true">›</span>
+          <span class="current">Cửa hàng</span>
+        </div>
+      </div>
+
+      <main class="container shop-layout">
+        <!-- Sidebar -->
+        <aside class="shop-sidebar">
+          <div class="filter-group">
+            <h3 class="filter-heading">Danh mục</h3>
+            <ul class="filter-list">
+              <li
+                class="filter-item"
+                data-group="category"
+                data-value="trong-nha"
+              >
+                Trong nhà
+              </li>
+              <li
+                class="filter-item"
+                data-group="category"
+                data-value="ngoai-troi"
+              >
+                Ngoài trời
+              </li>
+              <li
+                class="filter-item"
+                data-group="category"
+                data-value="phong-thuy"
+              >
+                Phong thủy
+              </li>
+              <li
+                class="filter-item"
+                data-group="category"
+                data-value="than-thien-thu-cung"
+              >
+                Thân thiện thú cưng
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter-group">
+            <h3 class="filter-heading">Mức ánh sáng</h3>
+            <ul class="filter-list">
+              <li
+                class="filter-item"
+                data-group="light"
+                data-value="anh-sang-yeu"
+              >
+                Ánh sáng yếu
+              </li>
+              <li
+                class="filter-item"
+                data-group="light"
+                data-value="anh-sang-vua"
+              >
+                Ánh sáng vừa
+              </li>
+              <li
+                class="filter-item"
+                data-group="light"
+                data-value="anh-sang-manh"
+              >
+                Ánh sáng mạnh
+              </li>
+            </ul>
+          </div>
+
+          <div class="shop-promo-banner">
+            <p class="promo-top-label">ƯU Đãi Khách Hàng Mới</p>
+            <h4 class="promo-heading">Giảm 15% cho đơn<br />hàng đầu tiên</h4>
+            <button class="promo-action-btn">Mua ngay</button>
+            <div class="promo-plant-icon">
+              <img
+                class="promo-plant-icon-img"
+                src="assets/figma/a5b501b8-4dbd-49b6-b595-2aba7353f490.svg"
+                alt="Plant Icon"
+              />
+            </div>
+          </div>
+        </aside>
+
+        <!-- Product List -->
+        <div class="shop-main">
+          <div class="shop-header">
+            <h1 class="shop-main-title">Cây cảnh tuyển chọn</h1>
+            <p class="shop-main-subtitle">
+              Khám phá mẫu cây cho không gian sống của bạn
+            </p>
+          </div>
+
+          <div class="shop-product-grid" id="product-grid">
+            <!-- Product Card 1 -->
+            <div
+              class="shop-card"
+              data-id="luoi-ho-laurenti"
+              data-name="Lưỡi hổ Laurenti"
+              data-price="600000"
+              data-tags="trong-nha anh-sang-yeu than-thien-thu-cung"
+            >
+              <div class="shop-card-image">
+                <img
+                  src="assets/figma/category-luoi-ho.png"
+                  alt="Lưỡi hổ Laurenti"
+                />
+                <span class="shop-badge">Hàng mới về</span>
+                <button
+                  class="shop-add-btn"
+                  aria-label="Thêm Lưỡi hổ Laurenti vào giỏ hàng"
+                >
+                  <img
+                    src="assets/figma/f10e1c13-713b-47b0-af39-c74411cfa977.svg"
+                    alt="+"
+                  />
+                </button>
+              </div>
+              <div class="shop-card-content">
+                <div class="shop-card-title-row">
+                  <h3 class="shop-card-name">Lưỡi hổ Laurenti</h3>
+                  <span class="shop-card-price">600.000 đ</span>
+                </div>
+                <p class="shop-card-desc">
+                  Thanh lọc không khí và cực kỳ bền bỉ. Hoàn hảo cho không gian
+                  thiếu sáng.
+                </p>
+                <div class="shop-card-tags">
+                  <span class="shop-tag">Ánh sáng yếu</span>
+                  <span class="shop-tag">Thân thiện thú cưng</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div
+              class="shop-card"
+              data-id="trau-ba-la-xe"
+              data-name="Trầu bà lá xẻ"
+              data-price="800000"
+              data-tags="trong-nha anh-sang-vua"
+            >
+              <div class="shop-card-image">
+                <img
+                  src="assets/figma/category-trau-ba.png"
+                  alt="Trầu bà lá xẻ"
+                />
+                <button
+                  class="shop-add-btn"
+                  aria-label="Thêm Trầu bà lá xẻ vào giỏ hàng"
+                >
+                  <img
+                    src="assets/figma/f10e1c13-713b-47b0-af39-c74411cfa977.svg"
+                    alt="+"
+                  />
+                </button>
+              </div>
+              <div class="shop-card-content">
+                <div class="shop-card-title-row">
+                  <h3 class="shop-card-name">Trầu bà lá xẻ</h3>
+                  <span class="shop-card-price">800.000đ</span>
+                </div>
+                <p class="shop-card-desc">
+                  Loài cây biểu tượng với những vết xẻ lá độc đáo mang tính kiến
+                  trúc.
+                </p>
+                <div class="shop-card-tags">
+                  <span class="shop-tag">Ánh sáng vừa</span>
+                  <span class="shop-tag">Kích thước lớn</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div
+              class="shop-card"
+              data-id="o-liu-lun"
+              data-name="Ô liu lùn"
+              data-price="500000"
+              data-tags="ngoai-troi anh-sang-manh"
+            >
+              <div class="shop-card-image">
+                <img
+                  src="assets/figma/category-o-liu.png"
+                  alt="Ô liu lùn"
+                />
+                <span class="shop-badge shop-badge-rare">lựa chọn sưu tầm</span>
+                <button
+                  class="shop-add-btn"
+                  aria-label="Thêm Ô liu lùn vào giỏ hàng"
+                >
+                  <img
+                    src="assets/figma/f10e1c13-713b-47b0-af39-c74411cfa977.svg"
+                    alt="+"
+                  />
+                </button>
+              </div>
+              <div class="shop-card-content">
+                <div class="shop-card-title-row">
+                  <h3 class="shop-card-name">Ô liu lùn</h3>
+                  <span class="shop-card-price">500.000đ</span>
+                </div>
+                <p class="shop-card-desc">
+                  Vẻ đẹp cổ điển Địa Trung Hải cho những góc tràn ngập ánh nắng.
+                  Sang trọng và lớn chậm.
+                </p>
+                <div class="shop-card-tags">
+                  <span class="shop-tag">Ánh sáng mạnh</span>
+                  <span class="shop-tag">Ngoài trời</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div
+              class="shop-card"
+              data-id="bang-singapore"
+              data-name="Bàng Singapore"
+              data-price="600000"
+              data-tags="trong-nha anh-sang-manh"
+            >
+              <div class="shop-card-image">
+                <img
+                  src="assets/figma/category-bang-singapore.png"
+                  alt="Bàng Singapore"
+                />
+                <button
+                  class="shop-add-btn"
+                  aria-label="Thêm Bàng Singapore vào giỏ hàng"
+                >
+                  <img
+                    src="assets/figma/f10e1c13-713b-47b0-af39-c74411cfa977.svg"
+                    alt="+"
+                  />
+                </button>
+              </div>
+              <div class="shop-card-content">
+                <div class="shop-card-title-row">
+                  <h3 class="shop-card-name">Bàng Singapore</h3>
+                  <span class="shop-card-price">600.000đ</span>
+                </div>
+                <p class="shop-card-desc">
+                  Điểm nhấn cho những căn phòng sáng sủa. Những chiếc lá bóng
+                  loáng hình vĩ cầm.
+                </p>
+                <div class="shop-card-tags">
+                  <span class="shop-tag">Ánh sáng mạnh</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div
+              class="shop-card"
+              data-id="duoi-cong"
+              data-name="Đuôi công"
+              data-price="750000"
+              data-tags="trong-nha anh-sang-vua than-thien-thu-cung"
+            >
+              <div class="shop-card-image">
+                <img
+                  src="assets/figma/category-duoi-cong.png"
+                  alt="Đuôi công"
+                />
+                <button
+                  class="shop-add-btn"
+                  aria-label="Thêm Đuôi công vào giỏ hàng"
+                >
+                  <img
+                    src="assets/figma/f10e1c13-713b-47b0-af39-c74411cfa977.svg"
+                    alt="+"
+                  />
+                </button>
+              </div>
+              <div class="shop-card-content">
+                <div class="shop-card-title-row">
+                  <h3 class="shop-card-name">Đuôi công</h3>
+                  <span class="shop-card-price">750.000đ</span>
+                </div>
+                <p class="shop-card-desc">
+                  Những đường vân bạc đầy nghệ thuật trên lá tròn rộng. Ưa thích
+                  độ ẩm cao.
+                </p>
+                <div class="shop-card-tags">
+                  <span class="shop-tag">Ánh sáng vừa</span>
+                  <span class="shop-tag">Thân thiện thú cưng</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div
+              class="shop-card"
+              data-id="bo-ba-sa-mac"
+              data-name="Bộ ba Sa mạc"
+              data-price="850000"
+              data-tags="trong-nha anh-sang-manh"
+            >
+              <div class="shop-card-image">
+                <img
+                  src="assets/figma/category-bo-ba-sa-mac.jpg"
+                  alt="Bộ ba Sa mạc"
+                />
+                <button
+                  class="shop-add-btn"
+                  aria-label="Thêm Bộ ba Sa mạc vào giỏ hàng"
+                >
+                  <img
+                    src="assets/figma/f10e1c13-713b-47b0-af39-c74411cfa977.svg"
+                    alt="+"
+                  />
+                </button>
+              </div>
+              <div class="shop-card-content">
+                <div class="shop-card-title-row">
+                  <h3 class="shop-card-name">Bộ ba Sa mạc</h3>
+                  <span class="shop-card-price">850.000đ</span>
+                </div>
+                <p class="shop-card-desc">
+                  Một bộ ba sen đá bền bỉ được tuyển chọn kỹ lưỡng cho bàn làm
+                  việc của bạn.
+                </p>
+                <div class="shop-card-tags">
+                  <span class="shop-tag">Ánh sáng mạnh</span>
+                  <span class="shop-tag">Trong nhà</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="shop-pagination">
+            <button class="page-prev">
+              <img
+                src="assets/figma/14971329-4f88-44d9-81e7-843671cb4a6f.svg"
+                alt="Prev"
+              />
+            </button>
+            <div class="page-numbers">
+              <button class="page-btn active">1</button>
+              <button class="page-btn">2</button>
+              <button class="page-btn">3</button>
+            </div>
+            <button class="page-next">
+              <img
+                src="assets/figma/fef462fd-b49a-4a84-8f5f-d228df3e45bb.svg"
+                alt="Next"
+              />
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-col">
+            <h4 class="footer-brand">Mầm Xanh</h4>
+            <p>Kiến tạo không gian sống xanh và bền vững từ tâm hồn.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Chính sách</h5>
+            <a href="policy_shipping.html">Chính sách giao hàng</a>
+            <a href="policy_warranty.html">Chính sách bảo hành</a>
+          </div>
+          <div class="footer-col">
+            <h5>Khám phá</h5>
+            <a href="index.html">Giới thiệu</a>
+            <a href="policy_privacy.html">Quyền riêng tư</a>
+          </div>
+          <div class="footer-col">
+            <h5>Liên hệ</h5>
+            <p>Sdt: 0867235467</p>
+            <p>Email: mamxanh@gmail.com</p>
+            <p>Địa chỉ: Số 1 Định Công, Hoàng Mai, Hà Nội</p>
+            <div class="footer-socials">
+              <img
+                src="assets/figma/8eca9a4d-0966-4284-8ca1-5a9dd180a039.svg"
+                alt="Social Icon 1"
+              />
+              <img
+                src="assets/figma/52dc52a9-90ac-463c-96e7-0c1e4287e0c9.svg"
+                alt="Social Icon 2"
+              />
+              <img
+                src="assets/figma/6eb5663f-87be-47c4-87ad-8ce2e9e6d282.svg"
+                alt="Social Icon 3"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast-container" id="toast-container"></div>
+    <script src="js/store.js"></script>
+
+    <script src="js/cart_badge.js"></script>
+    <script src="js/category.js"></script>
+    <script src="js/mobile-nav.js"></script>
+  </body>
+</html>

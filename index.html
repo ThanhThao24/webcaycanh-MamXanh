@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mầm Xanh - Trang chủ</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Miama&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Top Navbar -->
+    <header class="top-navbar">
+      <div class="top-navbar-inner">
+        <div class="nav-logo-group">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-bg-shape"></div>
+            <div class="nav-logo-subtitle">Mầm Xanh</div>
+            <div class="nav-logo-icon-wrap">
+              <img
+                src="assets/figma/ffa71a92-4aa9-4c9a-885b-ef6879b7d9fc.png"
+                alt="Logo Icon"
+              />
+            </div>
+          </a>
+          <h1 class="nav-brand-name">Mầm Xanh</h1>
+        </div>
+
+        <nav class="nav-center">
+          <a href="index.html" class="nav-link active">Trang chủ</a>
+          <a href="category.html" class="nav-link">Cửa hàng</a>
+          <a href="consulting.html" class="nav-link">Tư vấn</a>
+          <a href="news.html" class="nav-link">Tin tức</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="search.html" class="nav-action-btn" aria-label="Tìm kiếm">
+            <img
+              src="assets/figma/04444616-6d23-4a3a-84c9-2fa926e97541.svg"
+              alt="Search"
+            />
+          </a>
+          <a
+            href="cart.html"
+            class="nav-action-btn cart-btn"
+            aria-label="Giỏ hàng"
+          >
+            <img
+              src="assets/figma/2890b619-1087-4116-ba0a-61805245dc35.svg"
+              alt="Cart"
+            />
+          </a>
+          <a href="profile.html" class="nav-action-btn" aria-label="Tài khoản">
+            <img
+              src="assets/figma/8681f0ce-1e27-4586-898e-675842daf101.svg"
+              alt="User"
+            />
+          </a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span></button>
+      </div>
+    </header>
+    <div class="mobile-nav-overlay"></div>
+
+    <div class="page-wrapper">
+      <main class="page-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-banner">
+            <img
+              class="hero-bg-img"
+              src="assets/figma/home-hero-figma.jpg"
+              alt="Hero Banner"
+            />
+            <div class="hero-content">
+              <div class="hero-text-wrap">
+                <p class="hero-slogan-top">Tận hưởng không gian sống xanh</p>
+                <p class="hero-slogan-main">
+                  Mỗi chậu cây không chỉ là một món trang trí, mà còn là một góc
+                  xanh nhỏ mang lại sự trong lành và dễ chịu cho không gian sống
+                  của bạn. Chúng tôi tin rằng ai cũng xứng đáng có một khoảng
+                  thiên nhiên riêng - nơi mang đến cảm giác bình yên, thư giãn
+                  và nguồn năng lượng tích cực trong cuộc sống hiện đại.
+                </p>
+              </div>
+              <a href="category.html" class="btn-hero-explore">Khám phá</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Collections Bento Grid -->
+        <section class="bento-section" id="bento-grid">
+          <div class="container">
+            <h2 class="section-heading-bento">Bộ sưu tầm nổi bật</h2>
+            <div class="bento-grid">
+              <!-- Office - Indoor -->
+              <div class="bento-item bento-office">
+                <img
+                  src="assets/figma/home-bento-office.png"
+                  alt="Cây Văn Phòng"
+                  class="bento-img"
+                />
+                <h3 class="bento-title">CÂY VĂN PHÒNG</h3>
+              </div>
+              <!-- Easy Care - Outdoor -->
+              <div class="bento-item bento-easy">
+                <img
+                  src="assets/figma/home-bento-easy.jpg"
+                  alt="Cây dễ chăm"
+                  class="bento-img"
+                />
+                <div class="bento-overlay-dark"></div>
+                <h3 class="bento-title">Cây dễ chăm</h3>
+              </div>
+              <!-- Feng Shui - Succulents -->
+              <div class="bento-item bento-fengshui">
+                <img
+                  src="assets/figma/home-bento-fengshui.png"
+                  alt="Cây Phong thủy"
+                  class="bento-img"
+                />
+                <div class="bento-overlay-dark"></div>
+                <h3 class="bento-title">Cây Phong thủy</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bestsellers -->
+        <section class="products-section products-bestseller">
+          <div class="container">
+            <h2 class="section-title">SẢN PHẨM BÁN CHẠY</h2>
+            <div class="grid-4">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/9697633d-bdd7-44be-8f07-987a08b66ae7.jpg"
+                    alt="Sen đá"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Sen đá</h3>
+                  <p class="product-price">350.000đ</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/82118e07-e632-4236-851b-6d1e8510c991.jpg"
+                    alt="Sen mini"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Sen mini</h3>
+                  <p class="product-price">240.000đ</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/d481c6b8-3d3d-4658-9498-a15d60ac9031.jpg"
+                    alt="Ngọc ngân"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Ngọc ngân</h3>
+                  <p class="product-price">250.000đ</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/77871b6c-c3aa-4ff7-b65d-c1d6e1f52818.jpg"
+                    alt="Hồng môn"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Hồng môn</h3>
+                  <p class="product-price">280.000đ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Office Plants -->
+        <section class="products-section products-office">
+          <div class="container">
+            <h2 class="section-title">CÂY CẢNH VĂN PHÒNG</h2>
+            <div class="grid-3 centered-grid">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/0b729df0-e35f-4e92-bd71-a0699108ce90.png"
+                    alt="Tùng bồng"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Tùng bồng</h3>
+                  <p class="product-price">500.000đ</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/7abf0c1a-fd55-4061-b91c-e4c85b12700d.png"
+                    alt="Thiết mộc lan"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Thiết mộc lan</h3>
+                  <p class="product-price">750.000đ</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/b12f13a7-19bb-4ef6-bb75-7b572805127b.png"
+                    alt="Cây trầu bà"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Cây trầu bà</h3>
+                  <p class="product-price">120.000đ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Desk Plants -->
+        <section class="products-section products-desk">
+          <div class="container">
+            <h2 class="section-title">CÂY ĐỂ BÀN</h2>
+            <div class="grid-3 centered-grid">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/15e04785-01a5-4af0-8935-558ed7594eed.png"
+                    alt="Cỏ lan chi"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Cỏ lan chi</h3>
+                  <p class="product-price">120.000đ</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/e2b7e060-89d0-4e77-8d46-758f09460557.png"
+                    alt="Lưỡi hổ"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Lưỡi hổ</h3>
+                  <p class="product-price">360.000đ</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/aa1ef1f6-1250-4087-b1a6-158c7bf42306.png"
+                    alt="Tùng bồng lai"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Tùng bồng lai</h3>
+                  <p class="product-price">500.000đ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Feng Shui Plants -->
+        <section class="products-section products-fengshui">
+          <div class="fengshui-bg-overlay">
+            <img
+              src="assets/figma/002bd529-9153-46f3-9234-f1dae6d4012c.svg"
+              alt="Feng Shui Bg"
+            />
+          </div>
+          <div class="container relative-z">
+            <h2 class="section-title">CÂY PHONG THỦY</h2>
+            <div class="grid-3 centered-grid">
+              <div class="product-card card-glass">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/21847130-856a-4cb9-98d2-1fb19d5169d9.png"
+                    alt="Kim ngân"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Kim ngân</h3>
+                  <p class="product-price">380.000đ</p>
+                </div>
+              </div>
+              <div class="product-card card-glass">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/e510d483-0faa-4793-a5a7-420abb74b2bb.png"
+                    alt="Trường sinh"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Trường sinh</h3>
+                  <p class="product-price">140.000đ</p>
+                </div>
+              </div>
+              <div class="product-card card-glass">
+                <div class="product-image">
+                  <img
+                    src="assets/figma/3232d86f-3db6-4fba-8989-e078185385cd.png"
+                    alt="Vạn lộc"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Vạn lộc</h3>
+                  <p class="product-price">120.000đ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="magazine-section">
+          <div class="container">
+            <h2 class="magazine-title-main">Tin Tức</h2>
+            <div class="magazine-layout">
+              <div class="magazine-media">
+                <img
+                  src="assets/figma/a4d48eeb-4e4f-4871-9d8c-a42c92e93185.png"
+                  alt="Magazine Image"
+                />
+              </div>
+              <div class="magazine-content">
+                <h3 class="magazine-heading">
+                  Những lời khuyên từ chuyên gia về cách sống hài hòa với cây
+                  xanh.
+                </h3>
+                <p class="magazine-desc">
+                  Nghệ thuật tạo độ ẩm: Mô phỏng khí hậu nhiệt đới tại nhà.
+                </p>
+                <p class="magazine-desc">
+                  Khám phá lý do tại sao cây của bạn lại khó phát triển và cách
+                  tạo ra vi khí hậu hoàn toàn bằng các kỹ thuật cơ bản.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-col">
+            <h4 class="footer-brand">Mầm Xanh</h4>
+            <p>Kiến tạo không gian sống xanh và bền vững từ tâm hồn.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Chính sách</h5>
+            <a href="policy_shipping.html">Chính sách giao hàng</a>
+            <a href="policy_warranty.html">Chính sách bảo hành</a>
+          </div>
+          <div class="footer-col">
+            <h5>Khám phá</h5>
+            <a href="index.html">Giới thiệu</a>
+            <a href="policy_privacy.html">Quyền riêng tư</a>
+          </div>
+          <div class="footer-col">
+            <h5>Liên hệ</h5>
+            <p>Sdt: 0867235467</p>
+            <p>Email: mamxanh@gmail.com</p>
+            <p>Địa chỉ: Số 1 Định Công, Hoàng Mai, Hà Nội</p>
+            <div class="footer-socials">
+              <img
+                src="assets/figma/8eca9a4d-0966-4284-8ca1-5a9dd180a039.svg"
+                alt="Social Icon 1"
+              />
+              <img
+                src="assets/figma/52dc52a9-90ac-463c-96e7-0c1e4287e0c9.svg"
+                alt="Social Icon 2"
+              />
+              <img
+                src="assets/figma/6eb5663f-87be-47c4-87ad-8ce2e9e6d282.svg"
+                alt="Social Icon 3"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="toast-container" id="toast-container"></div>
+    <script src="js/store.js"></script>
+
+    <script src="js/cart_badge.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/mobile-nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mầm Xanh - Hồ sơ cá nhân</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&family=Manrope:wght@600;700;800&family=Miama&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: #fafaf5">
+    <!-- Top Navbar -->
+    <header class="top-navbar">
+      <div class="top-navbar-inner">
+        <div class="nav-logo-group">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-bg-shape"></div>
+            <div class="nav-logo-subtitle">Mầm Xanh</div>
+            <div class="nav-logo-icon-wrap">
+              <img
+                src="assets/figma/ffa71a92-4aa9-4c9a-885b-ef6879b7d9fc.png"
+                alt="Logo Icon"
+              />
+            </div>
+          </a>
+          <h1 class="nav-brand-name">Mầm Xanh</h1>
+        </div>
+
+        <nav class="nav-center">
+          <a href="index.html" class="nav-link">Trang chủ</a>
+          <a href="category.html" class="nav-link">Cửa hàng</a>
+          <a href="consulting.html" class="nav-link">Tư vấn</a>
+          <a href="news.html" class="nav-link">Tin tức</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="search.html" class="nav-action-btn" aria-label="Tìm kiếm">
+            <img
+              src="assets/figma/04444616-6d23-4a3a-84c9-2fa926e97541.svg"
+              alt="Search"
+            />
+          </a>
+          <a
+            href="cart.html"
+            class="nav-action-btn cart-btn"
+            aria-label="Giỏ hàng"
+          >
+            <img
+              src="assets/figma/2890b619-1087-4116-ba0a-61805245dc35.svg"
+              alt="Cart"
+            />
+          </a>
+          <a
+            href="profile.html"
+            class="nav-action-btn active"
+            aria-label="Tài khoản"
+          >
+            <img
+              src="assets/figma/8681f0ce-1e27-4586-898e-675842daf101.svg"
+              alt="User"
+            />
+          </a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span></button>
+      </div>
+    </header>
+    <div class="mobile-nav-overlay"></div>
+
+    <main
+      class="profile-container"
+      style="
+        max-width: 1536px;
+        margin: 0 auto;
+        display: flex;
+        gap: 48px;
+        padding: 37px 48px 80px 48px;
+      "
+    >
+      <!-- Sidebar -->
+      <aside
+        class="profile-sidebar"
+        style="
+          width: 256px;
+          background-color: #f4f4ef;
+          border-radius: 0 24px 24px 0;
+          padding: 32px 0;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <div class="sidebar-header" style="padding: 0 24px 32px 24px">
+          <h3
+            style="
+              font-family: &quot;Manrope&quot;, sans-serif;
+              font-weight: 700;
+              font-size: 18px;
+              color: #154212;
+              margin: 0;
+            "
+          >
+            Chào mừng quay lại
+          </h3>
+          <p
+            style="
+              font-family: &quot;Inter&quot;, sans-serif;
+              font-size: 14px;
+              color: #42493e;
+              margin: 0;
+            "
+          >
+            Người làm vườn tâm huyết
+          </p>
+        </div>
+        <nav
+          class="sidebar-nav"
+          style="display: flex; flex-direction: column; gap: 4px; padding: 8px"
+        >
+          <a
+            href="profile.html"
+            class="nav-item active"
+            style="
+              background-color: #2d5a27;
+              color: white;
+              border-radius: 9999px;
+              padding: 12px 16px;
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              text-decoration: none;
+              font-family: &quot;Inter&quot;, sans-serif;
+              font-weight: 700;
+              font-size: 16px;
+            "
+          >
+            <img
+              src="assets/figma/dc8c557c-0631-4245-99ff-8995fc79439f.svg"
+              alt="Acc"
+              style="width: 16px"
+            />
+            Tài khoản
+          </a>
+          <a
+            href="tracking.html"
+            class="nav-item"
+            style="
+              color: #42493e;
+              padding: 12px 16px;
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              text-decoration: none;
+              font-family: &quot;Inter&quot;, sans-serif;
+              font-size: 16px;
+            "
+          >
+            <img
+              src="assets/figma/988c7308-64d3-4a39-88d1-7ea7c3b6aa08.svg"
+              alt="Ord"
+              style="width: 18px"
+            />
+            Đơn hàng
+          </a>
+          <a
+            href="checkout.html"
+            class="nav-item"
+            style="
+              color: #42493e;
+              padding: 12px 16px;
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              text-decoration: none;
+              font-family: &quot;Inter&quot;, sans-serif;
+              font-size: 16px;
+            "
+          >
+            <img
+              src="assets/figma/e0caa921-4fc2-467f-b369-6e4f970220ef.svg"
+              alt="Loc"
+              style="width: 16px"
+            />
+            Địa chỉ
+          </a>
+          <a
+            href="news.html"
+            class="nav-item"
+            style="
+              color: #42493e;
+              padding: 12px 16px;
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              text-decoration: none;
+              font-family: &quot;Inter&quot;, sans-serif;
+              font-size: 16px;
+            "
+          >
+            <img
+              src="assets/figma/d82414f2-8a6f-42bb-9a57-aab98c947964.svg"
+              alt="Not"
+              style="width: 20px"
+            />
+            Thông báo
+          </a>
+        </nav>
+        <div class="sidebar-footer" style="margin-top: 56px; padding: 0 24px">
+          <button
+            class="btn-logout"
+            style="
+              width: 100%;
+              background: none;
+              border: 1px solid rgba(194, 201, 187, 0.2);
+              border-radius: 9999px;
+              padding: 13px;
+              font-family: &quot;Inter&quot;, sans-serif;
+              font-weight: 700;
+              font-size: 16px;
+              color: #154212;
+              cursor: pointer;
+            "
+          >
+            Đăng xuất
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div
+        class="profile-main"
+        style="flex: 1; display: flex; flex-direction: column; gap: 48px"
+      >
+        <div
+          class="profile-header"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div>
+            <h1
+              style="
+                font-family: &quot;Manrope&quot;, sans-serif;
+                font-weight: 800;
+                font-size: 36px;
+                color: #154212;
+                letter-spacing: -0.9px;
+                margin: 0;
+              "
+            >
+              Hồ sơ cá nhân
+            </h1>
+            <p
+              style="
+                font-family: &quot;Inter&quot;, sans-serif;
+                font-size: 16px;
+                color: #42493e;
+                margin: 8px 0 0 0;
+              "
+            >
+              Quản lý thông tin tài khoản và tùy chỉnh trải nghiệm của bạn tại
+              Mầm Xanh.
+            </p>
+          </div>
+          <button
+            class="btn-edit-profile"
+            style="
+              background-color: #2d5a27;
+              color: white;
+              border: none;
+              border-radius: 9999px;
+              padding: 12px 32px;
+              font-family: &quot;Inter&quot;, sans-serif;
+              font-weight: 700;
+              font-size: 16px;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              cursor: pointer;
+              box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <img
+              src="assets/figma/b324349e-caa2-41d9-a8ca-2856646720a2.svg"
+              alt="Edit"
+              style="width: 10px"
+            />
+            <span>Chỉnh sửa thông tin</span>
+          </button>
+        </div>
+
+        <div
+          class="profile-bento-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto auto;
+            gap: 24px;
+          "
+        >
+          <!-- Main Info Card -->
+          <div
+            class="main-info-card"
+            style="
+              grid-column: span 2;
+              background-color: white;
+              border-radius: 8px;
+              padding: 32px;
+              position: relative;
+              overflow: hidden;
+              box-shadow: 0px 20px 40px rgba(26, 28, 25, 0.06);
+              display: flex;
+              gap: 32px;
+            "
+          >
+            <div
+              style="
+                position: absolute;
+                width: 128px;
+                height: 128px;
+                background-color: rgba(21, 66, 18, 0.05);
+                border-radius: 50%;
+                top: -64px;
+                right: -64px;
+              "
+            ></div>
+            <div class="avatar-wrap" style="position: relative">
+              <div
+                class="avatar-box"
+                style="
+                  width: 128px;
+                  height: 128px;
+                  border-radius: 8px;
+                  border: 4px solid #fafaf5;
+                  overflow: hidden;
+                  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <img
+                  src="assets/figma/135df7aa-7fb2-4226-bcc0-7ff1ef5ae740.jpg"
+                  alt="Avatar"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <button
+                class="btn-change-avatar"
+                style="
+                  position: absolute;
+                  bottom: -8px;
+                  right: -8px;
+                  width: 32px;
+                  height: 32px;
+                  background-color: white;
+                  border: none;
+                  border-radius: 50%;
+                  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  cursor: pointer;
+                "
+              >
+                <img
+                  src="assets/figma/eadbe070-817d-49b2-9f7b-f4edbb694872.svg"
+                  alt="Cam"
+                  style="width: 16px"
+                />
+              </button>
+            </div>
+            <div
+              class="info-details"
+              style="flex: 1; display: flex; flex-direction: column; gap: 16px"
+            >
+              <div>
+                <label
+                  style="
+                    font-family: &quot;Inter&quot;, sans-serif;
+                    font-weight: 700;
+                    font-size: 10px;
+                    color: rgba(66, 73, 62, 0.6);
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                  "
+                  >HỌ VÀ TÊN</label
+                >
+                <h3
+                  style="
+                    font-family: &quot;Manrope&quot;, sans-serif;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #154212;
+                    margin: 4px 0 0 0;
+                  "
+                >
+                  Nguyễn Minh
+                </h3>
+              </div>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 24px;
+                  padding-top: 8px;
+                "
+              >
+                <div>
+                  <label
+                    style="
+                      font-family: &quot;Inter&quot;, sans-serif;
+                      font-weight: 700;
+                      font-size: 10px;
+                      color: rgba(66, 73, 62, 0.6);
+                      letter-spacing: 1px;
+                      text-transform: uppercase;
+                    "
+                    >EMAIL</label
+                  >
+                  <p
+                    style="
+                      font-family: &quot;Inter&quot;, sans-serif;
+                      font-weight: 500;
+                      font-size: 16px;
+                      color: #1a1c19;
+                      margin: 4px 0 0 0;
+                    "
+                  >
+                    minhnguyen.mamxanh@gmail.com
+                  </p>
+                </div>
+                <div>
+                  <label
+                    style="
+                      font-family: &quot;Inter&quot;, sans-serif;
+                      font-weight: 700;
+                      font-size: 10px;
+                      color: rgba(66, 73, 62, 0.6);
+                      letter-spacing: 1px;
+                      text-transform: uppercase;
+                    "
+                    >SỐ ĐIỆN THOẠI</label
+                  >
+                  <p
+                    style="
+                      font-family: &quot;Inter&quot;, sans-serif;
+                      font-weight: 500;
+                      font-size: 16px;
+                      color: #1a1c19;
+                      margin: 4px 0 0 0;
+                    "
+                  >
+                    090 123 4567
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Loyalty Card -->
+          <div
+            class="loyalty-card"
+            style="
+              background-color: #2d5a27;
+              border-radius: 8px;
+              padding: 32px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              height: 214px;
+            "
+          >
+            <div>
+              <span
+                class="loyalty-label"
+                style="
+                  font-family: &quot;Inter&quot;, sans-serif;
+                  font-weight: 700;
+                  font-size: 10px;
+                  color: rgba(255, 255, 255, 0.6);
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                "
+                >HẠNG THÀNH VIÊN</span
+              >
+              <h2
+                style="
+                  font-family: &quot;Manrope&quot;, sans-serif;
+                  font-weight: 700;
+                  font-size: 24px;
+                  color: white;
+                  margin: 4px 0 0 0;
+                "
+              >
+                Mầm Non
+              </h2>
+            </div>
+            <div class="loyalty-points">
+              <div
+                class="points-row"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-family: &quot;Inter&quot;, sans-serif;
+                  font-size: 14px;
+                  color: white;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Điểm tích lũy</span>
+                <span>850/1000</span>
+              </div>
+              <div
+                class="points-bar"
+                style="
+                  height: 8px;
+                  background-color: rgba(255, 255, 255, 0.2);
+                  border-radius: 9999px;
+                  overflow: hidden;
+                "
+              >
+                <div
+                  class="points-fill"
+                  style="width: 85%; height: 100%; background-color: white"
+                ></div>
+              </div>
+              <p
+                class="points-hint"
+                style="
+                  font-family: &quot;Inter&quot;, sans-serif;
+                  font-style: italic;
+                  font-size: 10px;
+                  color: rgba(255, 255, 255, 0.7);
+                  margin: 8px 0 0 0;
+                "
+              >
+                Cần 150 điểm nữa để lên hạng Chồi Xanh
+              </p>
+            </div>
+          </div>
+
+          <!-- Recent Orders -->
+          <div
+            class="recent-orders-card"
+            style="
+              grid-column: span 3;
+              background-color: #f4f4ef;
+              border-radius: 8px;
+              padding: 32px;
+              display: flex;
+              flex-direction: column;
+              gap: 24px;
+            "
+          >
+            <div
+              class="recent-orders-header"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <h2
+                style="
+                  font-family: &quot;Manrope&quot;, sans-serif;
+                  font-weight: 700;
+                  font-size: 20px;
+                  color: #154212;
+                  margin: 0;
+                "
+              >
+                Đơn hàng gần đây
+              </h2>
+              <a
+                href="tracking.html"
+                class="view-all-link"
+                style="
+                  font-family: &quot;Inter&quot;, sans-serif;
+                  font-weight: 700;
+                  font-size: 14px;
+                  color: #154212;
+                  text-decoration: none;
+                "
+                >Xem tất cả</a
+              >
+            </div>
+
+            <div
+              class="orders-list"
+              style="display: flex; flex-direction: column; gap: 16px"
+            >
+              <!-- Order 1 -->
+              <div
+                class="order-item"
+                style="
+                  background-color: white;
+                  border-radius: 8px;
+                  padding: 20px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <div
+                  class="order-left"
+                  style="display: flex; align-items: center; gap: 16px"
+                >
+                  <div
+                    class="order-image"
+                    style="
+                      width: 64px;
+                      height: 64px;
+                      background-color: #e8e8e3;
+                      border-radius: 8px;
+                      overflow: hidden;
+                    "
+                  >
+                    <img
+                      src="assets/figma/f44f536d-feb0-42e9-a910-c765c6c756e8.jpg"
+                      alt="Prod"
+                      style="width: 100%; height: 100%; object-fit: cover"
+                    />
+                  </div>
+                  <div class="order-info">
+                    <h4
+                      style="
+                        font-family: &quot;Inter&quot;, sans-serif;
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: #154212;
+                        margin: 0;
+                      "
+                    >
+                      Cây Bàng Singapore (L)
+                    </h4>
+                    <p
+                      style="
+                        font-family: &quot;Inter&quot;, sans-serif;
+                        font-size: 12px;
+                        color: #42493e;
+                        margin: 4px 0 0 0;
+                      "
+                    >
+                      Mã ĐH: <strong>MX-2026-888</strong> • 15/05/2026
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="order-right"
+                  style="display: flex; align-items: center; gap: 16px"
+                >
+                  <div
+                    class="price-status"
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-end;
+                      gap: 4px;
+                    "
+                  >
+                    <span
+                      class="price"
+                      style="
+                        font-family: &quot;Inter&quot;, sans-serif;
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #154212;
+                      "
+                      >800.000đ</span
+                    >
+                    <span
+                      class="status-badge"
+                      style="
+                        background-color: rgba(21, 66, 18, 0.1);
+                        color: #154212;
+                        font-family: &quot;Inter&quot;, sans-serif;
+                        font-weight: 700;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        padding: 4px 8px;
+                        border-radius: 9999px;
+                      "
+                      >ĐANG GIAO HÀNG</span
+                    >
+                  </div>
+                  <img
+                    src="assets/figma/46489c23-9233-4e3f-9b9d-5fd676a67af9.svg"
+                    alt="Arrow"
+                    style="width: 7px"
+                  />
+                </div>
+              </div>
+
+              <!-- Order 2 -->
+              <div
+                class="order-item"
+                style="
+                  background-color: white;
+                  border-radius: 8px;
+                  padding: 20px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <div
+                  class="order-left"
+                  style="display: flex; align-items: center; gap: 16px"
+                >
+                  <div
+                    class="order-image"
+                    style="
+                      width: 64px;
+                      height: 64px;
+                      background-color: #e8e8e3;
+                      border-radius: 8px;
+                      overflow: hidden;
+                    "
+                  >
+                    <img
+                      src="assets/figma/6d6015fa-e2bf-4224-8e3b-6503abffb608.jpg"
+                      alt="Prod"
+                      style="width: 100%; height: 100%; object-fit: cover"
+                    />
+                  </div>
+                  <div class="order-info">
+                    <h4
+                      style="
+                        font-family: &quot;Inter&quot;, sans-serif;
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #1a1c19;
+                        margin: 0;
+                      "
+                    >
+                      Bộ dụng cụ Bonsai thủ công
+                    </h4>
+                    <p
+                      style="
+                        font-family: &quot;Inter&quot;, sans-serif;
+                        font-size: 12px;
+                        color: #42493e;
+                        margin: 4px 0 0 0;
+                      "
+                    >
+                      Mã ĐH: <strong>MX-2026-888</strong> • 15/04/2026
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="order-right"
+                  style="display: flex; align-items: center; gap: 16px"
+                >
+                  <div
+                    class="price-status"
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-end;
+                      gap: 4px;
+                    "
+                  >
+                    <span
+                      class="price"
+                      style="
+                        font-family: &quot;Inter&quot;, sans-serif;
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #154212;
+                      "
+                      >600.000đ</span
+                    >
+                    <span
+                      class="status-badge"
+                      style="
+                        background-color: #e8e8e3;
+                        color: #154212;
+                        font-family: &quot;Inter&quot;, sans-serif;
+                        font-weight: 700;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        padding: 4px 8px;
+                        border-radius: 9999px;
+                      "
+                      >ĐANG GIAO HÀNG</span
+                    >
+                  </div>
+                  <img
+                    src="assets/figma/46489c23-9233-4e3f-9b9d-5fd676a67af9.svg"
+                    alt="Arrow"
+                    style="width: 7px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div
+        class="footer-container"
+        style="
+          max-width: 1280px;
+          margin: 0 auto;
+          padding: 80px 32px 40px 32px;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 48px;
+        "
+      >
+        <div class="footer-col">
+          <h3
+            class="footer-brand"
+            style="
+              font-weight: 600;
+              font-size: 18px;
+              color: #064e3b;
+              margin-bottom: 15px;
+            "
+          >
+            Mầm Xanh
+          </h3>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; line-height: 1.6"
+          >
+            Kiến tạo không gian sống xanh và bền<br />vững từ tâm hồn.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4
+            class="footer-title"
+            style="
+              font-weight: 600;
+              font-size: 14px;
+              color: #064e3b;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+            "
+          >
+            Chính sách
+          </h4>
+          <ul
+            class="footer-links"
+            style="
+              list-style: none;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+            "
+          >
+            <li>
+              <a
+                href="policy_shipping.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Chính sách giao hàng</a
+              >
+            </li>
+            <li>
+              <a
+                href="policy_warranty.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Chính sách bảo hành</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4
+            class="footer-title"
+            style="
+              font-weight: 600;
+              font-size: 14px;
+              color: #064e3b;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+            "
+          >
+            Khám phá
+          </h4>
+          <ul
+            class="footer-links"
+            style="
+              list-style: none;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+            "
+          >
+            <li>
+              <a
+                href="index.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Giới thiệu</a
+              >
+            </li>
+            <li>
+              <a
+                href="policy_privacy.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Quyền riêng tư</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4
+            class="footer-title"
+            style="
+              font-weight: 600;
+              font-size: 14px;
+              color: #064e3b;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+            "
+          >
+            Liên hệ
+          </h4>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; margin-bottom: 4px"
+          >
+            Sdt: 0867235467
+          </p>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; margin-bottom: 4px"
+          >
+            Email: mamxanh@gmail.com
+          </p>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; margin-bottom: 16px"
+          >
+            Địa chỉ: Số 1 Định Công, Hoàng Mai, Hà Nội
+          </p>
+          <div class="footer-socials" style="display: flex; gap: 16px">
+            <a href="#" aria-label="Facebook"
+              ><img
+                src="assets/figma/8cb61996-a766-4390-9014-1f3e6541ce82.svg"
+                alt="FB"
+                style="width: 18px"
+            /></a>
+            <a href="#" aria-label="Instagram"
+              ><img
+                src="assets/figma/84b6cbf6-6a79-42ba-b8ab-1ae501aea22d.svg"
+                alt="IG"
+                style="width: 16px"
+            /></a>
+            <a href="#" aria-label="YouTube"
+              ><img
+                src="assets/figma/0d4f4514-4ae9-4f0e-a9d1-cb3212f294e6.svg"
+                alt="YT"
+                style="width: 19px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/store.js"></script>
+    <script src="js/cart_badge.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/mobile-nav.js"></script>
+  </body>
+</html>

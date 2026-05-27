@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mầm Xanh - Tin tức</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;600;700&family=Manrope:wght@600;700;800&family=Miama&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: #fafaf5">
+    <!-- Top Navbar -->
+    <header class="top-navbar">
+      <div class="top-navbar-inner">
+        <div class="nav-logo-group">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-bg-shape"></div>
+            <div class="nav-logo-subtitle">Mầm Xanh</div>
+            <div class="nav-logo-icon-wrap">
+              <img
+                src="assets/figma/ffa71a92-4aa9-4c9a-885b-ef6879b7d9fc.png"
+                alt="Logo Icon"
+              />
+            </div>
+          </a>
+          <h1 class="nav-brand-name">Mầm Xanh</h1>
+        </div>
+
+        <nav class="nav-center">
+          <a href="index.html" class="nav-link">Trang chủ</a>
+          <a href="category.html" class="nav-link">Cửa hàng</a>
+          <a href="consulting.html" class="nav-link">Tư vấn</a>
+          <a href="news.html" class="nav-link active">Tin tức</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="search.html" class="nav-action-btn" aria-label="Tìm kiếm">
+            <img
+              src="assets/figma/04444616-6d23-4a3a-84c9-2fa926e97541.svg"
+              alt="Search"
+            />
+          </a>
+          <a
+            href="cart.html"
+            class="nav-action-btn cart-btn"
+            aria-label="Giỏ hàng"
+          >
+            <img
+              src="assets/figma/2890b619-1087-4116-ba0a-61805245dc35.svg"
+              alt="Cart"
+            />
+          </a>
+          <a href="profile.html" class="nav-action-btn" aria-label="Tài khoản">
+            <img
+              src="assets/figma/8681f0ce-1e27-4586-898e-675842daf101.svg"
+              alt="User"
+            />
+          </a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span></button>
+      </div>
+    </header>
+    <div class="mobile-nav-overlay"></div>
+
+    <main class="news-container">
+      <!-- Header -->
+      <div class="news-header">
+        <h1 class="news-main-title">Nhật ký mầm xanh</h1>
+      </div>
+
+      <!-- Featured Article -->
+      <section class="featured-article">
+        <div class="featured-image">
+          <div class="blur-overlay"></div>
+          <div class="featured-img-wrapper">
+            <img
+              src="assets/figma/9c309c03-d115-4527-95e2-97b088100a85.jpg"
+              alt="Featured"
+            />
+          </div>
+        </div>
+        <div class="featured-content">
+          <span class="article-category"
+            >Hướng Dẫn Chăm Sóc — Xu hướng 2026</span
+          >
+          <h2 class="featured-title">
+            Làm thế nào để<br />chăm sóc Trầu Bà lá<br />xẻ luôn xanh tốt
+          </h2>
+          <p class="featured-excerpt">
+            Khám phá những bí mật đằng sau việc duy trì vẻ đẹp hoang dã của
+            Monstera trong không gian sống hiện đại. Từ độ ẩm lý tưởng đến chế
+            độ dinh dưỡng định kỳ.
+          </p>
+          <a href="post.html" class="btn-read-more">
+            <span>Đọc tiếp</span>
+            <img
+              src="assets/figma/1b8988b2-902c-4e64-bfdc-734a5d1b2e8f.svg"
+              alt="arrow"
+            />
+          </a>
+        </div>
+      </section>
+
+      <!-- Main Content Grid -->
+      <section class="news-grid-section">
+        <div class="news-articles">
+          <!-- Article 1 -->
+          <div class="article-card">
+            <div class="article-image">
+              <img
+                src="assets/figma/265ff4d7-a152-4d36-a516-62cad89f5c6c.png"
+                alt="Art 1"
+              />
+            </div>
+            <div class="article-info">
+              <span class="article-tag">Cảm Hứng Thiết Kế</span>
+              <h3 class="article-title">
+                Nâng tầm không gian với sắc xanh tự nhiên
+              </h3>
+              <p class="article-desc">
+                Mang thiên nhiên vào từng góc nhỏ, giúp không gian sống trở nên
+                tươi mới, thư giãn và tràn đầy sức sống.
+              </p>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="article-card">
+            <div class="article-image">
+              <img
+                src="assets/figma/6138daa1-90e1-4a23-a087-64ac53d5b0c6.png"
+                alt="Art 2"
+              />
+            </div>
+            <div class="article-info">
+              <span class="article-tag">Câu Chuyện Thực Vật</span>
+              <h3 class="article-title">
+                Những loài thực vật quý hiếm bạn chưa từng biết
+              </h3>
+              <p class="article-desc">
+                Hành trình tìm kiếm những loài sen đá đột biến mang vẻ đẹp kỳ lạ
+                từ khắp nơi trên thế giới.
+              </p>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="article-card">
+            <div class="article-image">
+              <img
+                src="assets/figma/afc404f3-639a-4aa6-bb59-bdd438e7cb35.png"
+                alt="Art 3"
+              />
+            </div>
+            <div class="article-info">
+              <span class="article-tag">Hướng Dẫn Chăm Sóc</span>
+              <h3 class="article-title">Vườn thảo mộc trên ban công nhỏ</h3>
+              <p class="article-desc">
+                Tận dụng tối đa không gian hẹp để tự tay trồng các loại gia vị
+                sạch cho gian bếp.
+              </p>
+            </div>
+          </div>
+
+          <!-- Article 4 -->
+          <div class="article-card">
+            <div class="article-image">
+              <img
+                src="assets/figma/617b3848-2683-4f9e-830d-f472e46a0789.png"
+                alt="Art 4"
+              />
+            </div>
+            <div class="article-info">
+              <span class="article-tag">Cảm Hứng Thiết Kế</span>
+              <h3 class="article-title">Nghệ thuật chọn chậu cây thủ công</h3>
+              <p class="article-desc">
+                Sự kết hợp hoàn mỹ giữa gốm sứ truyền thống và vẻ đẹp tự nhiên
+                của thực vật.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="news-sidebar">
+          <div class="sidebar-image-group">
+            <div class="sidebar-top-img">
+              <img
+                src="assets/figma/66874100-ec02-4005-b84c-a47d97a929e8.png"
+                alt="Sidebar 1"
+              />
+            </div>
+            <div class="sidebar-bottom-img">
+              <img
+                src="assets/figma/fe4c9963-d59f-4814-9e5d-65246ccfa211.png"
+                alt="Sidebar 2"
+              />
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div
+        class="footer-container"
+        style="
+          max-width: 1280px;
+          margin: 0 auto;
+          padding: 80px 32px 40px 32px;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 48px;
+        "
+      >
+        <div class="footer-col">
+          <h3
+            class="footer-brand"
+            style="
+              font-weight: 600;
+              font-size: 18px;
+              color: #064e3b;
+              margin-bottom: 15px;
+            "
+          >
+            Mầm Xanh
+          </h3>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; line-height: 1.6"
+          >
+            Kiến tạo không gian sống xanh và bền<br />vững từ tâm hồn.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4
+            class="footer-title"
+            style="
+              font-weight: 600;
+              font-size: 14px;
+              color: #064e3b;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+            "
+          >
+            Chính sách
+          </h4>
+          <ul
+            class="footer-links"
+            style="
+              list-style: none;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+            "
+          >
+            <li>
+              <a
+                href="policy_shipping.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Chính sách giao hàng</a
+              >
+            </li>
+            <li>
+              <a
+                href="policy_warranty.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Chính sách bảo hành</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4
+            class="footer-title"
+            style="
+              font-weight: 600;
+              font-size: 14px;
+              color: #064e3b;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+            "
+          >
+            Khám phá
+          </h4>
+          <ul
+            class="footer-links"
+            style="
+              list-style: none;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+            "
+          >
+            <li>
+              <a
+                href="index.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Giới thiệu</a
+              >
+            </li>
+            <li>
+              <a
+                href="policy_privacy.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Quyền riêng tư</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4
+            class="footer-title"
+            style="
+              font-weight: 600;
+              font-size: 14px;
+              color: #064e3b;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+            "
+          >
+            Liên hệ
+          </h4>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; margin-bottom: 4px"
+          >
+            Sdt: 0867235467
+          </p>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; margin-bottom: 4px"
+          >
+            Email: mamxanh@gmail.com
+          </p>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; margin-bottom: 16px"
+          >
+            Địa chỉ: Số 1 Định Công, Hoàng Mai, Hà Nội
+          </p>
+          <div class="footer-socials" style="display: flex; gap: 16px">
+            <a href="#" aria-label="Facebook"
+              ><img
+                src="assets/figma/42c34f0c-4741-4685-bcf7-3d3a8b50b0ce.svg"
+                alt="FB"
+                style="width: 18px"
+            /></a>
+            <a href="#" aria-label="Instagram"
+              ><img
+                src="assets/figma/7ff6dea4-4a9c-4254-946e-08b670bd6d28.svg"
+                alt="IG"
+                style="width: 16px"
+            /></a>
+            <a href="#" aria-label="YouTube"
+              ><img
+                src="assets/figma/461d33b7-3fa5-499c-ab4f-628aa9f6a0c0.svg"
+                alt="YT"
+                style="width: 19px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/store.js"></script>
+    <script src="js/cart_badge.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/mobile-nav.js"></script>
+  </body>
+</html>

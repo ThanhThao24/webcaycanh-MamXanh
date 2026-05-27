@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mầm Xanh - Đăng ký</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/register_simple.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-cream">
+    <div class="form-section">
+      <div class="form-container">
+        <div class="brand-header-simple">
+          <h1 class="auth-title-large">Đăng ký</h1>
+          <h2 class="auth-subtitle-large">Chào mừng bạn đến với Mầm xanh</h2>
+        </div>
+
+        <form id="registerForm" class="auth-form-simple">
+          <div class="form-group">
+            <label class="form-label" for="email">Địa chỉ email</label>
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="name@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="password">Mật khẩu</label>
+            <div class="input-wrapper">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary auth-btn">
+            Tạo tài khoản
+          </button>
+        </form>
+
+        <div class="divider">
+          <span class="divider-line"></span>
+          <span class="divider-text">Or continue with</span>
+          <span class="divider-line"></span>
+        </div>
+
+        <div class="social-logins">
+          <button class="btn-social" id="btn-google" type="button">
+            <img
+              src="assets/figma/google-icon.svg"
+              alt="Google"
+              width="20"
+              height="20"
+            />
+            <span>Google</span>
+          </button>
+          <button class="btn-social" id="btn-apple" type="button">
+            <img
+              src="assets/figma/apple-icon.svg"
+              alt="Apple"
+              width="20"
+              height="20"
+            />
+            <span>Apple</span>
+          </button>
+        </div>
+
+        <div class="auth-footer">
+          <span class="text-label">Bạn đã có tài khoản? </span>
+          <a href="login.html" class="text-primary font-bold">Đăng nhập</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/store.js"></script>
+
+    <script src="js/register.js"></script>
+  </body>
+</html>

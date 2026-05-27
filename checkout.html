@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mầm Xanh - Thanh toán</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Miama&family=Manrope:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-alt">
+    <!-- Top Navbar -->
+    <header class="top-navbar">
+      <div class="top-navbar-inner">
+        <div class="nav-logo-group">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-bg-shape"></div>
+            <div class="nav-logo-subtitle">Mầm Xanh</div>
+            <div class="nav-logo-icon-wrap">
+              <img
+                src="assets/figma/ffa71a92-4aa9-4c9a-885b-ef6879b7d9fc.png"
+                alt="Logo Icon"
+              />
+            </div>
+          </a>
+          <h1 class="nav-brand-name">Mầm Xanh</h1>
+        </div>
+
+        <nav class="nav-center">
+          <a href="index.html" class="nav-link">Trang chủ</a>
+          <a href="category.html" class="nav-link">Cửa hàng</a>
+          <a href="consulting.html" class="nav-link">Tư vấn</a>
+          <a href="news.html" class="nav-link">Tin tức</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="search.html" class="nav-action-btn" aria-label="Tìm kiếm">
+            <img
+              src="assets/figma/04444616-6d23-4a3a-84c9-2fa926e97541.svg"
+              alt="Search"
+            />
+          </a>
+          <a
+            href="cart.html"
+            class="nav-action-btn cart-btn"
+            aria-label="Giỏ hàng"
+          >
+            <img
+              src="assets/figma/2890b619-1087-4116-ba0a-61805245dc35.svg"
+              alt="Cart"
+            />
+          </a>
+          <a href="profile.html" class="nav-action-btn" aria-label="Tài khoản">
+            <img
+              src="assets/figma/8681f0ce-1e27-4586-898e-675842daf101.svg"
+              alt="User"
+            />
+          </a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span></button>
+      </div>
+    </header>
+    <div class="mobile-nav-overlay"></div>
+
+    <div class="page-wrapper">
+      <main class="container checkout-container">
+        <div class="checkout-header mb-48">
+          <h1
+            class="auth-title"
+            style="color: var(--primary-dark); font-size: 48px"
+          >
+            Thanh Toán
+          </h1>
+          <p class="text-label">
+            Hoàn tất đơn hàng của bạn để mang thiên nhiên về nhà.
+          </p>
+        </div>
+
+        <div class="checkout-layout">
+          <!-- Form Column -->
+          <div class="checkout-form-col">
+            <!-- Step 1 -->
+            <section class="checkout-section">
+              <div class="flex items-center gap-16 mb-24">
+                <div
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    font-weight: 700;
+                    background-color: #154212;
+                    color: white;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Manrope', sans-serif;
+                  "
+                >
+                  1
+                </div>
+                <h2
+                  class="checkout-section-title"
+                  style="font-size: 24px; color: #154212"
+                >
+                  Thông tin giao hàng
+                </h2>
+              </div>
+
+              <div
+                class="checkout-form-card"
+                style="
+                  background-color: #f4f4ef;
+                  border-radius: 20px;
+                  padding: 32px;
+                "
+              >
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label">Họ và tên</label>
+                    <div
+                      class="input-wrapper"
+                      style="background-color: #e8e8e3; border-radius: 16px"
+                    >
+                      <input id="fullname" type="text" placeholder="Nguyễn Văn A" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Số điện thoại</label>
+                    <div
+                      class="input-wrapper"
+                      style="background-color: #e8e8e3; border-radius: 16px"
+                    >
+                      <input id="phone" type="text" placeholder="090 123 4567" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Địa chỉ nhận hàng</label>
+                  <div
+                    class="input-wrapper"
+                    style="background-color: #e8e8e3; border-radius: 16px"
+                  >
+                    <input
+                      id="address"
+                      type="text"
+                      placeholder="Số nhà, tên đường, phường/xã..."
+                    />
+                  </div>
+                </div>
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label">Tỉnh / Thành phố</label>
+                    <div
+                      class="input-wrapper"
+                      style="background-color: #e8e8e3; border-radius: 16px"
+                    >
+                      <select
+                        id="city"
+                        style="
+                          width: 100%;
+                          border: none;
+                          background: transparent;
+                          font-family: inherit;
+                          font-size: 16px;
+                          outline: none;
+                        "
+                      >
+                        <option>Hà Nội</option>
+                        <option>TP. Hồ Chí Minh</option>
+                        <option>Đà Nẵng</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Ghi chú (tùy chọn)</label>
+                    <div
+                      class="input-wrapper"
+                      style="background-color: #e8e8e3; border-radius: 16px"
+                    >
+                      <input id="note" type="text" placeholder="Chỉ dẫn giao hàng..." />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Step 2 -->
+            <section class="checkout-section mt-48">
+              <div class="flex items-center gap-16 mb-24">
+                <div
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    font-weight: 700;
+                    background-color: #e8e8e3;
+                    color: #42493e;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Manrope', sans-serif;
+                  "
+                >
+                  2
+                </div>
+                <h2
+                  class="checkout-section-title"
+                  style="font-size: 24px; color: #154212"
+                >
+                  Phương thức thanh toán
+                </h2>
+              </div>
+
+              <div class="grid-3" style="gap: 16px">
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="card" checked />
+                  <div
+                    class="payment-card-figma active"
+                    style="
+                      background-color: #fff;
+                      border: 2px solid #154212;
+                      border-radius: 20px;
+                      padding: 26px;
+                      text-align: center;
+                      cursor: pointer;
+                    "
+                  >
+                    <img
+                      src="assets/fallback/payment-card.svg"
+                      alt="Card"
+                      style="
+                        width: 25px;
+                        height: 25px;
+                        object-fit: contain;
+                        margin: 0 auto 12px;
+                      "
+                    />
+                    <p
+                      style="font-weight: 600; font-size: 14px; color: #154212"
+                    >
+                      Thẻ Tín Dụng
+                    </p>
+                  </div>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="bank" />
+                  <div
+                    class="payment-card-figma"
+                    style="
+                      background-color: #f4f4ef;
+                      border: 2px solid transparent;
+                      border-radius: 20px;
+                      padding: 26px;
+                      text-align: center;
+                      cursor: pointer;
+                    "
+                  >
+                    <img
+                      src="assets/fallback/payment-bank.svg"
+                      alt="Bank"
+                      style="
+                        width: 25px;
+                        height: 25px;
+                        object-fit: contain;
+                        margin: 0 auto 12px;
+                      "
+                    />
+                    <p
+                      style="font-weight: 600; font-size: 14px; color: #154212"
+                    >
+                      Chuyển Khoản
+                    </p>
+                  </div>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="cash" />
+                  <div
+                    class="payment-card-figma"
+                    style="
+                      background-color: #f4f4ef;
+                      border: 2px solid transparent;
+                      border-radius: 20px;
+                      padding: 26px;
+                      text-align: center;
+                      cursor: pointer;
+                    "
+                  >
+                    <img
+                      src="assets/fallback/payment-cash.svg"
+                      alt="Cash"
+                      style="
+                        width: 24px;
+                        height: 24px;
+                        object-fit: contain;
+                        margin: 0 auto 12px;
+                      "
+                    />
+                    <p
+                      style="font-weight: 600; font-size: 14px; color: #154212"
+                    >
+                      Tiền mặt
+                    </p>
+                  </div>
+                </label>
+              </div>
+
+              <!-- Card Detail View -->
+              <div
+                class="checkout-form-card mt-24 shadow-lg"
+                style="
+                  background-color: #fff;
+                  border-radius: 20px;
+                  padding: 32px;
+                "
+              >
+                <div class="form-group">
+                  <label class="form-label">Số thẻ</label>
+                  <div
+                    class="input-wrapper"
+                    style="
+                      background-color: #f4f4ef;
+                      border-radius: 16px;
+                      position: relative;
+                    "
+                  >
+                    <input type="text" placeholder="0000 0000 0000 0000" />
+                    <div
+                      style="
+                        position: absolute;
+                        right: 16px;
+                        display: flex;
+                        gap: 8px;
+                      "
+                    >
+                      <div
+                        style="
+                          width: 32px;
+                          height: 20px;
+                          background-color: #e7e5e4;
+                          border-radius: 2px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          width: 32px;
+                          height: 20px;
+                          background-color: #d6d3d1;
+                          border-radius: 2px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label">Hết hạn (MM/YY)</label>
+                    <div
+                      class="input-wrapper"
+                      style="background-color: #f4f4ef; border-radius: 16px"
+                    >
+                      <input type="text" placeholder="12/26" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">CVV</label>
+                    <div
+                      class="input-wrapper"
+                      style="background-color: #f4f4ef; border-radius: 16px"
+                    >
+                      <input type="password" placeholder="***" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Sidebar Column -->
+          <aside class="checkout-sidebar-col">
+            <div
+              class="summary-card shadow-lg"
+              style="
+                background-color: #fff;
+                border-radius: 20px;
+                overflow: hidden;
+                padding: 0;
+              "
+            >
+              <div style="padding: 32px; border-bottom: 1px solid #eeeee9">
+                <h2
+                  style="
+                    font-family: var(--font-heading);
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #154212;
+                  "
+                >
+                  Tóm tắt đơn hàng
+                </h2>
+              </div>
+
+              <div
+                id="sidebar-items"
+                style="
+                  padding: 32px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 24px;
+                "
+                >
+                <div id="sidebar-empty" style="display: none; color: #42493e; font-size: 14px">
+                  Chưa có sản phẩm trong giỏ hàng.
+                </div>
+                <!-- Item 1 -->
+                <div class="flex gap-16 sidebar-item">
+                  <div
+                    style="
+                      width: 80px;
+                      height: 96px;
+                      background-color: #f4f4ef;
+                      border-radius: 16px;
+                      overflow: hidden;
+                      flex-shrink: 0;
+                    "
+                  >
+                    <img
+                      src="assets/figma/a2cb778d-ed97-4ac3-b4c6-3ff39997ccab.jpg"
+                      alt="Plant"
+                      style="width: 100%; height: 100%; object-fit: cover"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <h4
+                      style="
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #154212;
+                        margin-bottom: 4px;
+                      "
+                    >
+                      Cây Bàng Singapore (L)
+                    </h4>
+                    <p
+                      style="
+                        font-size: 12px;
+                        color: #42493e;
+                        margin-bottom: 12px;
+                      "
+                    >
+                      Chậu Gốm Nghệ Nhân
+                    </p>
+                    <div class="flex justify-between items-end">
+                      <span style="font-size: 12px; color: #1a1c19"
+                        >Số lượng: 1</span
+                      >
+                      <span
+                        style="
+                          font-size: 16px;
+                          font-weight: 600;
+                          color: #154212;
+                        "
+                        >600.000đ</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex gap-16 sidebar-item">
+                  <div
+                    style="
+                      width: 80px;
+                      height: 96px;
+                      background-color: #f4f4ef;
+                      border-radius: 16px;
+                      overflow: hidden;
+                      flex-shrink: 0;
+                    "
+                  >
+                    <img
+                      src="assets/figma/995d1751-0352-47d8-8793-13215a74443a.png"
+                      alt="Plant"
+                      style="width: 100%; height: 100%; object-fit: cover"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <h4
+                      style="
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #1a1c19;
+                        margin-bottom: 4px;
+                      "
+                    >
+                      Trầu Bà lá xẻ Thái
+                    </h4>
+                    <p
+                      style="
+                        font-size: 12px;
+                        color: #42493e;
+                        margin-bottom: 12px;
+                      "
+                    >
+                      Đồng thau & Gỗ sồi
+                    </p>
+                    <div class="flex justify-between items-end">
+                      <span style="font-size: 12px; color: #1a1c19"
+                        >Số lượng: 1</span
+                      >
+                      <span
+                        style="
+                          font-size: 16px;
+                          font-weight: 600;
+                          color: #154212;
+                        "
+                        >800.000đ</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    border-top: 1px solid #eeeee9;
+                    padding-top: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                  "
+                >
+                  <div
+                    class="flex justify-between"
+                    style="font-size: 14px; color: #42493e"
+                  >
+                    <span>Tạm tính</span>
+                    <span id="summary-subtotal" style="font-weight: 600; color: #42493e"
+                      >1.400.000đ</span
+                    >
+                  </div>
+                  <div
+                    class="flex justify-between"
+                    style="font-size: 14px; color: #42493e"
+                  >
+                    <span>Phí vận chuyển</span>
+                    <span id="summary-shipping" style="font-weight: 600; color: #42493e"
+                      >Miễn phí</span
+                    >
+                  </div>
+                  <div id="discount-row" class="flex justify-between hidden" style="font-size: 14px; color: #42493e">
+                    <span>Giảm giá</span>
+                    <span id="summary-discount" style="font-weight: 600; color: #154212">-0đ</span>
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    border-top: 1px solid #eeeee9;
+                    padding-top: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <span
+                    style="
+                      font-family: var(--font-heading);
+                      font-size: 18px;
+                      font-weight: 700;
+                      color: #154212;
+                    "
+                    >Tổng cộng</span
+                  >
+                  <span
+                    style="font-size: 24px; font-weight: 700; color: #154212"
+                    id="summary-total"
+                    >1.400.000 đ</span
+                  >
+                </div>
+
+                <button
+                  id="btn-place-order"
+                  class="btn btn-primary"
+                  style="
+                    width: 100%;
+                    padding: 20px;
+                    background-color: #154212;
+                    border-radius: 9999px;
+                    box-shadow: 0px 10px 15px -3px rgba(21, 66, 18, 0.2);
+                  "
+                >
+                  Đặt hàng ngay
+                </button>
+
+                <div class="flex items-center justify-center gap-8">
+                  <img
+                    src="assets/figma/f0317671-01a7-4455-91f3-f00cfac15863.svg"
+                    alt="Lock"
+                    style="width: 10px"
+                  />
+                  <span
+                    style="
+                      font-size: 10px;
+                      font-weight: 600;
+                      color: #42493e;
+                      letter-spacing: 1px;
+                      text-transform: uppercase;
+                    "
+                    >Thanh toán bảo mật & mã hóa</span
+                  >
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-col">
+            <h4 class="footer-brand">Mầm Xanh</h4>
+            <p>Kiến tạo không gian sống xanh và bền vững từ tâm hồn.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Chính sách</h5>
+            <a href="policy_shipping.html">Chính sách giao hàng</a>
+            <a href="policy_warranty.html">Chính sách bảo hành</a>
+          </div>
+          <div class="footer-col">
+            <h5>Khám phá</h5>
+            <a href="index.html">Giới thiệu</a>
+            <a href="policy_privacy.html">Quyền riêng tư</a>
+          </div>
+          <div class="footer-col">
+            <h5>Liên hệ</h5>
+            <p>Sdt: 0867235467</p>
+            <p>Email: mamxanh@gmail.com</p>
+            <p>Địa chỉ: Số 1 Định Công, Hoàng Mai, Hà Nội</p>
+            <div class="footer-socials">
+              <img
+                src="assets/figma/8eca9a4d-0966-4284-8ca1-5a9dd180a039.svg"
+                alt="Social Icon 1"
+              />
+              <img
+                src="assets/figma/52dc52a9-90ac-463c-96e7-0c1e4287e0c9.svg"
+                alt="Social Icon 2"
+              />
+              <img
+                src="assets/figma/6eb5663f-87be-47c4-87ad-8ce2e9e6d282.svg"
+                alt="Social Icon 3"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="toast-container" id="toast-container"></div>
+    <script src="js/store.js"></script>
+
+    <script src="js/cart_badge.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/mobile-nav.js"></script>
+  </body>
+</html>

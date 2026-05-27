@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mầm Xanh - Tìm kiếm</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Miama&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-alt">
+    <!-- Top Navbar -->
+    <header class="top-navbar">
+      <div class="top-navbar-inner">
+        <div class="nav-logo-group">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-bg-shape"></div>
+            <div class="nav-logo-subtitle">Mầm Xanh</div>
+            <div class="nav-logo-icon-wrap">
+              <img
+                src="assets/search/ffa71a92-4aa9-4c9a-885b-ef6879b7d9fc.png"
+                alt="Logo Icon"
+              />
+            </div>
+          </a>
+          <h1 class="nav-brand-name">Mầm Xanh</h1>
+        </div>
+
+        <nav class="nav-center">
+          <a href="index.html" class="nav-link">Trang chủ</a>
+          <a href="category.html" class="nav-link">Cửa hàng</a>
+          <a href="consulting.html" class="nav-link">Tư vấn</a>
+          <a href="news.html" class="nav-link">Tin tức</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a
+            href="search.html"
+            class="nav-action-btn active"
+            aria-label="Tìm kiếm"
+          >
+            <img
+              src="assets/search/04444616-6d23-4a3a-84c9-2fa926e97541.svg"
+              alt="Search"
+            />
+          </a>
+          <a
+            href="cart.html"
+            class="nav-action-btn cart-btn"
+            aria-label="Giỏ hàng"
+          >
+            <img
+              src="assets/search/2890b619-1087-4116-ba0a-61805245dc35.svg"
+              alt="Cart"
+            />
+          </a>
+          <a href="profile.html" class="nav-action-btn" aria-label="Tài khoản">
+            <img
+              src="assets/search/8681f0ce-1e27-4586-898e-675842daf101.svg"
+              alt="User"
+            />
+          </a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span></button>
+      </div>
+    </header>
+    <div class="mobile-nav-overlay"></div>
+
+    <div class="page-wrapper">
+      <main class="container search-container">
+        <!-- Search Header -->
+        <div class="search-header">
+          <h1 class="search-title">Tìm kiếm cây xanh</h1>
+          <div class="search-input-wrapper">
+            <span class="search-input-icon">
+              <img
+                src="assets/search/09277a35-c1c0-4bd5-8bb0-0c2026aa97f6.svg"
+                alt="Search Icon"
+                class="search-input-icon-img"
+              />
+            </span>
+            <input
+              type="text"
+              class="search-input"
+              id="search-input"
+              placeholder="Tìm tên cây (ví dụ: Trầu Bà, Lưỡi Hổ...)"
+            />
+            <button class="search-clear hidden" id="search-clear" type="button">
+              &times;
+            </button>
+          </div>
+          <div class="search-suggestions">
+            <span class="suggestion-label">PHỔ BIẾN:</span>
+            <button
+              class="suggestion-btn"
+              data-suggest="Cây Bàng Singapore"
+              type="button"
+            >
+              Cây Bàng Singapore
+            </button>
+            <button
+              class="suggestion-btn"
+              data-suggest="Cây Kim Tiền"
+              type="button"
+            >
+              Cây Kim Tiền
+            </button>
+            <button
+              class="suggestion-btn"
+              data-suggest="Cây Trầu Bà Lá Xẻ"
+              type="button"
+            >
+              Cây Trầu Bà Lá Xẻ
+            </button>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="search-results-wrapper">
+          <div class="results-meta">
+            <p id="results-count-text">Hiển thị 3 kết quả</p>
+          </div>
+
+          <div class="search-results-grid" id="search-results-grid">
+            <!-- Result 1 -->
+            <div class="search-result-card" data-id="trau-ba-la-xe">
+              <div class="search-result-image">
+                <img
+                  src="assets/search/17b05ab7-0d2f-41bb-b359-d13fcd252af7.png"
+                  alt="Trầu Bà Lá Xẻ"
+                />
+              </div>
+              <div class="search-result-info">
+                <div class="search-result-name-row">
+                  <h3 class="search-result-name">Trầu Bà Lá Xẻ</h3>
+                  <span class="search-result-price">850.000đ</span>
+                </div>
+                <p class="search-result-latin">Monstera Deliciosa</p>
+                <div class="search-result-tags">
+                  <div class="search-tag-chip">
+                    <img
+                      src="assets/search/dfde4cc3-c71f-4eb4-a0f9-5cb3fce7b11d.svg"
+                      alt="Size"
+                      class="search-tag-icon"
+                    />
+                    <span class="filter-label">VỪA</span>
+                  </div>
+                  <div class="search-tag-chip">
+                    <img
+                      src="assets/search/74e6a44e-86b8-4553-b94b-4d1cb02157c5.svg"
+                      alt="Water"
+                      class="search-tag-icon is-water"
+                    />
+                    <span class="filter-label">HÀNG TUẦN</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Result 2 -->
+            <div class="search-result-card" data-id="trau-ba-leo">
+              <div class="search-result-image">
+                <img
+                  src="assets/search/f851b23f-0885-497d-8edd-0cd421230bb0.jpg"
+                  alt="Trầu bà leo"
+                />
+              </div>
+              <div class="search-result-info">
+                <div class="search-result-name-row">
+                  <h3 class="search-result-name">Trầu bà leo</h3>
+                  <span class="search-result-price">420.000đ</span>
+                </div>
+                <p class="search-result-latin">Sansevieria</p>
+                <div class="search-result-tags">
+                  <div class="search-tag-chip">
+                    <img
+                      src="assets/search/237e6196-8e8a-4686-a71c-149cdef476df.svg"
+                      alt="Size"
+                      class="search-tag-icon"
+                    />
+                    <span class="filter-label">THẤP</span>
+                  </div>
+                  <div class="search-tag-chip">
+                    <img
+                      src="assets/search/74e6a44e-86b8-4553-b94b-4d1cb02157c5.svg"
+                      alt="Water"
+                      class="search-tag-icon is-water"
+                    />
+                    <span class="filter-label">ÍT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Result 3 -->
+            <div class="search-result-card" data-id="bang-singapore">
+              <div class="search-result-image">
+                <img
+                  src="assets/search/61765859-00b9-427c-8fca-521136298cd9.jpg"
+                  alt="Bàng Singapore"
+                />
+              </div>
+              <div class="search-result-info">
+                <div class="search-result-name-row">
+                  <h3 class="search-result-name">Bàng Singapore</h3>
+                  <span class="search-result-price">1.250.000đ</span>
+                </div>
+                <p class="search-result-latin">Ficus Lyrata</p>
+                <div class="search-result-tags">
+                  <div class="search-tag-chip">
+                    <img
+                      src="assets/search/8310a144-d1e4-4c67-8036-bf60711412f7.svg"
+                      alt="Size"
+                      class="search-tag-icon"
+                    />
+                    <span class="filter-label">CAO</span>
+                  </div>
+                  <div class="search-tag-chip">
+                    <img
+                      src="assets/search/74e6a44e-86b8-4553-b94b-4d1cb02157c5.svg"
+                      alt="Water"
+                      class="search-tag-icon is-water"
+                    />
+                    <span class="filter-label">VỪA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Empty State (Hidden by default) -->
+          <div class="search-empty-state hidden" id="search-empty-state">
+            <p class="empty-desc">
+              Đừng lo lắng, bộ sưu tập của chúng tôi luôn được cập nhật hàng
+              tuần với những "siêu phẩm" đẹp nhất từ các vườn ươm bản địa.
+            </p>
+            <div class="empty-actions">
+              <a href="category.html" class="btn btn-primary"
+                >Xem bộ sưu tập mới</a
+              >
+              <button
+                class="btn btn-secondary"
+                style="
+                  border: 1px solid #c2c9bb;
+                  border-radius: 9999px;
+                  padding: 14px 32px;
+                "
+              >
+                Chat với chuyên gia
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-col">
+            <h4 class="footer-brand">Mầm Xanh</h4>
+            <p>Kiến tạo không gian sống xanh và bền vững từ tâm hồn.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Chính sách</h5>
+            <a href="policy_shipping.html">Chính sách giao hàng</a>
+            <a href="policy_warranty.html">Chính sách bảo hành</a>
+          </div>
+          <div class="footer-col">
+            <h5>Khám phá</h5>
+            <a href="index.html">Giới thiệu</a>
+            <a href="policy_privacy.html">Quyền riêng tư</a>
+          </div>
+          <div class="footer-col">
+            <h5>Liên hệ</h5>
+            <p>Sdt: 0867235467</p>
+            <p>Email: mamxanh@gmail.com</p>
+            <p>Địa chỉ: Số 1 Định Công, Hoàng Mai, Hà Nội</p>
+            <div class="footer-socials">
+              <img
+                src="assets/search/8eca9a4d-0966-4284-8ca1-5a9dd180a039.svg"
+                alt="Social Icon 1"
+              />
+              <img
+                src="assets/search/52dc52a9-90ac-463c-96e7-0c1e4287e0c9.svg"
+                alt="Social Icon 2"
+              />
+              <img
+                src="assets/search/6eb5663f-87be-47c4-87ad-8ce2e9e6d282.svg"
+                alt="Social Icon 3"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="toast-container" id="toast-container"></div>
+    <script src="js/store.js"></script>
+
+    <script src="js/cart_badge.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/mobile-nav.js"></script>
+  </body>
+</html>

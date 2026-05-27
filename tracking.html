@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mầm Xanh - Theo dõi đơn hàng</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/tracking.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Manrope:wght@600;700;800&family=Miama&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: #fafaf5">
+    <!-- Top Navbar -->
+    <header class="top-navbar">
+      <div class="top-navbar-inner">
+        <div class="nav-logo-group">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-bg-shape"></div>
+            <div class="nav-logo-subtitle">Mầm Xanh</div>
+            <div class="nav-logo-icon-wrap">
+              <img
+                src="assets/figma/ffa71a92-4aa9-4c9a-885b-ef6879b7d9fc.png"
+                alt="Logo Icon"
+              />
+            </div>
+          </a>
+          <h1 class="nav-brand-name">Mầm Xanh</h1>
+        </div>
+
+        <nav class="nav-center">
+          <a href="index.html" class="nav-link">Trang chủ</a>
+          <a href="category.html" class="nav-link">Cửa hàng</a>
+          <a href="consulting.html" class="nav-link">Tư vấn</a>
+          <a href="news.html" class="nav-link">Tin tức</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="search.html" class="nav-action-btn" aria-label="Tìm kiếm">
+            <img
+              src="assets/figma/04444616-6d23-4a3a-84c9-2fa926e97541.svg"
+              alt="Search"
+            />
+          </a>
+          <a
+            href="cart.html"
+            class="nav-action-btn cart-btn"
+            aria-label="Giỏ hàng"
+          >
+            <img
+              src="assets/figma/2890b619-1087-4116-ba0a-61805245dc35.svg"
+              alt="Cart"
+            />
+          </a>
+          <a
+            href="profile.html"
+            class="nav-action-btn active"
+            aria-label="Tài khoản"
+          >
+            <img
+              src="assets/figma/8681f0ce-1e27-4586-898e-675842daf101.svg"
+              alt="User"
+            />
+          </a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span></button>
+      </div>
+    </header>
+    <div class="mobile-nav-overlay"></div>
+
+    <main class="tracking-container">
+      <!-- Header -->
+      <div class="tracking-header">
+        <div class="tracking-order-id">
+          <p>Mã đơn hàng: <strong>MX-2026-888</strong></p>
+        </div>
+        <h1 class="tracking-title">Theo Dõi Đơn Hàng</h1>
+        <div class="tracking-status-badge">
+          <span class="status-dot"></span>
+          <span>Trạng thái đơn hàng: Đang giao hàng</span>
+        </div>
+      </div>
+
+      <div class="tracking-layout">
+        <!-- Left Column: Progress & Products -->
+        <div class="tracking-main-col">
+          <!-- Progress Section -->
+          <section class="progress-section">
+            <h2>Tiến Độ Giao Hàng</h2>
+
+            <div class="progress-timeline">
+              <div class="progress-line"></div>
+
+              <!-- Step 1 -->
+              <div class="progress-step completed">
+                <div class="step-icon">
+                  <img
+                    src="assets/figma/eedf64b1-6404-4edc-8a37-6770c41ba38e.svg"
+                    alt="Check"
+                  />
+                </div>
+                <div class="step-info">
+                  <div class="step-name">Đã đặt hàng</div>
+                  <div class="step-date">12 Th04, 2026</div>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="progress-step completed">
+                <div class="step-icon">
+                  <img
+                    src="assets/figma/eedf64b1-6404-4edc-8a37-6770c41ba38e.svg"
+                    alt="Check"
+                  />
+                </div>
+                <div class="step-info">
+                  <div class="step-name">Đang xử lý</div>
+                  <div class="step-date">13 Th04, 2026</div>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="progress-step active">
+                <div class="step-icon active-glow">
+                  <img
+                    src="assets/figma/48c63874-9856-481a-8f56-343d781f7374.svg"
+                    alt="Truck"
+                  />
+                </div>
+                <div class="step-info">
+                  <div class="step-name">Đang vận chuyển</div>
+                  <div class="step-date">Dự kiến 15 Th04</div>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="progress-step pending">
+                <div class="step-icon">
+                  <img
+                    src="assets/figma/cf47cf6c-29be-4b8b-9f57-15053740d007.svg"
+                    alt="Box"
+                  />
+                </div>
+                <div class="step-info">
+                  <div class="step-name">Đã giao hàng</div>
+                  <div class="step-date">---</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Products Ordered -->
+          <section class="ordered-products-section">
+            <div class="section-header-inline">
+              <h2>Sản Phẩm Đã Đặt</h2>
+              <span class="item-count-badge">01 Món</span>
+            </div>
+
+            <div class="ordered-items-list">
+              <!-- Product 1 -->
+              <div class="ordered-product-card">
+                <div class="product-img-box">
+                  <img
+                    src="assets/figma/cart-bang-singapore.png"
+                    alt="Bàng Singapore"
+                  />
+                </div>
+                <div class="product-details">
+                  <div class="product-name-row">
+                    <h3>Chậu Gốm Nghệ Nhân</h3>
+                  </div>
+                  <div class="product-price-row">
+                    <span class="product-qty">Số lượng: 01</span>
+                    <span class="product-price">800.000đ</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="ordered-product-card">
+                <div class="product-img-box">
+                  <img
+                    src="assets/figma/cart-trau-ba.png"
+                    alt="Trầu bà"
+                  />
+                </div>
+                <div class="product-details">
+                  <div class="product-name-row">
+                    <h3>Trầu Bà lá xẻ Thái</h3>
+                  </div>
+                  <p class="product-variant">Đồng thau & Gỗ sồi</p>
+                  <div class="product-price-row">
+                    <span class="product-qty">Số lượng: 01</span>
+                    <span class="product-price">600.000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Right Column: Info Cards -->
+        <aside class="tracking-sidebar">
+          <!-- Expected Delivery Card -->
+          <div class="info-card dark-card">
+            <div class="card-header-icon">
+              <img
+                src="assets/figma/67d2eff7-7cb8-4f18-bdb3-212dcab3d3fb.svg"
+                alt="Calendar"
+              />
+              <h3>Dự kiến giao hàng</h3>
+            </div>
+            <div class="delivery-date-large">
+              <div class="day">15</div>
+              <div class="month-year">Tháng Tư, 2026</div>
+            </div>
+            <div class="delivery-note">
+              Đơn hàng của bạn đang được đơn vị vận chuyển Giao Hàng Tiết Kiệm
+              điều phối. Bạn sẽ nhận được cuộc gọi trước khi giao.
+            </div>
+          </div>
+
+          <!-- Shipping Address Card -->
+          <div class="info-card light-card">
+            <div class="card-header-icon">
+              <img
+                src="assets/figma/5ed36475-54a1-4807-8ccc-9ef8da23edff.svg"
+                alt="Location"
+              />
+              <h3>Địa chỉ nhận hàng</h3>
+            </div>
+            <div class="address-group">
+              <label>Người nhận</label>
+              <p>Nguyễn Minh Anh</p>
+            </div>
+            <div class="address-group">
+              <label>Điện thoại</label>
+              <p>090 * * * 1234</p>
+            </div>
+            <div class="address-group">
+              <label>Địa chỉ</label>
+              <p>86 Liễu Giai, Ba Đình, Hà Nội</p>
+            </div>
+          </div>
+
+          <!-- Support Card -->
+          <div class="info-card white-card">
+            <h3>Cần hỗ trợ?</h3>
+            <p class="support-text">
+              Đội ngũ Mầm Xanh của chúng tôi luôn sẵn sàng giải đáp thắc mắc về
+              đơn hàng của bạn.
+            </p>
+            <div class="support-links">
+              <a href="#" class="support-link">
+                <img
+                  src="assets/figma/8ae918b2-0a0e-4307-855b-9a96e5c8ccea.svg"
+                  alt="Chat"
+                />
+                <span>Trò chuyện trực tiếp</span>
+              </a>
+              <a href="#" class="support-link">
+                <img
+                  src="assets/figma/fdd261a8-f3b8-468a-a3d8-4826ac8c417d.svg"
+                  alt="Phone"
+                />
+                <span>1900 8888</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div
+        class="footer-container"
+        style="
+          max-width: 1280px;
+          margin: 0 auto;
+          padding: 80px 32px 40px 32px;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 48px;
+        "
+      >
+        <div class="footer-col">
+          <h3
+            class="footer-brand"
+            style="
+              font-weight: 600;
+              font-size: 18px;
+              color: #064e3b;
+              margin-bottom: 15px;
+            "
+          >
+            Mầm Xanh
+          </h3>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; line-height: 1.6"
+          >
+            Kiến tạo không gian sống xanh và bền<br />vững từ tâm hồn.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4
+            class="footer-title"
+            style="
+              font-weight: 600;
+              font-size: 14px;
+              color: #064e3b;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+            "
+          >
+            Chính sách
+          </h4>
+          <ul
+            class="footer-links"
+            style="
+              list-style: none;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+            "
+          >
+            <li>
+              <a
+                href="policy_shipping.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Chính sách giao hàng</a
+              >
+            </li>
+            <li>
+              <a
+                href="policy_warranty.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Chính sách bảo hành</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4
+            class="footer-title"
+            style="
+              font-weight: 600;
+              font-size: 14px;
+              color: #064e3b;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+            "
+          >
+            Khám phá
+          </h4>
+          <ul
+            class="footer-links"
+            style="
+              list-style: none;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+            "
+          >
+            <li>
+              <a
+                href="index.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Giới thiệu</a
+              >
+            </li>
+            <li>
+              <a
+                href="policy_privacy.html"
+                style="font-size: 14px; color: #78716c; text-decoration: none"
+                >Quyền riêng tư</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4
+            class="footer-title"
+            style="
+              font-weight: 600;
+              font-size: 14px;
+              color: #064e3b;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+            "
+          >
+            Liên hệ
+          </h4>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; margin-bottom: 4px"
+          >
+            Sdt: 0867235467
+          </p>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; margin-bottom: 4px"
+          >
+            Email: mamxanh@gmail.com
+          </p>
+          <p
+            class="footer-text"
+            style="font-size: 14px; color: #78716c; margin-bottom: 16px"
+          >
+            Địa chỉ: Số 1 Định Công, Hoàng Mai, Hà Nội
+          </p>
+          <div class="footer-socials" style="display: flex; gap: 16px">
+            <a href="#" aria-label="Facebook"
+              ><img
+                src="assets/figma/e40619e6-f86d-4d4d-addd-aa6990e69060.svg"
+                alt="FB"
+                style="width: 18px"
+            /></a>
+            <a href="#" aria-label="Instagram"
+              ><img
+                src="assets/figma/8d782747-e1ed-4ef1-8e72-4b344c2bdbce.svg"
+                alt="IG"
+                style="width: 16px"
+            /></a>
+            <a href="#" aria-label="YouTube"
+              ><img
+                src="assets/figma/77321ae9-9f8c-44e8-9757-2250c9ead1e7.svg"
+                alt="YT"
+                style="width: 19px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/store.js"></script>
+    <script src="js/cart_badge.js"></script>
+    <script src="js/tracking.js"></script>
+    <script src="js/mobile-nav.js"></script>
+  </body>
+</html>

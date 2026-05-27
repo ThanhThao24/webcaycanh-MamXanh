@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mầm Xanh - Giỏ hàng</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Miama&family=Manrope:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-alt">
+    <!-- Top Navbar -->
+    <header class="top-navbar">
+      <div class="top-navbar-inner">
+        <div class="nav-logo-group">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-bg-shape"></div>
+            <div class="nav-logo-subtitle">Mầm Xanh</div>
+            <div class="nav-logo-icon-wrap">
+              <img
+                src="assets/figma/ffa71a92-4aa9-4c9a-885b-ef6879b7d9fc.png"
+                alt="Logo Icon"
+              />
+            </div>
+          </a>
+          <h1 class="nav-brand-name">Mầm Xanh</h1>
+        </div>
+
+        <nav class="nav-center">
+          <a href="index.html" class="nav-link">Trang chủ</a>
+          <a href="category.html" class="nav-link">Cửa hàng</a>
+          <a href="consulting.html" class="nav-link">Tư vấn</a>
+          <a href="news.html" class="nav-link">Tin tức</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="search.html" class="nav-action-btn" aria-label="Tìm kiếm">
+            <img
+              src="assets/figma/04444616-6d23-4a3a-84c9-2fa926e97541.svg"
+              alt="Search"
+            />
+          </a>
+          <a
+            href="cart.html"
+            class="nav-action-btn cart-btn active"
+            aria-label="Giỏ hàng"
+          >
+            <img
+              src="assets/figma/2890b619-1087-4116-ba0a-61805245dc35.svg"
+              alt="Cart"
+            />
+          </a>
+          <a href="profile.html" class="nav-action-btn" aria-label="Tài khoản">
+            <img
+              src="assets/figma/8681f0ce-1e27-4586-898e-675842daf101.svg"
+              alt="User"
+            />
+          </a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span></button>
+      </div>
+    </header>
+    <div class="mobile-nav-overlay"></div>
+
+    <div class="page-wrapper">
+      <main class="container cart-layout-grid">
+        <!-- Cart Main -->
+        <div class="cart-items-area">
+          <div class="cart-page-header">
+            <h1 class="cart-page-title">Giỏ Hàng</h1>
+            <p class="cart-page-subtitle">
+              Danh sách các cây xanh bạn đã tuyển chọn cho không gian sống của
+              mình.
+            </p>
+          </div>
+
+          <div class="cart-list" id="cart-items-list">
+            <!-- Cart Item 1 -->
+            <div
+              class="cart-product-item"
+              data-id="bang-singapore"
+              data-price="600000"
+            >
+              <div class="cart-item-image">
+                <img
+                  src="assets/figma/cart-bang-singapore.png"
+                  alt="Bàng Singapore"
+                />
+              </div>
+              <div class="cart-item-info">
+                <div class="cart-item-top">
+                  <div class="cart-item-meta">
+                    <span class="cart-item-tag">CỔ ĐIỂN NHIỆT ĐỚI</span>
+                    <h3 class="cart-item-name">
+                      Bàng Singapore (Fiddle Leaf Fig)
+                    </h3>
+                  </div>
+                  <span class="cart-item-price">600.000₫</span>
+                </div>
+                <p class="cart-item-desc">
+                  Kích thước lớn, tán lá rộng, thích hợp cho không gian phòng
+                  khách sang trọng.
+                </p>
+                <div class="cart-item-bottom">
+                  <div class="cart-qty-control">
+                    <button
+                      class="cart-qty-btn cart-qty-minus"
+                      type="button"
+                      aria-label="Giảm số lượng"
+                    >
+                      <span class="cart-qty-symbol" aria-hidden="true">-</span>
+                    </button>
+                    <span class="cart-qty-value">1</span>
+                    <button
+                      class="cart-qty-btn cart-qty-plus"
+                      type="button"
+                      aria-label="Tăng số lượng"
+                    >
+                      <span class="cart-qty-symbol" aria-hidden="true">+</span>
+                    </button>
+                  </div>
+                  <button
+                    class="cart-remove-btn"
+                    type="button"
+                    aria-label="Loại bỏ sản phẩm"
+                  >
+                    <span class="cart-remove-icon" aria-hidden="true">×</span>
+                    Loại bỏ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cart Item 2 -->
+            <div
+              class="cart-product-item"
+              data-id="trau-ba-la-xea"
+              data-price="800000"
+            >
+              <div class="cart-item-image">
+                <img
+                  src="assets/figma/cart-trau-ba.png"
+                  alt="Trầu Bà Lá Xẻ"
+                />
+              </div>
+              <div class="cart-item-info">
+                <div class="cart-item-top">
+                  <div class="cart-item-meta">
+                    <span class="cart-item-tag">MẪU CÂY QUÝ HIẾM</span>
+                    <h3 class="cart-item-name">Trầu Bà lá xẻ Thái</h3>
+                  </div>
+                  <span class="cart-item-price">800.000₫</span>
+                </div>
+                <p class="cart-item-desc">
+                  Dòng biến dị quý hiếm với các đốm trắng như dải ngân hà, cây
+                  khỏe mạnh bền vững.
+                </p>
+                <div class="cart-item-bottom">
+                  <div class="cart-qty-control">
+                    <button
+                      class="cart-qty-btn cart-qty-minus"
+                      type="button"
+                      aria-label="Giảm số lượng"
+                    >
+                      <span class="cart-qty-symbol" aria-hidden="true">-</span>
+                    </button>
+                    <span class="cart-qty-value">1</span>
+                    <button
+                      class="cart-qty-btn cart-qty-plus"
+                      type="button"
+                      aria-label="Tăng số lượng"
+                    >
+                      <span class="cart-qty-symbol" aria-hidden="true">+</span>
+                    </button>
+                  </div>
+                  <button
+                    class="cart-remove-btn"
+                    type="button"
+                    aria-label="Loại bỏ sản phẩm"
+                  >
+                    <span class="cart-remove-icon" aria-hidden="true">×</span>
+                    Loại bỏ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upsell Cards -->
+          <div class="cart-upsell-grid">
+            <div class="upsell-card bg-tan">
+              <img
+                src="assets/figma/204ae240-6372-4eca-a0a9-535a8efabde2.svg"
+                alt="Care"
+                class="upsell-icon"
+              />
+              <h4 class="upsell-title">Chăm sóc trọn đời</h4>
+              <p class="upsell-desc">
+                Nhận hướng dẫn chăm sóc cá nhân hóa cho từng loại cây trong giỏ
+                hàng của bạn.
+              </p>
+              <a href="care_guide.html" class="upsell-link"
+                >Khám phá Hướng dẫn →</a
+              >
+            </div>
+            <div class="upsell-card bg-pink">
+              <img
+                src="assets/figma/35b3bce8-72df-467b-8986-11a1c07c708d.svg"
+                alt="Shipping"
+                class="upsell-icon"
+              />
+              <h4 class="upsell-title">Vận chuyển an toàn</h4>
+              <p class="upsell-desc">
+                Chúng tôi sử dụng bao bì sinh học đặc biệt để đảm bảo cây đến
+                tay bạn trong tình trạng tốt nhất.
+              </p>
+              <span class="upsell-badge">NGUỒN GỐC BỀN VỮNG</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="order-summary-area">
+          <div class="summary-card">
+            <h2 class="summary-heading">Tóm tắt đơn hàng</h2>
+            <div class="summary-rows">
+              <div class="summary-row">
+                <span class="summary-label">Tạm tính</span>
+                <span class="summary-value text-green" id="summary-subtotal"
+                  >1.400.000đ</span
+                >
+              </div>
+              <div class="summary-row">
+                <span class="summary-label">Phí vận chuyển (ước tính)</span>
+                <span class="summary-free">Miễn phí</span>
+              </div>
+              <div class="summary-divider"></div>
+              <div class="summary-row summary-total-row">
+                <span class="summary-total-label">Tổng cộng :</span>
+                <span class="summary-total-value" id="summary-total"
+                  >1.400.000 đ</span
+                >
+              </div>
+            </div>
+            <div class="summary-actions">
+              <a
+                href="checkout.html"
+                class="btn btn-primary summary-checkout-btn"
+                id="btn-checkout-now"
+              >
+                Thanh Toán Ngay
+                <span class="summary-checkout-icon" aria-hidden="true">→</span>
+              </a>
+              <a
+                href="category.html"
+                class="btn btn-outline summary-continue-btn"
+                id="btn-continue-shopping"
+                >Tiếp tục mua sắm</a
+              >
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <span class="promo-label">MÃ GIẢM GIÁ</span>
+            <div class="promo-input-group">
+              <input
+                type="text"
+                id="promo-input"
+                class="promo-input"
+                placeholder="Nhập mã của bạn"
+              />
+              <button
+                class="btn promo-apply-btn"
+                id="btn-apply-promo"
+                type="button"
+              >
+                Áp dụng
+              </button>
+            </div>
+            <p class="promo-message" id="promo-message"></p>
+          </div>
+        </aside>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-col">
+            <h4 class="footer-brand">Mầm Xanh</h4>
+            <p>Kiến tạo không gian sống xanh và bền vững từ tâm hồn.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Chính sách</h5>
+            <a href="policy_shipping.html">Chính sách giao hàng</a>
+            <a href="policy_warranty.html">Chính sách bảo hành</a>
+          </div>
+          <div class="footer-col">
+            <h5>Khám phá</h5>
+            <a href="index.html">Giới thiệu</a>
+            <a href="policy_privacy.html">Quyền riêng tư</a>
+          </div>
+          <div class="footer-col">
+            <h5>Liên hệ</h5>
+            <p>Sdt: 0867235467</p>
+            <p>Email: mamxanh@gmail.com</p>
+            <p>Địa chỉ: Số 1 Định Công, Hoàng Mai, Hà Nội</p>
+            <div class="footer-socials">
+              <img
+                src="assets/figma/8eca9a4d-0966-4284-8ca1-5a9dd180a039.svg"
+                alt="Social Icon 1"
+              />
+              <img
+                src="assets/figma/52dc52a9-90ac-463c-96e7-0c1e4287e0c9.svg"
+                alt="Social Icon 2"
+              />
+              <img
+                src="assets/figma/6eb5663f-87be-47c4-87ad-8ce2e9e6d282.svg"
+                alt="Social Icon 3"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast-container" id="toast-container"></div>
+    <script src="js/store.js"></script>
+
+    <script src="js/cart_badge.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/mobile-nav.js"></script>
+  </body>
+</html>
