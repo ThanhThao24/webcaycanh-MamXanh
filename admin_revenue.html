@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mầm Xanh - Báo cáo doanh thu</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/admin-revenue.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Manrope:wght@600;700;800&family=Miama&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+    <div class="admin-sidebar-overlay"></div>
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="admin-brand">
+                <div class="logo-wrapper">
+                    <div class="logo-bg-nav"></div>
+                    <img class="logo-icon-nav" src="../assets/figma/d9f71e46-e9a3-4e61-923d-b8127b2f640a.png" alt="Logo">
+                </div>
+                <div class="brand-name">Mầm Xanh</div>
+            </div>
+
+            <nav class="admin-nav">
+                <a href="dashboard.html" class="admin-nav-item">
+                    <img src="../assets/figma/7c5c57b3-bde1-42c8-9890-b6c72d6a2462.svg" alt="Overview">
+                    <span>Tổng quan</span>
+                </a>
+                <a href="admin_products.html" class="admin-nav-item">
+                    <img src="../assets/figma/65604623-9335-45dc-82d0-bbab9117f463.svg" alt="Products">
+                    <span>Sản phẩm</span>
+                </a>
+                <a href="admin_categories.html" class="admin-nav-item">
+                    <img src="../assets/figma/b2f1a6e0-540a-4c3a-b26d-664ab3d370a9.svg" alt="Categories">
+                    <span>Danh mục</span>
+                </a>
+                <a href="admin_support.html" class="admin-nav-item">
+                    <img src="../assets/figma/cd8eba3d-ce30-4a6a-97ec-59a131755381.svg" alt="Messages">
+                    <span>Tin nhắn</span>
+                </a>
+                <a href="admin_orders.html" class="admin-nav-item">
+                    <img src="../assets/figma/7afeb6d8-8ecd-4c5c-a594-527cdf1b5509.svg" alt="Orders">
+                    <span>Đơn hàng</span>
+                </a>
+                <a href="admin_promotions.html" class="admin-nav-item">
+                    <img src="../assets/figma/f1933006-83db-4d6e-952e-a3ff03729963.svg" alt="Promotions">
+                    <span>Khuyến mãi</span>
+                </a>
+                <a href="admin_revenue.html" class="admin-nav-item active">
+                    <img src="../assets/figma/19197cba-4bbc-4dad-b44f-db7ec66e0e2f.svg" alt="Analytics">
+                    <span>Doanh thu</span>
+                </a>
+                <a href="admin_analytics.html" class="admin-nav-item">
+                    <img src="../assets/figma/91d61ecb-6dc8-4744-bd1f-82bb8a738b46.svg" alt="Analyze">
+                    <span>Phân tích</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="admin-main">
+            <!-- Header -->
+            <header class="admin-header">
+            <button class="admin-sidebar-toggle" aria-label="Menu"><span></span></button>
+                <div class="admin-search">
+                    <div class="admin-search-icon">
+                        <img src="../assets/figma/b318d8ff-e111-4466-b36d-a0614b81c8fa.svg" alt="Search">
+                    </div>
+                    <input type="text" placeholder="Tìm kiếm giao dịch...">
+                </div>
+                <div class="admin-profile">
+                    <div class="admin-notif">
+                        <img src="../assets/figma/0922f742-d09d-491d-8fdc-90fa1372c6f6.svg" alt="Notifications">
+                        <span class="notif-dot"></span>
+                    </div>
+                    <div class="admin-user">
+                        <span class="user-role">Quản trị Mầm Xanh</span>
+                        <div class="user-avatar">
+                            <img src="../assets/figma/39ce1dc7-e848-4955-a03e-421c98b8ef05.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="admin-content">
+                
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="header-title">
+                        <span class="subtitle">Tổng quan tài chính</span>
+                        <h1 class="title">Báo cáo Doanh thu</h1>
+                    </div>
+                    
+                    <div class="header-actions">
+                        <div class="filter-dropdown">
+                            <img src="../assets/figma/65b57560-806d-447f-b3ce-c59589b20b77.svg" alt="Calendar">
+                            <span>30 ngày qua</span>
+                            <img src="../assets/figma/fde8d736-a777-4e11-982c-d4ad7dd53df5.svg" alt="Dropdown">
+                        </div>
+                        <div class="filter-dropdown">
+                            <img src="../assets/figma/e6687930-ab18-4541-8991-b65cba1c1616.svg" alt="Filter">
+                            <span>Tất cả danh mục</span>
+                            <img src="../assets/figma/fde8d736-a777-4e11-982c-d4ad7dd53df5.svg" alt="Dropdown">
+                        </div>
+                        <button class="export-btn">
+                            <img src="../assets/figma/eaa73d29-0ea4-457b-a3b2-8732471aaea3.svg" alt="Export">
+                            Xuất báo cáo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- KPI Cards -->
+                <div class="kpi-grid">
+                    <!-- Card 1: Total Revenue -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <div class="kpi-icon">
+                                <img src="../assets/figma/91045b5c-0be9-4358-b2ff-fb537c01125f.svg" alt="Icon">
+                            </div>
+                            <div class="kpi-trend positive">
+                                <span>+12.5%</span>
+                                <img src="../assets/figma/cb953e71-207b-4dd3-a29a-8f44c4458e43.svg" alt="Up">
+                            </div>
+                        </div>
+                        <div class="kpi-content">
+                            <h3 class="kpi-label">Tổng doanh thu</h3>
+                            <div class="kpi-value">1.284.000.000₫</div>
+                        </div>
+                        <div class="kpi-chart">
+                            <div class="bar-chart">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="card-bg-shape"></div>
+                    </div>
+
+                    <!-- Card 2: Net Profit -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <div class="kpi-icon">
+                                <img src="../assets/figma/21c0a3b6-ae0e-4e70-b830-10342ec6d9f2.svg" alt="Icon">
+                            </div>
+                            <div class="kpi-trend positive">
+                                <span>+8.2%</span>
+                                <img src="../assets/figma/cb953e71-207b-4dd3-a29a-8f44c4458e43.svg" alt="Up">
+                            </div>
+                        </div>
+                        <div class="kpi-content">
+                            <h3 class="kpi-label">Lợi nhuận ròng</h3>
+                            <div class="kpi-value">456.200.000₫</div>
+                        </div>
+                        <div class="kpi-chart">
+                            <div class="bar-chart">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Orders -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <div class="kpi-icon">
+                                <img src="../assets/figma/a339a081-ad3a-45cd-8260-9b91b8ccad4a.svg" alt="Icon">
+                            </div>
+                            <div class="kpi-trend negative">
+                                <span>-2.4%</span>
+                                <img src="../assets/figma/acf6738e-ddab-4883-8349-7d809c7c8631.svg" alt="Down">
+                            </div>
+                        </div>
+                        <div class="kpi-content">
+                            <h3 class="kpi-label">Đơn hàng thành công</h3>
+                            <div class="kpi-value">1,248</div>
+                        </div>
+                        <div class="kpi-chart">
+                            <div class="bar-chart">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Average Order Value -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <div class="kpi-icon">
+                                <img src="../assets/figma/cf2ff185-8d45-4de5-97aa-a96c0efd6129.svg" alt="Icon">
+                            </div>
+                            <div class="kpi-trend positive">
+                                <span>+5.1%</span>
+                                <img src="../assets/figma/cb953e71-207b-4dd3-a29a-8f44c4458e43.svg" alt="Up">
+                            </div>
+                        </div>
+                        <div class="kpi-content">
+                            <h3 class="kpi-label">Giá trị đơn trung bình</h3>
+                            <div class="kpi-value">1.028.000₫</div>
+                        </div>
+                        <div class="kpi-chart">
+                            <div class="bar-chart">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Charts Area -->
+                <div class="charts-grid">
+                    <!-- Main Line Chart -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>Biểu đồ doanh thu</h3>
+                            <div class="chart-filters">
+                                <button>Ngày</button>
+                                <button>Tuần</button>
+                                <button>Tháng</button>
+                            </div>
+                        </div>
+                        <div class="chart-body">
+                            <!-- Placeholder for actual chart -->
+                            <div class="chart-grid">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            
+                            <div class="revenue-chart-visual" aria-label="Đường biểu diễn doanh thu tháng 5">
+                                <svg viewBox="0 0 560 190" role="img" aria-hidden="true">
+                                    <path class="revenue-area" d="M0 128 C56 104 84 126 128 94 C170 64 206 94 242 122 C280 152 312 140 350 82 C388 24 430 30 468 74 C496 106 526 86 560 58 L560 190 L0 190 Z" />
+                                    <path class="revenue-line" d="M0 128 C56 104 84 126 128 94 C170 64 206 94 242 122 C280 152 312 140 350 82 C388 24 430 30 468 74 C496 106 526 86 560 58" />
+                                    <circle cx="350" cy="82" r="5" />
+                                </svg>
+                                <div class="revenue-tooltip">
+                                    <span>120Tr VNĐ</span>
+                                </div>
+                            </div>
+
+                            <!-- X Axis Labels -->
+                            <div class="x-axis-labels">
+                                <span>01 THÁNG 5</span>
+                                <span>08 THÁNG 5</span>
+                                <span>15 THÁNG 5</span>
+                                <span>22 THÁNG 5</span>
+                                <span>29 THÁNG 5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Breakdown -->
+                    <div class="chart-card">
+                        <h3>Doanh thu theo loại</h3>
+                        
+                        <div class="category-bars">
+                            <!-- Category 1 -->
+                            <div class="cat-bar-item">
+                                <div class="cat-header">
+                                    <span>Cây nhiệt đới (Tropical)</span>
+                                    <span>45%</span>
+                                </div>
+                                <div class="bar-bg">
+                                    <div class="bar-fill"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Category 2 -->
+                            <div class="cat-bar-item">
+                                <div class="cat-header">
+                                    <span>Cây trong nhà (Indoor)</span>
+                                    <span>30%</span>
+                                </div>
+                                <div class="bar-bg">
+                                    <div class="bar-fill"></div>
+                                </div>
+                            </div>
+
+                            <!-- Category 3 -->
+                            <div class="cat-bar-item">
+                                <div class="cat-header">
+                                    <span>Xương rồng & Sen đá</span>
+                                    <span>15%</span>
+                                </div>
+                                <div class="bar-bg">
+                                    <div class="bar-fill"></div>
+                                </div>
+                            </div>
+
+                            <!-- Category 4 -->
+                            <div class="cat-bar-item">
+                                <div class="cat-header">
+                                    <span>Phụ kiện & Đất</span>
+                                    <span>10%</span>
+                                </div>
+                                <div class="bar-bg">
+                                    <div class="bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Top Selling -->
+                        <div class="top-selling">
+                            <div>Sản phẩm bán<br>chạy nhất:</div>
+                            <div>Ficus Lyrata (Bàng<br>Singapore)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transaction Table Area -->
+                <div class="transaction-table-area">
+                    <div class="table-header-wrap">
+                        <div class="table-title">
+                            <h3>Lịch sử giao dịch</h3>
+                            <p>Danh sách 100 giao dịch gần đây nhất</p>
+                        </div>
+                        <div class="table-actions">
+                            <div class="search-wrap">
+                                <input type="text" placeholder="Mã đơn, tên khách...">
+                                <img src="../assets/figma/b25760b1-bb6c-4294-8adf-7b9c9fcf352b.svg" alt="Search">
+                            </div>
+                            <button>
+                                <img src="../assets/figma/163f2233-0150-4b51-a1f3-8d9b3f58fc48.svg" alt="Filter">
+                            </button>
+                        </div>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mã đơn<br>hàng</th>
+                                <th>Ngày & Giờ</th>
+                                <th>Khách hàng</th>
+                                <th>Phương thức</th>
+                                <th>Số tiền</th>
+                                <th>Trạng<br>thái</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1 -->
+                            <tr>
+                                <td>#LC-<br>89241</td>
+                                <td>14/05/2024,<br>09:42</td>
+                                <td>Nguyễn<br>Minh Tuấn</td>
+                                <td>
+                                    <div>
+                                        <img src="../assets/figma/5b6cc4a3-faf0-44cc-98a0-d71b9c837f42.svg" alt="Card">
+                                        <span>Thẻ nội địa</span>
+                                    </div>
+                                </td>
+                                <td>2.450.000₫</td>
+                                <td><span class="rev-status delivered">Hoàn tất</span></td>
+                                <td>
+                                    <button>
+                                        <img src="../assets/figma/55677778-0ee0-4163-96ad-8e0ff09bb2c1.svg" alt="More">
+                                    </button>
+                                </td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr>
+                                <td>#LC-<br>89240</td>
+                                <td>14/05/2024,<br>08:15</td>
+                                <td>Trần Thị<br>Lan</td>
+                                <td>
+                                    <div>
+                                        <img src="../assets/figma/117b96bf-6458-4b8a-bdad-124ce72870f0.svg" alt="Bank">
+                                        <span>Chuyển khoản</span>
+                                    </div>
+                                </td>
+                                <td>890.000₫</td>
+                                <td><span class="rev-status processing">Đang xử lý</span></td>
+                                <td>
+                                    <button>
+                                        <img src="../assets/figma/55677778-0ee0-4163-96ad-8e0ff09bb2c1.svg" alt="More">
+                                    </button>
+                                </td>
+                            </tr>
+                            <!-- Row 3 -->
+                            <tr>
+                                <td>#LC-<br>89239</td>
+                                <td>13/05/2024,<br>22:30</td>
+                                <td>Lê Hoàng<br>Nam</td>
+                                <td>
+                                    <div>
+                                        <img src="../assets/figma/bd567df6-1ecb-49a9-a7db-33b93b53a141.svg" alt="Momo">
+                                        <span>Momo</span>
+                                    </div>
+                                </td>
+                                <td>1.200.000₫</td>
+                                <td><span class="rev-status delivered">Hoàn tất</span></td>
+                                <td>
+                                    <button>
+                                        <img src="../assets/figma/55677778-0ee0-4163-96ad-8e0ff09bb2c1.svg" alt="More">
+                                    </button>
+                                </td>
+                            </tr>
+                            <!-- Row 4 -->
+                            <tr>
+                                <td>#LC-<br>89238</td>
+                                <td>13/05/2024,<br>19:12</td>
+                                <td>Phạm Minh<br>Anh</td>
+                                <td>
+                                    <div>
+                                        <img src="../assets/figma/49331833-67e1-4f77-a07a-6606a3a03ac8.svg" alt="COD">
+                                        <span>COD</span>
+                                    </div>
+                                </td>
+                                <td>550.000₫</td>
+                                <td><span class="rev-status cancelled">Đã hủy</span></td>
+                                <td>
+                                    <button>
+                                        <img src="../assets/figma/55677778-0ee0-4163-96ad-8e0ff09bb2c1.svg" alt="More">
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="table-pagination">
+                        <span>Hiển thị 1-4 trong số 1.248 giao dịch</span>
+                        <div>
+                            <button><img src="../assets/figma/c3846251-c7ae-4d99-b53a-2bd774188e9b.svg" alt="Prev"></button>
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button><img src="../assets/figma/101e3784-17f7-4764-97c3-d0f149410833.svg" alt="Next"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/store.js"></script>
+    <script src="../js/admin_revenue.js"></script>
+    <script src="../js/admin-sidebar-toggle.js"></script>
+</body>
+</html>

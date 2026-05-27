@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mầm Xanh - Quản lý đơn hàng</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/admin-orders.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Manrope:wght@600;700;800&family=Miama&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+    <div class="admin-sidebar-overlay"></div>
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="admin-brand">
+                <div class="logo-wrapper">
+                    <div class="logo-bg-nav"></div>
+                    <img class="logo-icon-nav" src="../assets/figma/d5dea261-38cb-48c2-814d-0cc3b6bc6e09.png" alt="Logo">
+                </div>
+                <div class="brand-name">Mầm Xanh</div>
+            </div>
+
+            <nav class="admin-nav">
+                <a href="dashboard.html" class="admin-nav-item">
+                    <img src="../assets/figma/ee1a9ac9-acf6-4534-a4b2-2d4863d7126a.svg" alt="Overview">
+                    <span>Tổng quan</span>
+                </a>
+                <a href="admin_products.html" class="admin-nav-item">
+                    <img src="../assets/figma/bca0e89a-4556-471e-b358-deef5ced5a39.svg" alt="Products">
+                    <span>Sản phẩm</span>
+                </a>
+                <a href="admin_categories.html" class="admin-nav-item">
+                    <img src="../assets/figma/00770926-d3b2-4e34-8799-cd58d6f87d05.svg" alt="Categories">
+                    <span>Danh mục</span>
+                </a>
+                <a href="admin_support.html" class="admin-nav-item">
+                    <img src="../assets/figma/86ca7c43-7102-4ec9-af6d-4bbf4f2135f4.svg" alt="Messages">
+                    <span>Tin nhắn</span>
+                </a>
+                <a href="admin_orders.html" class="admin-nav-item active">
+                    <img src="../assets/figma/c0d2d681-ce04-4767-80ff-3310b6dfd247.svg" alt="Orders">
+                    <span>Đơn hàng</span>
+                </a>
+                <a href="admin_promotions.html" class="admin-nav-item">
+                    <img src="../assets/figma/10903e07-5316-4e25-b6ea-2b92139bbc9e.svg" alt="Promotions">
+                    <span>Khuyến mãi</span>
+                </a>
+                <a href="admin_revenue.html" class="admin-nav-item">
+                    <img src="../assets/figma/779a1b65-c8fe-4e4e-a232-23f02aa23882.svg" alt="Analytics">
+                    <span>Doanh thu</span>
+                </a>
+                <a href="admin_analytics.html" class="admin-nav-item">
+                    <img src="../assets/figma/a24c1009-eeff-4e1e-bac3-0f50eed49b42.svg" alt="Analyze">
+                    <span>Phân tích</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <!-- Header -->
+            <header class="admin-header">
+            <button class="admin-sidebar-toggle" aria-label="Menu"><span></span></button>
+                <div class="admin-search">
+                    <div class="admin-search-icon">
+                        <img src="../assets/figma/978bf268-1472-47ba-8460-752f7d97dfa6.svg" alt="Search">
+                    </div>
+                    <input type="text" placeholder="Tìm kiếm nhanh đơn hàng, khách hàng...">
+                </div>
+
+                <div class="admin-profile">
+                    <div class="admin-notif">
+                        <img src="../assets/figma/bb548abe-fc9d-41d4-ad73-da4164a0b088.svg" alt="Notifications">
+                        <span class="notif-dot"></span>
+                    </div>
+                    <div class="admin-user">
+                        <span class="user-role">Quản trị Mầm Xanh</span>
+                        <div class="user-avatar">
+                            <img src="../assets/figma/58e8437f-2cdc-4b9b-bc6d-56cf3b5393a2.jpg" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <div class="admin-content">
+                <div class="hero-title-section">
+                    <div>
+                        <h2 class="page-heading">Quản lý đơn hàng</h2>
+                        <p class="page-subheading">Theo dõi và điều phối các đơn hàng cây cảnh nghệ thuật.</p>
+                    </div>
+                    <button class="btn-export">
+                        <img src="../assets/figma/05c8df89-f3ac-4855-90ab-8783507fe0e5.svg" alt="Export">
+                        Xuất báo cáo
+                    </button>
+                </div>
+
+                <!-- Summary Grid -->
+                <div class="summary-bento-grid">
+                    <div class="bento-card">
+                        <div class="bento-header">
+                            <div class="bento-icon-wrap">
+                                <img src="../assets/figma/2e612df0-0729-46be-b788-ed4be9cf589b.svg" alt="Total">
+                            </div>
+                            <span class="bento-badge">+12%</span>
+                        </div>
+                        <div class="bento-info">
+                            <span class="bento-label">Tổng đơn hôm nay</span>
+                            <span class="bento-value">128</span>
+                        </div>
+                    </div>
+                    <div class="bento-card">
+                        <div class="bento-header">
+                            <div class="bento-icon-wrap">
+                                <img src="../assets/figma/dd6fc956-956a-490b-9347-8616b7bf4413.svg" alt="Pending">
+                            </div>
+                            <span class="bento-badge">Chờ xử lý</span>
+                        </div>
+                        <div class="bento-info">
+                            <span class="bento-label">Đang chờ</span>
+                            <span class="bento-value">45</span>
+                        </div>
+                    </div>
+                    <div class="bento-card">
+                        <div class="bento-header">
+                            <div class="bento-icon-wrap">
+                                <img src="../assets/figma/ae921bb1-6062-453f-8650-40bb7d5838be.svg" alt="Shipping">
+                            </div>
+                        </div>
+                        <div class="bento-info">
+                            <span class="bento-label">Đang giao</span>
+                            <span class="bento-value">72</span>
+                        </div>
+                    </div>
+                    <div class="bento-card">
+                        <div class="bento-header">
+                            <div class="bento-icon-wrap">
+                                <img src="../assets/figma/b3cf8e72-9834-4e0d-a0bb-9b990eac3a00.svg" alt="Cancelled">
+                            </div>
+                        </div>
+                        <div class="bento-info">
+                            <span class="bento-label">Đã hủy</span>
+                            <span class="bento-value">11</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table Section -->
+                <div class="table-section">
+                    <div class="filter-bar">
+                        <div class="filter-tabs">
+                            <button class="filter-tab active">Tất cả</button>
+                            <button class="filter-tab">Chờ xử lý</button>
+                            <button class="filter-tab">Đang xử lý</button>
+                            <button class="filter-tab">Đang giao</button>
+                            <button class="filter-tab">Đã giao</button>
+                            <button class="filter-tab">Đã hủy</button>
+                        </div>
+                        <button class="btn-adv-filter">
+                            <img src="../assets/figma/43837696-b300-4a18-8e24-9ce5b52e7ee4.svg" alt="Filter">
+                            Bộ lọc nâng cao
+                        </button>
+                    </div>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Mã đơn hàng</th>
+                                <th>Khách hàng</th>
+                                <th>Ngày đặt</th>
+                                <th>Tổng tiền</th>
+                                <th>Trạng thái</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1 -->
+                            <tr>
+                                <td><span class="order-id">#ORD-2849</span></td>
+                                <td>
+                                    <div class="customer-info">
+                                        <div class="avatar avatar-nh">NH</div>
+                                        <span class="customer-name">Nguyễn Văn Hiếu</span>
+                                    </div>
+                                </td>
+                                <td>20/10/2023</td>
+                                <td><span class="amount">2.500.000đ</span></td>
+                                <td><span class="status-badge delivered">Đã giao hàng</span></td>
+                                <td class="actions">
+                                    <div>
+                                        <button class="action-btn" data-action="View" title="Xem"><img src="../assets/figma/8e197189-e72a-4e24-9ce3-4ee64ed26168.svg" alt="View"></button>
+                                        <button class="action-btn" data-action="Edit" title="Sửa"><img src="../assets/figma/041bb1be-597b-4c7b-af63-44260c9dd16e.svg" alt="Edit"></button>
+                                        <button class="action-btn" data-action="Print" title="In"><img src="../assets/figma/1d12b54d-5daa-4497-b975-fa0cda5f6742.svg" alt="Print"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr>
+                                <td><span class="order-id">#ORD-2850</span></td>
+                                <td>
+                                    <div class="customer-info">
+                                        <div class="avatar avatar-tl">TL</div>
+                                        <span class="customer-name">Trần Thị Lan</span>
+                                    </div>
+                                </td>
+                                <td>21/10/2023</td>
+                                <td><span class="amount">1.250.000đ</span></td>
+                                <td><span class="status-badge pending">Chờ xác nhận</span></td>
+                                <td class="actions">
+                                    <div>
+                                        <button class="action-btn" data-action="View" title="Xem"><img src="../assets/figma/8e197189-e72a-4e24-9ce3-4ee64ed26168.svg" alt="View"></button>
+                                        <button class="action-btn" data-action="Edit" title="Sửa"><img src="../assets/figma/041bb1be-597b-4c7b-af63-44260c9dd16e.svg" alt="Edit"></button>
+                                        <button class="action-btn" data-action="Print" title="In"><img src="../assets/figma/1d12b54d-5daa-4497-b975-fa0cda5f6742.svg" alt="Print"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Row 3 -->
+                            <tr>
+                                <td><span class="order-id">#ORD-2851</span></td>
+                                <td>
+                                    <div class="customer-info">
+                                        <div class="avatar avatar-lm">LM</div>
+                                        <span class="customer-name">Lê Minh</span>
+                                    </div>
+                                </td>
+                                <td>21/10/2023</td>
+                                <td><span class="amount">4.800.000đ</span></td>
+                                <td><span class="status-badge processing">Đang xử lý</span></td>
+                                <td class="actions">
+                                    <div>
+                                        <button class="action-btn" data-action="View" title="Xem"><img src="../assets/figma/8e197189-e72a-4e24-9ce3-4ee64ed26168.svg" alt="View"></button>
+                                        <button class="action-btn" data-action="Edit" title="Sửa"><img src="../assets/figma/041bb1be-597b-4c7b-af63-44260c9dd16e.svg" alt="Edit"></button>
+                                        <button class="action-btn" data-action="Print" title="In"><img src="../assets/figma/1d12b54d-5daa-4497-b975-fa0cda5f6742.svg" alt="Print"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Row 4 -->
+                            <tr>
+                                <td><span class="order-id">#ORD-2852</span></td>
+                                <td>
+                                    <div class="customer-info">
+                                        <div class="avatar avatar-pv">PV</div>
+                                        <span class="customer-name">Phạm Văn Quý</span>
+                                    </div>
+                                </td>
+                                <td>22/10/2023</td>
+                                <td><span class="amount">850.000đ</span></td>
+                                <td><span class="status-badge cancelled">Đã hủy</span></td>
+                                <td class="actions">
+                                    <div>
+                                        <button class="action-btn" data-action="View" title="Xem"><img src="../assets/figma/8e197189-e72a-4e24-9ce3-4ee64ed26168.svg" alt="View"></button>
+                                        <button class="action-btn" data-action="Edit" title="Sửa"><img src="../assets/figma/041bb1be-597b-4c7b-af63-44260c9dd16e.svg" alt="Edit"></button>
+                                        <button class="action-btn" data-action="Print" title="In"><img src="../assets/figma/1d12b54d-5daa-4497-b975-fa0cda5f6742.svg" alt="Print"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Row 5 -->
+                            <tr>
+                                <td><span class="order-id">#ORD-2853</span></td>
+                                <td>
+                                    <div class="customer-info">
+                                        <div class="avatar avatar-kd">KD</div>
+                                        <span class="customer-name">Kiều Duy</span>
+                                    </div>
+                                </td>
+                                <td>22/10/2023</td>
+                                <td><span class="amount">12.000.000đ</span></td>
+                                <td><span class="status-badge shipping">Đang giao hàng</span></td>
+                                <td class="actions">
+                                    <div>
+                                        <button class="action-btn" data-action="View" title="Xem"><img src="../assets/figma/8e197189-e72a-4e24-9ce3-4ee64ed26168.svg" alt="View"></button>
+                                        <button class="action-btn" data-action="Edit" title="Sửa"><img src="../assets/figma/041bb1be-597b-4c7b-af63-44260c9dd16e.svg" alt="Edit"></button>
+                                        <button class="action-btn" data-action="Print" title="In"><img src="../assets/figma/1d12b54d-5daa-4497-b975-fa0cda5f6742.svg" alt="Print"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="pagination-shell">
+                        <span class="page-info">Hiển thị 1 - 5 trong tổng số 128 đơn hàng</span>
+                        <div class="pagination-controls">
+                            <button class="page-arrow"><img src="../assets/figma/ed8a6901-715b-4dbe-bc51-8d99cbc55f19.svg" alt="Prev"></button>
+                            <button class="page-num active">1</button>
+                            <button class="page-num">2</button>
+                            <button class="page-num">3</button>
+                            <span class="page-dots">...</span>
+                            <button class="page-num">26</button>
+                            <button class="page-arrow"><img src="../assets/figma/28125b04-0417-445d-bb97-64fbaa57bb92.svg" alt="Next"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/store.js"></script>
+    <script src="../js/admin_orders.js"></script>
+    <script src="../js/admin-sidebar-toggle.js"></script>
+</body>
+</html>

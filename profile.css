@@ -1,0 +1,552 @@
+/* Profile Page Specific Styles */
+.profile-container {
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 128px 48px 80px;
+}
+
+.profile-layout {
+    display: flex;
+    gap: 48px;
+}
+
+/* Sidebar */
+.profile-sidebar {
+    width: 256px;
+    background-color: #f4f4ef;
+    border-radius: 0 24px 24px 0;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.sidebar-header {
+    padding: 0 24px 32px;
+}
+
+.sidebar-header h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #154212;
+    margin-bottom: 4px;
+}
+
+.sidebar-header p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #42493e;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+}
+
+.sidebar-nav .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #42493e;
+    transition: background-color 0.2s;
+    margin-bottom: 4px;
+}
+
+.sidebar-nav .nav-item.active {
+    background-color: #2d5a27;
+    color: #fff;
+    font-weight: 700;
+}
+
+.sidebar-nav .nav-item:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-nav .nav-item img {
+    width: 18px;
+    height: 21px;
+    object-fit: contain;
+}
+
+.sidebar-nav .nav-item.active img {
+    filter: brightness(0) invert(1);
+}
+
+.sidebar-footer {
+    margin-top: 56px;
+    padding: 0 24px;
+}
+
+.btn-logout {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(194, 201, 187, 0.2);
+    border-radius: 9999px;
+    padding: 13px 17px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #154212;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-logout:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Main Content */
+.profile-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-header h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #154212;
+    letter-spacing: -0.9px;
+    margin-bottom: 8px;
+}
+
+.profile-header p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #42493e;
+}
+
+.btn-edit-profile {
+    background-color: #2d5a27;
+    color: #fff;
+    border: none;
+    border-radius: 9999px;
+    padding: 12px 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.btn-edit-profile:hover {
+    background-color: #154212;
+}
+
+.btn-edit-profile img {
+    width: 10.5px;
+    height: 10.5px;
+}
+
+/* Profile Bento Grid */
+.profile-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Main Info Card */
+.main-info-card {
+    grid-column: span 2;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(26, 28, 25, 0.06);
+    position: relative;
+    overflow: hidden;
+    padding: 32px;
+}
+
+.card-overlay {
+    position: absolute;
+    top: -64px;
+    right: -64px;
+    width: 128px;
+    height: 128px;
+    background-color: rgba(21, 66, 18, 0.05);
+    border-radius: 50%;
+}
+
+.info-content-wrap {
+    display: flex;
+    gap: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.avatar-wrap {
+    position: relative;
+}
+
+.avatar-box {
+    width: 128px;
+    height: 128px;
+    border-radius: 8px;
+    border: 4px solid #fafaf5;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-change-avatar {
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    width: 32.6px;
+    height: 32.6px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-change-avatar img {
+    width: 16.6px;
+    height: 15px;
+}
+
+.info-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5px;
+}
+
+.info-group label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(66, 73, 62, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-group h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #154212;
+}
+
+.info-group p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1a1c19;
+}
+
+.info-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+/* Loyalty Card */
+.loyalty-card {
+    grid-column: span 1;
+    background-color: #2d5a27;
+    border-radius: 8px;
+    padding: 32px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.loyalty-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.loyalty-header h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 4.5px;
+}
+
+.loyalty-points {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.points-row {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.points-bar {
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.points-fill {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 9999px;
+}
+
+.points-hint {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 8px;
+}
+
+/* Recent Orders Card */
+.recent-orders-card {
+    grid-column: span 3;
+    background-color: #f4f4ef;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.recent-orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.recent-orders-header h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #154212;
+}
+
+.view-all-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #154212;
+    text-decoration: none;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.order-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.order-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: #e8e8e3;
+    overflow: hidden;
+    position: relative;
+}
+
+.order-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.order-info h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #154212;
+    margin-bottom: 4px;
+}
+
+.order-info p {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #42493e;
+}
+
+.order-info strong {
+    font-weight: 700;
+}
+
+.order-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.price-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.price-status .price {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #154212;
+}
+
+.status-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2.5px 8px;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.status-badge.bg-green-light {
+    background-color: rgba(21, 66, 18, 0.1);
+    color: #154212;
+}
+
+.status-badge.bg-gray {
+    background-color: #e8e8e3;
+    color: #154212;
+}
+
+.arrow-icon {
+    width: 7.4px;
+    height: 12px;
+}
+
+@media (max-width: 1024px) {
+    .profile-layout {
+        flex-direction: column;
+    }
+
+    .profile-sidebar {
+        width: 100%;
+        border-radius: 24px;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile-bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-info-card,
+    .loyalty-card,
+    .recent-orders-card {
+        grid-column: span 1;
+    }
+
+    .info-row {
+        grid-template-columns: 1fr;
+    }
+
+    .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .order-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 16px !important;
+        gap: 24px !important;
+    }
+    .profile-sidebar {
+        width: 100% !important;
+    }
+    .profile-bento-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .main-info-card {
+        grid-column: span 1 !important;
+    }
+    .recent-orders-card {
+        grid-column: span 1 !important;
+    }
+    .avatar-box {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .info-details {
+        grid-template-columns: 1fr !important;
+    }
+    .profile-header h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 12px !important;
+    }
+    .profile-header h1 {
+        font-size: 24px;
+    }
+    .order-item {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 8px !important;
+    }
+}

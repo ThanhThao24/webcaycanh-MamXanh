@@ -1,0 +1,539 @@
+/* Analytics page helpers. Most visual styling is inline from the Figma export. */
+
+.analytics-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #154212;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bg-hover {
+    display: none !important;
+    pointer-events: none;
+}
+
+.nav-bg-hover img {
+    display: none !important;
+}
+
+.admin-main img,
+.admin-sidebar img {
+    max-width: 100%;
+    flex-shrink: 0;
+}
+
+.admin-sidebar .nav-item > img {
+    width: 22px !important;
+    height: 22px !important;
+    object-fit: contain;
+}
+
+.admin-sidebar .nav-item > img[alt="Messages"] {
+    width: 22px !important;
+    height: 16px !important;
+}
+
+.admin-header img,
+.header-actions img,
+.filter-dropdown img,
+.export-btn img,
+button img {
+    height: 18px !important;
+    object-fit: contain;
+}
+
+.search-bar img {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.filter-dropdown img,
+.header-actions img {
+    width: 18px !important;
+}
+
+.export-btn img {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+.kpi-icon img,
+.chart-body img,
+.search-bar img,
+.header-actions img {
+    display: block;
+    object-fit: contain;
+}
+
+.product-img img {
+    display: block;
+    object-fit: cover !important;
+}
+
+.product-img.image-missing {
+    background: #f4f4ef url("../assets/figma/admin-fallback-icon.svg") center / 24px 24px no-repeat;
+}
+
+.trend img {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+/* Section header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+}
+
+.header-title .title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #154212;
+    letter-spacing: -0.75px;
+    margin-bottom: 4px;
+}
+
+.header-title .subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #42493e;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.filter-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f4f4ef;
+    border-radius: 9999px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #42493e;
+}
+
+.export-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #154212;
+    color: #fff;
+    border: none;
+    border-radius: 9999px;
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* KPI Grid — 3 columns for analytics */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.kpi-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.kpi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.kpi-header > div:first-child h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7268;
+    margin-bottom: 8px;
+}
+
+.kpi-header > div:first-child > div {
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #154212;
+}
+
+/* CRITICAL: constrain kpi-icon so SVG doesn't render at full width */
+.kpi-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: rgba(45, 90, 39, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.kpi-icon img {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.kpi-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #6b7268;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 9999px;
+}
+
+.trend.positive {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.trend.negative {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Charts layout */
+.charts-grid-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.chart-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.chart-card.large {
+    /* spans larger column from charts-grid-main */
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.chart-header h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #154212;
+    margin-bottom: 4px;
+}
+
+.chart-header p {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #6b7268;
+}
+
+.chart-legend {
+    display: flex;
+    gap: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #6b7268;
+}
+
+.chart-legend > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.chart-legend > div > div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.chart-legend > div:first-child > div { background-color: #2d5a27; }
+.chart-legend > div:last-child > div { background-color: #86efac; }
+
+.chart-body {
+    position: relative;
+}
+
+.chart-body > img[alt="Chart"] {
+    width: 100% !important;
+    height: 256px !important;
+    object-fit: contain;
+}
+
+.x-axis-labels {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: #6b7268;
+    margin-top: 12px;
+}
+
+/* Donut chart placeholder */
+.donut-chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.donut-chart > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.donut-chart > div > div:first-child {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 16px solid #2d5a27;
+    border-left-color: #e2e8f0;
+    border-bottom-color: #e2e8f0;
+}
+
+.donut-chart > div > div:nth-child(2) {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #154212;
+}
+
+.donut-chart > div > div:nth-child(3) {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #6b7268;
+}
+
+.donut-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #42493e;
+}
+
+.donut-legend > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donut-legend > div > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.donut-legend > div > div > div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.donut-legend > div:first-child > div > div { background-color: #2d5a27; }
+.donut-legend > div:last-child > div > div { background-color: #e2e8f0; }
+
+/* Bottom grid */
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #154212;
+}
+
+.card-header a {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #2d5a27;
+    text-decoration: none;
+}
+
+/* Product list */
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f4f4ef;
+}
+
+.product-item:last-child {
+    border-bottom: none;
+}
+
+.product-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #f4f4ef;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1c19;
+    margin-bottom: 2px;
+}
+
+.product-info p {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #6b7268;
+}
+
+.product-stats,
+.product-revenue {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.product-stats span:first-child,
+.product-revenue span:first-child {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #154212;
+}
+
+.product-stats span:last-child,
+.product-revenue span:last-child {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: #6b7268;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+    .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .charts-grid-main {
+        grid-template-columns: 1fr;
+    }
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kpi-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .kpi-card {
+        padding: 16px;
+    }
+    .header-title .title {
+        font-size: 22px;
+    }
+    .chart-card {
+        padding: 16px;
+    }
+    .chart-body > img[alt="Chart"] {
+        height: 180px !important;
+    }
+    .header-actions {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .product-item {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title .title {
+        font-size: 18px;
+    }
+    .donut-chart > div > div:first-child {
+        width: 72px;
+        height: 72px;
+        border-width: 12px;
+    }
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mầm Xanh - Chăm sóc khách hàng</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/admin-support.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Manrope:wght@600;700;800&family=Miama&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+    <div class="admin-sidebar-overlay"></div>
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="admin-brand">
+                <div class="logo-wrapper">
+                    <div class="logo-bg-nav"></div>
+                    <img class="logo-icon-nav" src="../assets/figma/4b9e6e0f-eb58-449f-9b44-3d39b9e665a3.png" alt="Logo">
+                </div>
+                <div class="brand-name">Mầm Xanh</div>
+            </div>
+
+            <nav class="admin-nav">
+                    <a href="dashboard.html" class="admin-nav-item">
+                        <img src="../assets/figma/44187262-fe27-4a4b-bc4c-eb6d2ab5151e.svg" alt="Overview">
+                        <span>Tổng quan</span>
+                    </a>
+                    <a href="admin_products.html" class="admin-nav-item">
+                        <img src="../assets/figma/efd15ce3-f83a-40b7-822f-df5ee6c3ca80.svg" alt="Products">
+                        <span>Sản phẩm</span>
+                    </a>
+                    <a href="admin_categories.html" class="admin-nav-item">
+                        <img src="../assets/figma/6b8c648d-bc29-4bd6-8e9b-ee46ddf72dbe.svg" alt="Categories">
+                        <span>Danh mục</span>
+                    </a>
+                    <a href="admin_support.html" class="admin-nav-item active">
+                        <img src="../assets/figma/b1916640-5388-450d-865b-eb53aa179740.svg" alt="Messages">
+                        <span>Tin nhắn</span>
+                    </a>
+                    <a href="admin_orders.html" class="admin-nav-item">
+                        <img src="../assets/figma/1a9705ff-ab63-4dd5-be85-b48061fe99f7.svg" alt="Orders">
+                        <span>Đơn hàng</span>
+                    </a>
+                    <a href="admin_promotions.html" class="admin-nav-item">
+                        <img src="../assets/figma/d42b492c-50f8-4cfd-a043-84c1a371f6aa.svg" alt="Promotions">
+                        <span>Khuyến mãi</span>
+                    </a>
+                    <a href="admin_revenue.html" class="admin-nav-item">
+                        <img src="../assets/figma/e1890ad3-b016-4db8-bcc0-52ac14124461.svg" alt="Revenue">
+                        <span>Doanh thu</span>
+                    </a>
+                    <a href="admin_analytics.html" class="admin-nav-item">
+                        <img src="../assets/figma/665676d1-12b7-4161-b953-3edd28517276.svg" alt="Analyze">
+                        <span>Phân tích</span>
+                    </a>
+                </nav>
+
+            <div class="sidebar-bottom">
+                <button class="btn-new-ticket">
+                    <img src="../assets/figma/72b90c02-1057-4de5-af3d-b004d2d98c87.svg" alt="Plus">
+                    New Ticket
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="admin-main">
+            <!-- Header -->
+            <header class="admin-header">
+            <button class="admin-sidebar-toggle" aria-label="Menu"><span></span></button>
+                <div class="admin-search">
+                    <div class="admin-search-icon">
+                        <img src="../assets/figma/2d55320a-a5c8-478a-a371-005c14b4b36a.svg" alt="Search">
+                    </div>
+                    <input type="text" placeholder="Tìm kiếm yêu cầu...">
+                </div>
+                <div class="admin-profile">
+                    <div class="admin-notif">
+                        <img src="../assets/figma/b9b7562e-0359-4d8d-b67c-d59d229521f5.svg" alt="Notifications">
+                        <span class="notif-dot"></span>
+                    </div>
+                    <div class="admin-user">
+                        <span class="user-role">Quản trị Mầm Xanh</span>
+                        <div class="user-avatar">
+                            <img src="../assets/figma/36fa8a97-f2cb-4b7c-926f-d8cd7c7fbde4.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="admin-content support-content">
+                <!-- Support Header & Stats -->
+                <div class="support-header-row">
+                    <div>
+                        <h2 class="support-title">Chăm Sóc Khách Hàng</h2>
+                        <p class="support-subtitle">Phản hồi và hỗ trợ khách hàng ngay tức thì.</p>
+                    </div>
+                    <div class="support-stats">
+                        <div class="stat-box">
+                            <span class="stat-label">TỔNG YÊU CẦU</span>
+                            <div class="stat-value">1,284</div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">ĐANG CHỜ</span>
+                            <div class="stat-value text-red">12</div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">ĐANG TƯ VẤN</span>
+                            <div class="stat-value text-green">45</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workspace -->
+                <div class="support-workspace">
+                    <!-- Inbox Panel -->
+                    <div class="inbox-panel">
+                        <div class="inbox-header">
+                            <h3>Hộp thư đến</h3>
+                            <button class="btn-filter-inbox"><img src="../assets/figma/ebb13d36-62e5-452b-94a4-3712408c8bc5.svg" alt="Filter"></button>
+                        </div>
+                        <div class="inbox-list">
+                            <!-- Active Item -->
+                            <div class="inbox-item active">
+                                <div class="item-header-row">
+                                    <span class="customer-name">Nguyễn Văn An</span>
+                                    <span class="badge-status bg-orange">Đang tư vấn</span>
+                                </div>
+                                <p class="message-preview">Cây bàng Singapore của mình có dấu hiệ…</p>
+                                <span class="message-time">2 phút trước</span>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="inbox-item">
+                                <div class="item-header-row">
+                                    <span class="customer-name">Trần Thị Bé</span>
+                                    <span class="badge-status bg-red">Chờ xử lý</span>
+                                </div>
+                                <p class="message-preview">Đơn hàng #8821 vẫn chưa thấy giao đến…</p>
+                                <span class="message-time">15 phút trước</span>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="inbox-item">
+                                <div class="item-header-row">
+                                    <span class="customer-name">Lê Minh Tuấn</span>
+                                    <span class="badge-status bg-gray">Đã xong</span>
+                                </div>
+                                <p class="message-preview">Cảm ơn shop đã hướng dẫn nhiệt tình nhé!</p>
+                                <span class="message-time">1 giờ trước</span>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="inbox-item">
+                                <div class="item-header-row">
+                                    <span class="customer-name">Hoàng Mỹ Linh</span>
+                                    <span class="badge-status bg-orange">Đang tư vấn</span>
+                                </div>
+                                <p class="message-preview">Mình muốn đặt thêm 3 chậu sen đá vạn…</p>
+                                <span class="message-time">2 giờ trước</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Interface Panel -->
+                    <div class="chat-panel">
+                        <div class="chat-header">
+                            <div class="chat-user-info">
+                                <div class="avatar-ring">
+                                    <img src="../assets/figma/39ce1dc7-e848-4955-a03e-421c98b8ef05.png" alt="Customer">
+                                </div>
+                                <div class="user-status-col">
+                                    <h4>Nguyễn Văn An</h4>
+                                    <div class="status-indicator">
+                                        <div class="dot-online"></div>
+                                        <span class="status-text">Đang hoạt động</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-purchase-history">
+                                <img src="../assets/figma/c36eaeb7-ec7a-4a75-822d-462b19031a80.svg" alt="History">
+                                <span>Lịch sử mua hàng</span>
+                            </button>
+                        </div>
+
+                        <div class="chat-area">
+                            <div class="chat-date-separator"><span>HÔM NAY</span></div>
+
+                            <!-- Msg Received -->
+                            <div class="chat-message message-received">
+                                <img class="chat-avatar" src="../assets/figma/39ce1dc7-e848-4955-a03e-421c98b8ef05.png" alt="Customer">
+                                <div class="message-bubble">
+                                    <p>Chào shop, mình mua cây Bàng Singapore bên mình được 2 tuần rồi. Dạo này mấy lá ở dưới bắt đầu bị vàng và rụng. Cho mình hỏi nguyên nhân do đâu và cách khắc phục với ạ?</p>
+                                    <span class="msg-time">10:45 AM</span>
+                                </div>
+                            </div>
+
+                            <!-- Msg Sent -->
+                            <div class="chat-message message-sent">
+                                <div class="message-bubble">
+                                    <p>Chào anh An ạ! Rất xin lỗi về sự cố với cây. Thường lá vàng dưới gốc có thể do tưới quá nhiều hoặc thiếu sáng. Anh có thể chụp giúp em vị trí đặt cây và tình trạng đất được không ạ?</p>
+                                    <span class="msg-time">10:48 AM</span>
+                                </div>
+                                <div class="admin-avatar">MX</div>
+                            </div>
+
+                            <!-- Msg Received with image -->
+                            <div class="chat-message message-received">
+                                <img class="chat-avatar" src="../assets/figma/39ce1dc7-e848-4955-a03e-421c98b8ef05.png" alt="Customer">
+                                <div class="message-bubble">
+                                    <p>Đây nè shop, mình để ở góc phòng khách, có ánh sáng gián tiếp nhẹ.</p>
+                                    <div class="msg-image">
+                                        <img src="../assets/figma/6e589377-22cf-4778-8adf-97d4de3f388f.jpg" alt="Plant photo">
+                                    </div>
+                                    <span class="msg-time">10:50 AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Details Panel -->
+                    <div class="details-panel">
+                        <div class="customer-profile-large">
+                            <div class="avatar-large-ring">
+                                <img src="../assets/figma/39ce1dc7-e848-4955-a03e-421c98b8ef05.png" alt="Customer">
+                            </div>
+                            <h2>Nguyễn Văn An</h2>
+                            <div class="member-tier">
+                                <img src="../assets/figma/a06e208e-a056-4e18-bb5c-76568a4682ce.svg" alt="Tier">
+                                <span>HẠNG: MẦM NON</span>
+                            </div>
+                        </div>
+
+                        <div class="details-cards">
+                            <div class="contact-card">
+                                <span class="card-eyebrow">THÔNG TIN LIÊN HỆ</span>
+                                <div class="contact-list">
+                                    <div class="contact-item">
+                                        <img src="../assets/figma/5b6c1587-c25a-4020-a2ca-cdf7999afc79.svg" alt="Phone">
+                                        <span>0908 123 456</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <img src="../assets/figma/80e7abc7-9e89-4658-b8e3-4421f93b4a80.svg" alt="Email">
+                                        <span>an.nguyen@email.com</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <img src="../assets/figma/5b6c1587-c25a-4020-a2ca-cdf7999afc79.svg" alt="Location">
+                                        <span>Quận 7, TP.HCM</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stats-row">
+                                <div class="small-stat-card">
+                                    <span class="stat-label">ĐƠN HÀNG</span>
+                                    <span class="stat-val">08</span>
+                                </div>
+                                <div class="small-stat-card">
+                                    <span class="stat-label">TÍCH LŨY</span>
+                                    <span class="stat-val">1.2M</span>
+                                </div>
+                            </div>
+
+                            <div class="note-card">
+                                <span class="card-eyebrow">GHI CHÚ NỘI BỘ</span>
+                                <p class="note-text">"Khách thích các dòng cây kiểng lá nhiệt đới, thường hỏi kỹ về cách chăm sóc."</p>
+                            </div>
+                        </div>
+
+                        <button class="btn-edit-profile">Chỉnh sửa hồ sơ</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/store.js"></script>
+    <script src="../js/admin_support.js"></script>
+    <script src="../js/admin-sidebar-toggle.js"></script>
+</body>
+</html>

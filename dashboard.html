@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản trị - Mầm Xanh</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&family=Miama&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+    <div class="admin-sidebar-overlay"></div>
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-brand">
+            <div class="logo-wrapper">
+                <div class="logo-bg-nav"></div>
+                <img class="logo-icon-nav" src="../assets/figma/ffa71a92-4aa9-4c9a-885b-ef6879b7d9fc.png" alt="Logo">
+            </div>
+            <div class="brand-name">Mầm Xanh</div>
+        </div>
+
+        <nav class="admin-nav">
+            <a href="dashboard.html" class="admin-nav-item active">
+                <img src="../assets/figma/48dfb713-a94f-46dc-b8cd-c25b37625eda.svg" alt="Dashboard">
+                <span>Tổng quan</span>
+            </a>
+            <a href="admin_products.html" class="admin-nav-item">
+                <img src="../assets/figma/7f5c995c-3ac6-4dea-90c2-b45855fee733.svg" alt="Products">
+                <span>Sản phẩm</span>
+            </a>
+            <a href="admin_categories.html" class="admin-nav-item">
+                <img src="../assets/figma/e640d50a-9649-4773-b0be-87c2fe0c93ba.svg" alt="Categories">
+                <span>Danh mục</span>
+            </a>
+            <a href="admin_support.html" class="admin-nav-item">
+                <img src="../assets/figma/9ba50ae1-d6d3-4eac-9f26-f6c6850d0c69.svg" alt="Messages">
+                <span>Tin nhắn</span>
+            </a>
+            <a href="admin_orders.html" class="admin-nav-item">
+                <img src="../assets/figma/99bb2688-2f8f-4fb9-ac0f-17b458281503.svg" alt="Orders">
+                <span>Đơn hàng</span>
+            </a>
+            <a href="admin_promotions.html" class="admin-nav-item">
+                <img src="../assets/figma/85a51582-47ad-4f4f-bd79-d76147367b43.svg" alt="Promos">
+                <span>Khuyến mãi</span>
+            </a>
+            <a href="admin_revenue.html" class="admin-nav-item">
+                <img src="../assets/figma/185b4e6f-d53b-4611-ac7b-eb54845dc563.svg" alt="Revenue">
+                <span>Doanh thu</span>
+            </a>
+            <a href="admin_analytics.html" class="admin-nav-item">
+                <img src="../assets/figma/185b4e6f-d53b-4611-ac7b-eb54845dc563.svg" alt="Analytics">
+                <span>Phân tích</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="admin-main">
+        <!-- Header -->
+        <header class="admin-header">
+            <button class="admin-sidebar-toggle" aria-label="Menu"><span></span></button>
+            <div class="admin-search">
+                <div class="admin-search-icon">
+                    <img src="../assets/figma/04444616-6d23-4a3a-84c9-2fa926e97541.svg" alt="Search" style="filter: brightness(0) invert(1);">
+                </div>
+                <input type="text" placeholder="Tìm kiếm nhanh đơn hàng, khách hàng...">
+            </div>
+            <div class="admin-profile">
+                <div class="admin-notif">
+                    <img src="../assets/figma/b11f1e24-faab-4b61-bef0-4370ce75ad8f.svg" alt="Notification">
+                    <span class="notif-dot"></span>
+                </div>
+                <div class="admin-user">
+                    <span class="user-role">Quản trị Mầm Xanh</span>
+                    <div class="user-avatar">
+                        <img src="../assets/figma/1007fd8b-89e4-49e2-96f8-2b0476bcc016.jpg" alt="Avatar">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <main class="admin-content">
+            <div class="admin-welcome mb-32">
+                <p class="text-label" style="max-width: 660px;">Chào mừng trở lại, Julian. Đế chế thực vật của bạn đang phát triển rực rỡ hôm nay. Dưới đây là cái nhìn nhanh về hiệu suất và tình trạng kho hàng gần đây.</p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid mb-48">
+                <div class="stat-card">
+                    <div class="flex justify-between items-start mb-16">
+                        <div class="stat-icon-bg"><img src="../assets/figma/fa6f0ead-74e9-4e2b-b09f-a880efe6a4b6.svg" alt="Sale"></div>
+                        <span class="stat-trend trend-up">+12%</span>
+                    </div>
+                    <p class="stat-label">TỔNG DOANH SỐ</p>
+                    <h3 class="stat-value">24.580 $</h3>
+                </div>
+                <div class="stat-card">
+                    <div class="flex justify-between items-start mb-16">
+                        <div class="stat-icon-bg"><img src="../assets/figma/10275d86-e8d9-4cb7-9de8-3baf17d11143.svg" alt="Orders"></div>
+                        <span class="stat-trend trend-new">Mới</span>
+                    </div>
+                    <p class="stat-label">ĐƠN HÀNG MỚI</p>
+                    <h3 class="stat-value">148</h3>
+                </div>
+                <div class="stat-card">
+                    <div class="flex justify-between items-start mb-16">
+                        <div class="stat-icon-bg"><img src="../assets/figma/b0a926b0-0817-4d62-a68d-a845c11eb9f8.svg" alt="Warning"></div>
+                        <span class="stat-trend trend-alert">Cảnh báo</span>
+                    </div>
+                    <p class="stat-label">HẾT HÀNG</p>
+                    <h3 class="stat-value">12 món</h3>
+                </div>
+                <div class="stat-card stat-card-green">
+                    <div class="flex justify-between items-start mb-16">
+                        <div class="stat-icon-bg"><img src="../assets/figma/afbefe99-8e93-4044-bc78-92943f2bea09.svg" alt="Revenue"></div>
+                    </div>
+                    <p class="stat-label" style="color:#bcf0ae;">DOANH THU</p>
+                    <h3 class="stat-value text-white">142.900 $</h3>
+                </div>
+            </div>
+
+            <!-- Analytics Row -->
+            <div class="analytics-row">
+                <!-- Chart Card -->
+                <div class="chart-card">
+                    <div class="flex justify-between items-center mb-32">
+                        <div>
+                            <h3 class="chart-title">Biểu đồ hiệu suất</h3>
+                            <p class="text-label" style="font-size:14px;">Giao dịch hàng ngày trong 30 ngày qua</p>
+                        </div>
+                        <div class="chart-filter">
+                            <span>30 ngày qua</span>
+                            <img src="../assets/figma/23031c96-b011-492d-81c6-45226a921ccd.svg" alt="Arrow">
+                        </div>
+                    </div>
+                    <div class="chart-visual">
+                        <div class="chart-bar" style="height:40%;"></div>
+                        <div class="chart-bar" style="height:60%;"></div>
+                        <div class="chart-bar" style="height:45%;"></div>
+                        <div class="chart-bar" style="height:75%;"></div>
+                        <div class="chart-bar" style="height:70%;"></div>
+                        <div class="chart-bar" style="height:90%;"></div>
+                        <div class="chart-bar bar-active" style="height:100%;"></div>
+                        <div class="chart-bar" style="height:85%;"></div>
+                        <div class="chart-bar" style="height:65%;"></div>
+                        <div class="chart-bar" style="height:55%;"></div>
+                        <div class="chart-bar" style="height:80%;"></div>
+                        <div class="chart-bar" style="height:95%;"></div>
+                    </div>
+                    <div class="chart-labels">
+                        <span>Tháng 10 - 01</span>
+                        <span>Tháng 10 - 15</span>
+                        <span>Tháng 10 - 30</span>
+                    </div>
+                </div>
+
+                <!-- Recent Orders List -->
+                <div class="orders-card">
+                    <div class="flex justify-between items-center mb-24">
+                        <h3 class="chart-title">Đơn hàng gần đây</h3>
+                        <a href="admin_orders.html" class="text-primary font-bold" style="font-size:12px;">Xem tất cả</a>
+                    </div>
+                    <div class="order-list-mini">
+                        <div class="order-item-mini">
+                            <div class="order-item-img"><img src="../assets/figma/6e589377-22cf-4778-8adf-97d4de3f388f.jpg" alt="Plant"></div>
+                            <div class="order-item-info">
+                                <p class="order-item-name">Cây Bàng Singapore</p>
+                                <p class="order-item-meta">Đơn #8921 • 45.00 $</p>
+                            </div>
+                            <span class="order-item-status status-delivered">Đã giao</span>
+                        </div>
+                        <div class="order-item-mini">
+                            <div class="order-item-img"><img src="../assets/figma/4e0fb5c3-6c8a-4905-815b-054b0a8a0cbb.jpg" alt="Plant"></div>
+                            <div class="order-item-info">
+                                <p class="order-item-name">Trầu Bà Nam Mỹ L</p>
+                                <p class="order-item-meta">Đơn #8922 • 120.00 $</p>
+                            </div>
+                            <span class="order-item-status status-pending">Đang giao</span>
+                        </div>
+                        <div class="order-item-mini">
+                            <div class="order-item-img"><img src="../assets/figma/387ba775-a0ab-4960-b4c9-fc5cad1cbaf4.jpg" alt="Plant"></div>
+                            <div class="order-item-info">
+                                <p class="order-item-name">Lưỡi Hổ XL</p>
+                                <p class="order-item-meta">Đơn #8924 • 85.00 $</p>
+                            </div>
+                            <span class="order-item-status status-delivered">Đã giao</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    </div>
+    <script src="../js/store.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/admin-sidebar-toggle.js"></script>
+</body>
+</html>

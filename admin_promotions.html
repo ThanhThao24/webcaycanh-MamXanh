@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mầm Xanh - Quản lý khuyến mãi</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/admin-promotions.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Manrope:wght@600;700;800&family=Miama&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+    <div class="admin-sidebar-overlay"></div>
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="admin-brand">
+                <div class="logo-wrapper">
+                    <div class="logo-bg-nav"></div>
+                    <img class="logo-icon-nav" src="../assets/figma/c36d063d-141e-497b-ad96-aea45993adcc.png" alt="Logo">
+                </div>
+                <div class="brand-name">Mầm Xanh</div>
+            </div>
+
+            <nav class="admin-nav">
+                <a href="dashboard.html" class="admin-nav-item">
+                    <img src="../assets/figma/46b3ee8b-d191-44be-931d-c945f38bec52.svg" alt="Overview">
+                    <span>Tổng quan</span>
+                </a>
+                <a href="admin_products.html" class="admin-nav-item">
+                    <img src="../assets/figma/395c022d-2dd0-4bf2-af4f-0e1f5a5d2ab8.svg" alt="Products">
+                    <span>Sản phẩm</span>
+                </a>
+                <a href="admin_categories.html" class="admin-nav-item">
+                    <img src="../assets/figma/a7823aa3-27c0-4962-94ac-1d07a053a16b.svg" alt="Categories">
+                    <span>Danh mục</span>
+                </a>
+                <a href="admin_support.html" class="admin-nav-item">
+                    <img src="../assets/figma/d52f3cdf-7ec8-439b-b463-8cb81e0f93c2.svg" alt="Messages">
+                    <span>Tin nhắn</span>
+                </a>
+                <a href="admin_orders.html" class="admin-nav-item">
+                    <img src="../assets/figma/846a8e4d-b1d1-4631-bd6b-d4abb3794421.svg" alt="Orders">
+                    <span>Đơn hàng</span>
+                </a>
+                <a href="admin_promotions.html" class="admin-nav-item active">
+                    <img src="../assets/figma/826dc59c-596b-4a7c-b23b-bc070e5eed45.svg" alt="Promotions">
+                    <span>Khuyến mãi</span>
+                </a>
+                <a href="admin_revenue.html" class="admin-nav-item">
+                    <img src="../assets/figma/55afb800-d482-40a2-bc90-554b36767880.svg" alt="Analytics">
+                    <span>Doanh thu</span>
+                </a>
+                <a href="admin_analytics.html" class="admin-nav-item">
+                    <img src="../assets/figma/cea4e1d8-e001-4c25-9c31-4e2dbfb472ea.svg" alt="Analyze">
+                    <span>Phân tích</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main relative-bg">
+            <!-- Background Pattern -->
+            <div class="promo-bg-graphic">
+                <img src="../assets/figma/24918f00-69c8-42c7-810b-1318577c12aa.svg" alt="Bg">
+            </div>
+
+            <!-- Header -->
+            <header class="admin-header">
+            <button class="admin-sidebar-toggle" aria-label="Menu"><span></span></button>
+                <div class="admin-search">
+                    <div class="admin-search-icon">
+                        <img src="../assets/figma/1df5e343-441d-4f0f-ad1f-4e58bac02252.svg" alt="Search">
+                    </div>
+                    <input type="text" placeholder="Tìm kiếm nhanh đơn hàng, khách hàng...">
+                </div>
+
+                <div class="admin-profile">
+                    <div class="admin-notif">
+                        <img src="../assets/figma/cbdade7a-4480-4b7b-b318-51c90e4b46c5.svg" alt="Notifications">
+                        <span class="notif-dot"></span>
+                    </div>
+                    <div class="admin-user">
+                        <span class="user-role">Quản trị Mầm Xanh</span>
+                        <div class="user-avatar">
+                            <img src="../assets/figma/8c207e01-fab7-482a-ad4b-790b1209edee.jpg" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <div class="admin-content promo-content">
+                <div class="promo-header">
+                    <h1 class="promo-title">Quản lý khuyến mãi</h1>
+                    <p class="promo-subtitle">Quản lý chiến dịch giảm giá và ưu đãi</p>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="promo-stats-grid">
+                    <div class="promo-stat-card">
+                        <div class="stat-info">
+                            <span class="stat-label">Khuyến mãi đang chạy</span>
+                            <div class="stat-val">15</div>
+                        </div>
+                        <div>
+                            <img src="../assets/figma/76291dd5-7bc8-4328-9571-370407fb461a.svg" alt="up">
+                            <span>+2 tháng này</span>
+                        </div>
+                        <img class="bg-icon" src="../assets/figma/7312c5d9-a2a7-45b1-9eb6-248146fc61c1.svg" alt="Bg">
+                    </div>
+                    <div class="promo-stat-card">
+                        <div class="stat-info">
+                            <span class="stat-label">Tổng lượt sử dụng</span>
+                            <div class="stat-val">1,240</div>
+                        </div>
+                        <div>
+                            <img src="../assets/figma/76291dd5-7bc8-4328-9571-370407fb461a.svg" alt="up">
+                            <span>12% so với tháng trước</span>
+                        </div>
+                        <img class="bg-icon" src="../assets/figma/aae40832-33f6-42cb-800c-d7554edaca26.svg" alt="Bg">
+                    </div>
+                    <div class="promo-stat-card">
+                        <div class="stat-info">
+                            <span class="stat-label">Giá trị đã giảm</span>
+                            <div class="stat-val">50.000.000đ</div>
+                        </div>
+                        <div>
+                            <img src="../assets/figma/c0c998bf-dae5-427a-8280-22e1182212ce.svg" alt="cal">
+                            <span>Tính từ đầu năm</span>
+                        </div>
+                        <img class="bg-icon" src="../assets/figma/426e3422-9fdc-46e2-a724-08c9fcdaa2d7.svg" alt="Bg">
+                    </div>
+                </div>
+
+                <!-- Filters & Action Bar -->
+                <div class="promo-actions-row">
+                    <div class="promo-filters">
+                        <div class="filter-dropdown">
+                            <span class="filter-label">Trạng thái:</span>
+                            <div class="dropdown-val">
+                                <span>Tất cả</span>
+                                <img src="../assets/figma/3b3ac2ce-b070-46d3-966f-dd14f299108b.svg" alt="down">
+                            </div>
+                        </div>
+                        <div class="filter-dropdown">
+                            <span class="filter-label">Loại:</span>
+                            <div class="dropdown-val">
+                                <span>Tất cả</span>
+                                <img src="../assets/figma/3b3ac2ce-b070-46d3-966f-dd14f299108b.svg" alt="down">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-primary-solid">
+                        <img src="../assets/figma/e719911b-2039-41a3-aaf4-8c672545bd73.svg" alt="Plus">
+                        Tạo khuyến mãi mới
+                    </button>
+                </div>
+
+                <!-- Promotion Table -->
+                <div class="promo-table-section">
+                    <table class="promo-table">
+                        <thead>
+                            <tr>
+                                <th>Tên khuyến mãi</th>
+                                <th>Mã code</th>
+                                <th>Giảm giá</th>
+                                <th>Lượt dùng</th>
+                                <th>Trạng thái</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1 -->
+                            <tr>
+                                <td>
+                                    <div class="promo-name-col">
+                                        <div class="promo-icon bg-gray-light">
+                                            <img src="../assets/figma/6002c68d-0c6a-46a6-832f-62c6fa671152.svg" alt="icon">
+                                        </div>
+                                        <div class="promo-info">
+                                            <h4>Spring Bloom</h4>
+                                            <p>Giảm giá đầu xuân 2024</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="code-badge">BLOOM24</span>
+                                </td>
+                                <td>
+                                    <span class="discount-val">Số tiền (50k)</span>
+                                </td>
+                                <td>
+                                    <div class="usage-col">
+                                        <div class="usage-stats">
+                                            <span>250/500</span>
+                                            <span>50%</span>
+                                        </div>
+                                        <div class="usage-bar">
+                                            <div class="usage-fill" style="width:50%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="status-badge bg-green-light text-green-light">Đang Chạy</span>
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="action-btn" data-action="Copy" title="Sao chép"><img src="../assets/figma/532537d8-93ba-4c9d-96fa-2de1f9b24a15.svg" alt="Copy"></button>
+                                        <button class="action-btn" data-action="Edit" title="Sửa"><img src="../assets/figma/1674064b-d40b-4ef9-a62a-4de433d3815d.svg" alt="Edit"></button>
+                                        <button class="action-btn" data-action="Delete" title="Xóa"><img src="../assets/figma/f5149786-c302-4d1f-9ed5-c21381e3d625.svg" alt="Delete"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr>
+                                <td>
+                                    <div class="promo-name-col">
+                                        <div class="promo-icon bg-yellow">
+                                            <img src="../assets/figma/3d8000fe-e5ca-41e1-b2f5-6bf86352827b.svg" alt="icon">
+                                        </div>
+                                        <div class="promo-info">
+                                            <h4>Welcome New User</h4>
+                                            <p>Ưu đãi khách hàng mới</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="code-badge">HELLO10</span>
+                                </td>
+                                <td>
+                                    <span class="discount-val">Phần trăm (15%)</span>
+                                </td>
+                                <td>
+                                    <div class="usage-col">
+                                        <div class="usage-stats">
+                                            <span>890/1000</span>
+                                            <span>89%</span>
+                                        </div>
+                                        <div class="usage-bar">
+                                            <div class="usage-fill" style="width:89%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="status-badge bg-green-light text-green-light">Đang Chạy</span>
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="action-btn" data-action="Copy" title="Sao chép"><img src="../assets/figma/532537d8-93ba-4c9d-96fa-2de1f9b24a15.svg" alt="Copy"></button>
+                                        <button class="action-btn" data-action="Edit" title="Sửa"><img src="../assets/figma/1674064b-d40b-4ef9-a62a-4de433d3815d.svg" alt="Edit"></button>
+                                        <button class="action-btn" data-action="Delete" title="Xóa"><img src="../assets/figma/f5149786-c302-4d1f-9ed5-c21381e3d625.svg" alt="Delete"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="pagination-shell">
+                        <span class="page-info">Hiển thị 1-4 trong số 15 khuyến mãi</span>
+                        <div class="pagination-controls">
+                            <button class="page-arrow"><img src="../assets/figma/b32b307c-62d7-4b9e-9f0c-db5fb5eea67d.svg" alt="P"></button>
+                            <button class="page-num active">1</button>
+                            <button class="page-num">2</button>
+                            <button class="page-num">3</button>
+                            <button class="page-arrow"><img src="../assets/figma/bb14582e-1fe2-4b6c-b873-450099f0c13b.svg" alt="N"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/store.js"></script>
+    <script src="../js/admin_promotions.js"></script>
+    <script src="../js/admin-sidebar-toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,693 @@
+/* Revenue page helpers. The Figma export is mostly inline-styled; this file
+   keeps dynamic states consistent with the rest of the admin area. */
+
+.revenue-toast,
+.analytics-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #154212;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bg-hover {
+    display: none !important;
+    pointer-events: none;
+}
+
+.nav-bg-hover img {
+    display: none !important;
+}
+
+.admin-main img,
+.admin-sidebar img {
+    max-width: 100%;
+    flex-shrink: 0;
+}
+
+.admin-sidebar .nav-item > img {
+    width: 22px !important;
+    height: 22px !important;
+    object-fit: contain;
+}
+
+.admin-sidebar .nav-item > img[alt="Messages"] {
+    width: 22px !important;
+    height: 16px !important;
+}
+
+.admin-header img,
+.header-actions img,
+.filter-dropdown img,
+.export-btn img,
+.table-actions img,
+button img {
+    height: 18px !important;
+    object-fit: contain;
+}
+
+.search-bar img {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.filter-dropdown img,
+.header-actions img {
+    width: 18px !important;
+}
+
+.export-btn img {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+/* Constrain table action icons — display:block without width expands to container width */
+.table-actions img,
+.transaction-table-area button img {
+    width: 18px !important;
+    height: 18px !important;
+    display: inline-block !important;
+    flex-shrink: 0;
+}
+
+.kpi-icon img,
+.chart-body img,
+.search-bar img,
+.header-actions img {
+    display: block;
+    object-fit: contain;
+}
+
+/* Search icon inside the input field */
+.search-wrap img {
+    width: 16px !important;
+    height: 16px !important;
+    flex-shrink: 0;
+}
+
+/* Table action buttons */
+.table-actions button {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4ef;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.transaction-table-area tbody td button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+/* Payment method icon inside td div — must be constrained or SVG renders full-width */
+.transaction-table-area tbody td div img {
+    width: 20px !important;
+    height: 20px !important;
+    flex-shrink: 0;
+    object-fit: contain;
+    display: inline-block !important;
+}
+
+.kpi-trend img {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+/* Section header layout */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+}
+
+.header-title .title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #154212;
+    letter-spacing: -0.75px;
+    margin-bottom: 4px;
+}
+
+.header-title .subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #42493e;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.filter-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f4f4ef;
+    border-radius: 9999px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #42493e;
+}
+
+.export-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #154212;
+    color: #fff;
+    border: none;
+    border-radius: 9999px;
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* KPI Grid */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.kpi-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.kpi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* CRITICAL: constrain kpi-icon so SVG doesn't render at full width */
+.kpi-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: rgba(45, 90, 39, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.kpi-icon img {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.kpi-trend {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 9999px;
+}
+
+.kpi-trend.positive {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.kpi-trend.negative {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.kpi-content .kpi-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #6b7268;
+    margin-bottom: 4px;
+}
+
+.kpi-content .kpi-value {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #154212;
+    letter-spacing: -0.5px;
+}
+
+.kpi-chart {
+    margin-top: auto;
+}
+
+.bar-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 36px;
+}
+
+.bar-chart div {
+    flex: 1;
+    background-color: rgba(45, 90, 39, 0.15);
+    border-radius: 2px 2px 0 0;
+    min-height: 4px;
+}
+
+.bar-chart div:last-child {
+    background-color: #2d5a27;
+}
+
+/* Charts area */
+.charts-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.chart-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.chart-header h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #154212;
+}
+
+.chart-filters {
+    display: flex;
+    gap: 4px;
+}
+
+.chart-filters button {
+    background-color: #f4f4ef;
+    border: none;
+    border-radius: 9999px;
+    padding: 6px 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #42493e;
+    cursor: pointer;
+}
+
+.chart-filters button:first-child {
+    background-color: #154212;
+    color: #fff;
+}
+
+.chart-body {
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chart-grid {
+    position: absolute;
+    inset: 0 0 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.chart-grid div {
+    border-top: 1px solid #f4f4ef;
+}
+
+.x-axis-labels {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: #6b7268;
+    margin-top: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.revenue-chart-visual {
+    position: relative;
+    z-index: 1;
+    height: 214px;
+    margin-top: 10px;
+}
+
+.revenue-chart-visual svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: visible;
+}
+
+.revenue-area {
+    fill: rgba(45, 90, 39, 0.08);
+}
+
+.revenue-line {
+    fill: none;
+    stroke: #2d5a27;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.revenue-chart-visual circle {
+    fill: #2d5a27;
+    stroke: #fff;
+    stroke-width: 3;
+}
+
+.revenue-tooltip {
+    position: absolute;
+    left: 58%;
+    top: 18px;
+    transform: translateX(-50%);
+    background: #154212;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 10px 18px rgba(21, 66, 18, 0.18);
+    white-space: nowrap;
+}
+
+/* Category breakdown chart */
+.category-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.cat-bar-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cat-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #42493e;
+}
+
+.bar-bg {
+    height: 6px;
+    background-color: #f4f4ef;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: #2d5a27;
+    border-radius: 9999px;
+}
+
+.cat-bar-item:nth-child(1) .bar-fill { width: 45%; }
+.cat-bar-item:nth-child(2) .bar-fill { width: 30%; }
+.cat-bar-item:nth-child(3) .bar-fill { width: 15%; }
+.cat-bar-item:nth-child(4) .bar-fill { width: 10%; }
+
+.top-selling {
+    display: flex;
+    gap: 12px;
+    padding: 12px 16px;
+    background-color: #f4f4ef;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #42493e;
+    line-height: 1.5;
+}
+
+/* Transaction table */
+.transaction-table-area {
+    background-color: #f4f4ef;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.table-header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+}
+
+.table-title h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #154212;
+}
+
+.table-title p {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #6b7268;
+    margin-top: 2px;
+}
+
+.table-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.search-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-wrap input {
+    background-color: #fff;
+    border: none;
+    border-radius: 9999px;
+    padding: 8px 16px 8px 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #42493e;
+    outline: none;
+    width: 200px;
+}
+
+.search-wrap img {
+    position: absolute;
+    left: 14px;
+}
+
+.transaction-table-area table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-table-area thead {
+    background-color: rgba(250, 250, 249, 0.5);
+}
+
+.transaction-table-area th {
+    padding: 16px 24px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #6b7268;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.transaction-table-area td {
+    padding: 18px 24px;
+    border-top: 1px solid rgba(231, 229, 228, 0.4);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #1a1c19;
+    vertical-align: middle;
+}
+
+.transaction-table-area td div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.table-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #6b7268;
+}
+
+.table-pagination div {
+    display: flex;
+    gap: 4px;
+}
+
+.table-pagination button {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #42493e;
+}
+
+.table-pagination button:first-child,
+.table-pagination button:last-child {
+    background-color: #fff;
+    border: 1px solid #e8e8e3;
+}
+
+.chart-body img[alt="Line"] {
+    max-height: 90px !important;
+    object-fit: contain;
+}
+
+.chart-body img[alt="Tooltip"] {
+    width: 79px !important;
+    height: 48px !important;
+}
+
+/* Transaction table status pills */
+.rev-status {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    display: inline-block;
+    white-space: nowrap;
+}
+.rev-status.delivered  { background-color: rgba(45,90,39,0.1);   color: #2d5a27; }
+.rev-status.processing { background-color: rgba(21,66,18,0.05);  color: #2d5a27; }
+.rev-status.shipping   { background-color: rgba(21,66,18,0.1);   color: #154212; }
+.rev-status.pending    { background-color: rgba(242,221,192,0.3); color: #6b5c46; }
+.rev-status.cancelled  { background-color: rgba(255,218,214,0.2); color: #ba1a1a; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+    .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .kpi-card {
+        padding: 16px;
+    }
+    .kpi-content .kpi-value {
+        font-size: 18px;
+    }
+    .header-title .title {
+        font-size: 22px;
+    }
+    .chart-card {
+        padding: 16px;
+    }
+    .transaction-table-area {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .transaction-table-area table {
+        min-width: 600px;
+    }
+    .table-header-wrap {
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .table-pagination {
+        padding: 16px;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .header-actions {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kpi-grid {
+        grid-template-columns: 1fr;
+    }
+    .header-title .title {
+        font-size: 18px;
+    }
+    .search-wrap input {
+        width: 140px;
+    }
+}

@@ -1,0 +1,444 @@
+/* Care Guide Page Specific Styles */
+.care-guide-container {
+    width: 100%;
+    max-width: 1536px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 83px;
+    padding: 101px 24px 96px;
+    position: relative;
+}
+
+/* Page Title */
+.care-guide-title {
+    position: absolute;
+    top: 64px;
+    left: 41px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 40px;
+    color: #154212;
+    letter-spacing: -0.9px;
+    margin: 0;
+    width: max-content;
+}
+
+/* Hero Section */
+.care-hero {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    width: 100%;
+    max-width: 1232px;
+    min-height: 730px;
+    padding: 0;
+}
+
+.hero-text-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.plant-name {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #154212;
+    letter-spacing: -3.6px;
+    line-height: 1;
+    margin: 0;
+}
+
+.plant-overview-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #154212;
+    line-height: 32.5px;
+    max-width: 596px;
+    display: flex;
+    flex-direction: column;
+}
+
+.plant-overview-text p {
+    margin: 0;
+}
+
+.overview-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(45, 90, 39, 0.1);
+    border-radius: 8px;
+    padding: 4px 12px;
+    font-size: 14px;
+    color: #2d5a27;
+}
+
+.hero-img-col {
+    flex: 1;
+}
+
+.hero-img-box {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    background-color: #f4f4ef;
+    height: 730px;
+}
+
+.hero-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Bento Guide Grid */
+.guide-bento-section {
+    background-color: #f4f4ef;
+    width: 100%;
+    min-height: 1358px;
+    padding: 84px 0 78px;
+}
+
+.bento-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    width: 100%;
+    max-width: 1488px;
+    margin: 0 auto;
+}
+
+/* Guide Cards */
+.guide-card {
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Lighting Card (Large) */
+.card-lighting {
+    grid-column: span 8;
+    background-color: white;
+    min-height: 526px;
+}
+
+.card-lighting .card-icon-header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card-lighting .card-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #154212;
+    letter-spacing: -0.75px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.card-img-block {
+    width: 349px;
+    height: 349px;
+    border-radius: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.card-img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Water & Humidity Card (Dark Green) */
+.card-water {
+    grid-column: span 4;
+    background-color: #2d5a27;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-height: 599px;
+}
+
+.card-water .card-icon-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-water .card-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.card-water .card-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.card-water .card-text p {
+    margin: 0 0 8px 0;
+}
+
+/* Nutrition Card */
+.card-nutrition {
+    grid-column: span 4;
+    background-color: #f2ddc0;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: -70px;
+    min-height: 338px;
+}
+
+.card-nutrition .card-icon-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-nutrition .card-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #70604a;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.card-nutrition .card-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: rgba(112, 96, 74, 0.8);
+    line-height: 1.6;
+}
+
+.card-nutrition .card-text p {
+    margin: 0 0 6px 0;
+}
+
+/* Disease Card (Large/Horizontal) */
+.card-disease {
+    grid-column: span 8;
+    background-color: white;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    min-height: 510px;
+}
+
+.disease-img {
+    flex: 1;
+    height: 196px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.disease-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.disease-info {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.disease-info .card-icon-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.disease-info .card-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #154212;
+    letter-spacing: -0.75px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.disease-info .card-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #42493e;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+.disease-info .card-text p {
+    margin: 0 0 6px 0;
+}
+
+/* Icon circles */
+.icon-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-circle img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.bg-green-light {
+    background-color: #bcf0ae;
+}
+
+.bg-green-lighter {
+    background-color: #9dd090;
+}
+
+.bg-brown-transparent {
+    background-color: rgba(112, 96, 74, 0.2);
+}
+
+.bg-pink-light {
+    background-color: #ffd9e4;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .care-hero {
+        flex-direction: column;
+    }
+
+    .hero-img-box {
+        height: 520px;
+    }
+
+    .bento-grid-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .card-lighting,
+    .card-water,
+    .card-nutrition,
+    .card-disease {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .card-water,
+    .card-nutrition {
+        min-height: auto;
+    }
+
+    .card-nutrition {
+        margin-top: 0;
+    }
+
+    .card-disease {
+        flex-direction: column;
+    }
+
+    .card-lighting {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .card-img-block {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .care-guide-container {
+        gap: 56px;
+        padding: 80px 16px 72px;
+    }
+
+    .care-guide-title {
+        position: static;
+        font-size: 40px;
+        line-height: 44px;
+        align-self: flex-start;
+    }
+
+    .plant-name {
+        font-size: 32px;
+        letter-spacing: -1.2px;
+    }
+
+    .plant-overview-text {
+        font-size: 16px;
+    }
+
+    .hero-img-box {
+        height: 420px;
+    }
+
+    .guide-bento-section {
+        padding: 48px 16px;
+    }
+
+    .guide-card {
+        padding: 24px;
+    }
+
+    .card-lighting .card-title,
+    .disease-info .card-title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .care-guide-title {
+        font-size: 32px;
+    }
+    .plant-name {
+        font-size: 24px;
+    }
+    .plant-overview-text {
+        font-size: 14px;
+    }
+    .hero-img-box {
+        height: 300px;
+    }
+    .card-title {
+        font-size: 22px;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+    .bento-grid-wrapper {
+        padding: 0 12px;
+    }
+}

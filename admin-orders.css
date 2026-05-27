@@ -1,0 +1,417 @@
+/* Admin Orders Specific Styles */
+
+/* Hero Title Section */
+.hero-title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.page-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #154212;
+    margin-bottom: 8px;
+}
+
+.page-subheading {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #42493e;
+}
+
+.btn-export {
+    background-color: #f4f4ef;
+    border: 1px solid rgba(194, 201, 187, 0.2);
+    border-radius: 9999px;
+    padding: 13px 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-export:hover {
+    background-color: #e8e8e3;
+}
+
+.btn-export img {
+    width: 13.33px;
+    height: 17.5px;
+}
+
+.btn-export span {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #154212;
+}
+
+/* Summary Bento Grid */
+.summary-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.bento-card {
+    background-color: #f4f4ef;
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bento-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.bento-icon-wrap {
+    width: 42px;
+    height: 42px;
+}
+
+.bento-icon-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bento-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 9999px;
+}
+
+.bento-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bento-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #6b5c46;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+
+.bento-value {
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* Common text colors for bento */
+.text-green { color: #154212; }
+.bg-green-light { background-color: rgba(21, 66, 18, 0.05); }
+
+.text-brown { color: #6b5c46; }
+.bg-brown-light { background-color: rgba(107, 92, 70, 0.05); }
+
+.text-pink { color: #60233e; }
+.bg-pink-light { background-color: #ffd9e4; }
+
+.text-red { color: #ba1a1a; }
+.bg-red-light { background-color: rgba(255, 218, 214, 0.2); }
+
+.text-gray { color: #42493e; }
+.bg-gray { background-color: #e3e3de; }
+
+/* Table Section */
+.table-section {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.filter-bar {
+    background-color: rgba(244, 244, 239, 0.3);
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-tab {
+    background: transparent;
+    border: none;
+    border-radius: 9999px;
+    padding: 8px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #42493e;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-tab.active {
+    background-color: #2d5a27;
+    color: #fff;
+}
+
+.filter-tab:hover:not(.active) {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.btn-adv-filter {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #42493e;
+    cursor: pointer;
+}
+
+.btn-adv-filter img {
+    width: 13.5px;
+    height: 9px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    padding: 32px;
+    text-align: left;
+    border-bottom: 1px solid rgba(194, 201, 187, 0.1);
+}
+
+.data-table th {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #6b5c46;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    padding: 20px 32px;
+}
+
+.data-table th.text-right {
+    text-align: right;
+}
+
+.order-id {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #154212;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.customer-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1c19;
+}
+
+.data-table td {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #42493e;
+}
+
+.amount {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #154212;
+}
+
+.status-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 9999px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.action-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.action-btn img {
+    height: 14px;
+    object-fit: contain;
+}
+
+/* Pagination Shell */
+.pagination-shell {
+    background-color: rgba(244, 244, 239, 0.1);
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-info {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #42493e;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-arrow {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(194, 201, 187, 0.2);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.page-arrow.disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.page-arrow img {
+    height: 9px;
+}
+
+.page-num {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #42493e;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.page-num.active {
+    background-color: #154212;
+    color: #fff;
+}
+
+.page-num:hover:not(.active) {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.page-dots {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #42493e;
+    padding: 0 4px;
+}
+
+/* Avatar color palette — named for static rows, c0–c4 cycle for dynamic rows */
+.avatar-nh, .avatar-c0 { background-color: #bcf0ae; color: #154212; }
+.avatar-tl, .avatar-c1 { background-color: #f5dfc3; color: #6b5c46; }
+.avatar-lm, .avatar-c2 { background-color: #ffd9e4; color: #60233e; }
+.avatar-pv, .avatar-c3 { background-color: rgba(21,66,18,0.1); color: #154212; }
+.avatar-kd, .avatar-c4 { background-color: #e3e3de; color: #42493e; }
+
+/* Status badge color variants */
+.status-badge.delivered { background-color: rgba(45,90,39,0.1); color: #2d5a27; }
+.status-badge.pending   { background-color: rgba(242,221,192,0.3); color: #6b5c46; }
+.status-badge.processing { background-color: rgba(21,66,18,0.05); color: #2d5a27; }
+.status-badge.shipping  { background-color: rgba(21,66,18,0.1); color: #154212; }
+.status-badge.cancelled { background-color: rgba(255,218,214,0.2); color: #ba1a1a; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+    .summary-bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .summary-bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .bento-card {
+        padding: 20px;
+    }
+    .bento-value {
+        font-size: 22px;
+    }
+    .filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px;
+    }
+    .filter-tabs {
+        flex-wrap: wrap;
+    }
+    .pagination-shell {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .summary-bento-grid {
+        grid-template-columns: 1fr;
+    }
+    .bento-value {
+        font-size: 18px;
+    }
+}

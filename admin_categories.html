@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mầm Xanh - Quản lý danh mục</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/admin-categories.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Manrope:wght@600;700;800&family=Miama&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+    <div class="admin-sidebar-overlay"></div>
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="admin-brand">
+                <div class="logo-wrapper">
+                    <div class="logo-bg-nav"></div>
+                    <img class="logo-icon-nav" src="../assets/figma/4f72c2ec-7179-4272-b845-aea0c5a160df.png" alt="Logo">
+                </div>
+                <div class="brand-name">Mầm Xanh</div>
+            </div>
+
+            <nav class="admin-nav">
+                <a href="dashboard.html" class="admin-nav-item">
+                    <img src="../assets/figma/ae323a79-83a6-4ffb-879c-9e4a5be34c60.svg" alt="Overview">
+                    <span>Tổng quan</span>
+                </a>
+                <a href="admin_products.html" class="admin-nav-item">
+                    <img src="../assets/figma/4624f88b-4675-44dd-bd26-413c92c281fa.svg" alt="Products">
+                    <span>Sản phẩm</span>
+                </a>
+                <a href="admin_categories.html" class="admin-nav-item active">
+                    <img src="../assets/figma/3ae4435a-8640-4b7f-9411-f183d7c2a2b4.svg" alt="Categories">
+                    <span>Danh mục</span>
+                </a>
+                <a href="admin_support.html" class="admin-nav-item">
+                    <img src="../assets/figma/025dcf5b-4ed3-4d92-861d-bf1c862a2bbc.svg" alt="Messages">
+                    <span>Tin nhắn</span>
+                </a>
+                <a href="admin_orders.html" class="admin-nav-item">
+                    <img src="../assets/figma/395c022d-2dd0-4bf2-af4f-0e1f5a5d2ab8.svg" alt="Orders">
+                    <span>Đơn hàng</span>
+                </a>
+                <a href="admin_promotions.html" class="admin-nav-item">
+                    <img src="../assets/figma/6f7a39f0-16be-4f8b-906b-1ff7d9d4c80a.svg" alt="Promotions">
+                    <span>Khuyến mãi</span>
+                </a>
+                <a href="admin_revenue.html" class="admin-nav-item">
+                    <img src="../assets/figma/0a143b48-b705-47b9-93f5-b5922a42a7ec.svg" alt="Analytics">
+                    <span>Doanh thu</span>
+                </a>
+                <a href="admin_analytics.html" class="admin-nav-item">
+                    <img src="../assets/figma/fa74ae3e-c061-411d-afba-de2b2c858832.svg" alt="Analyze">
+                    <span>Phân tích</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <!-- Header -->
+            <header class="admin-header">
+            <button class="admin-sidebar-toggle" aria-label="Menu"><span></span></button>
+                <div class="admin-search">
+                    <div class="admin-search-icon">
+                        <img src="../assets/figma/978bf268-1472-47ba-8460-752f7d97dfa6.svg" alt="Search">
+                    </div>
+                    <input type="text" placeholder="Tìm kiếm danh mục...">
+                </div>
+
+                <div class="admin-profile">
+                    <div class="admin-notif">
+                        <img src="../assets/figma/bb548abe-fc9d-41d4-ad73-da4164a0b088.svg" alt="Notifications">
+                        <span class="notif-dot"></span>
+                    </div>
+                    <div class="admin-user">
+                        <span class="user-role">Quản trị Mầm Xanh</span>
+                        <div class="user-avatar">
+                            <img src="../assets/figma/58e8437f-2cdc-4b9b-bc6d-56cf3b5393a2.jpg" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <div class="admin-content categories-content">
+                <div class="page-header-row">
+                    <div>
+                        <h2>Quản lý danh mục</h2>
+                        <p class="page-desc">Tổ chức và phân loại các loài cây trong hệ thống một cách khoa học và thẩm mỹ.</p>
+                    </div>
+                    <button class="btn-primary-solid btn-add">
+                        <img src="../assets/figma/00f8e2bb-5283-4447-93b8-8c3d2173cab4.svg" alt="Add">
+                        Thêm danh mục mới
+                    </button>
+                </div>
+
+                <!-- Stats Bento Grid -->
+                <div class="stats-bento-grid">
+                    <div class="stat-bento-card border-green">
+                        <div class="card-top">
+                            <span class="stat-eyebrow">Tổng số danh mục</span>
+                            <img src="../assets/figma/fcba12be-ac3d-4d2d-ab91-4a4e684f8302.svg" alt="I">
+                        </div>
+                        <span class="stat-large text-green-light">12</span>
+                        <div class="stat-trend">
+                            <img src="../assets/figma/720a823e-55f9-4e72-bb19-f67a2b95d732.svg" alt="up">
+                            <span class="trend-text">+2 so với tháng trước</span>
+                        </div>
+                    </div>
+                    <div class="stat-bento-card border-green-light">
+                        <div class="card-top">
+                            <span class="stat-eyebrow">Danh mục hoạt động</span>
+                            <img src="../assets/figma/d68ab70d-8ec7-442f-9475-c6ede4f10a0b.svg" alt="I">
+                        </div>
+                        <span class="stat-large text-green-light">10</span>
+                        <span class="stat-desc">Chiếm 83% tổng số hệ thống</span>
+                    </div>
+                    <div class="stat-bento-card border-pink">
+                        <div class="card-top">
+                            <span class="stat-eyebrow">Danh mục đang ẩn</span>
+                            <img src="../assets/figma/5a484fbb-da45-4896-8494-5f2e5721ea12.svg" alt="I">
+                        </div>
+                        <span class="stat-large">2</span>
+                        <span class="stat-desc">Cần kiểm tra lại nội dung</span>
+                    </div>
+                </div>
+
+                <!-- Category Table -->
+                <div class="cat-table-section">
+                    <div class="table-header">
+                        <h3>Danh sách phân loại</h3>
+                        <div class="table-actions">
+                            <button class="action-btn btn-category-filter"><img src="../assets/figma/2f069dd7-aed2-4f5b-ae2f-baf9fec11d01.svg" alt="F"></button>
+                            <button class="action-btn btn-category-sort"><img src="../assets/figma/f568f6d2-1d01-45ab-9e64-d51eb5d0d913.svg" alt="S"></button>
+                        </div>
+                    </div>
+
+                    <table class="categories-table">
+                        <thead>
+                            <tr>
+                                <th>Hình ảnh</th>
+                                <th>Tên danh mục</th>
+                                <th>Mô tả</th>
+                                <th>Số lượng sản phẩm</th>
+                                <th>Trạng thái</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1 -->
+                            <tr>
+                                <td>
+                                    <div class="cat-img">
+                                        <img src="../assets/figma/caeef0bf-fe55-4d83-8c2b-3b43ee06cfdc.jpg" alt="T">
+                                    </div>
+                                </td>
+                                <td><span class="cat-name">Nhiệt đới</span></td>
+                                <td><p class="cat-desc">Các loài cây nhiệt đới với tán lá rộng và x…</p></td>
+                                <td><span class="cat-qty">45</span></td>
+                                <td>
+                                    <div class="status-badge bg-green-light text-green-light">Hoạt động</div>
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="action-btn" data-action="Edit" title="Sửa"><img src="../assets/figma/911c0eb3-5297-4f60-aa03-c90dca39ec79.svg" alt="Edit"></button>
+                                        <button class="action-btn" data-action="View" title="Xem"><img src="../assets/figma/7fb08ea8-71c5-41f1-8fb2-0d49255f7b61.svg" alt="View"></button>
+                                        <button class="action-btn" data-action="Delete" title="Xóa"><img src="../assets/figma/9c55a93f-8bb7-4523-a579-1f343794660c.svg" alt="Delete"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr>
+                                <td>
+                                    <div class="cat-img">
+                                        <img src="../assets/figma/7362ee9c-83cb-4db8-b1a7-3bef2b33f6cc.png" alt="Trong nhà">
+                                    </div>
+                                </td>
+                                <td><span class="cat-name">Trong nhà</span></td>
+                                <td><p class="cat-desc">Cây lọc không khí, thích hợp trang trí khô…</p></td>
+                                <td><span class="cat-qty">32</span></td>
+                                <td>
+                                    <div class="status-badge bg-green-light text-green-light">Hoạt động</div>
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="action-btn" data-action="Edit" title="Sửa"><img src="../assets/figma/911c0eb3-5297-4f60-aa03-c90dca39ec79.svg" alt="Edit"></button>
+                                        <button class="action-btn" data-action="View" title="Xem"><img src="../assets/figma/7fb08ea8-71c5-41f1-8fb2-0d49255f7b61.svg" alt="View"></button>
+                                        <button class="action-btn" data-action="Delete" title="Xóa"><img src="../assets/figma/9c55a93f-8bb7-4523-a579-1f343794660c.svg" alt="Delete"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="pagination-shell">
+                        <span class="page-info">Hiển thị 1-4 trên tổng 12</span>
+                        <div class="pagination-controls">
+                            <button class="page-arrow"><img src="../assets/figma/42b2f5c2-8088-4788-83ae-af4d68074e63.svg" alt="P"></button>
+                            <button class="page-num active">1</button>
+                            <button class="page-num">2</button>
+                            <button class="page-num">3</button>
+                            <button class="page-arrow"><img src="../assets/figma/364170b3-ae61-4fc3-af18-678bbea3c850.svg" alt="N"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/store.js"></script>
+    <script src="../js/admin_categories.js"></script>
+    <script src="../js/admin-sidebar-toggle.js"></script>
+</body>
+</html>

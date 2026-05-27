@@ -1,0 +1,459 @@
+/* ============================================================
+   CART PAGE Styles (Refined)
+   ============================================================ */
+
+.cart-layout-grid {
+    display: grid;
+    grid-template-columns: 768px 352px;
+    gap: 64px;
+    padding: 34px 48px 0;
+    max-width: 1280px;
+}
+
+.cart-page-title {
+    font-family: var(--font-heading);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    color: var(--primary-darker);
+    margin-bottom: 16px;
+}
+
+.cart-page-subtitle {
+    width: 512px;
+    font-size: 18px;
+    color: var(--text-label);
+    line-height: 28px;
+    margin-bottom: 64px;
+}
+
+/* Items */
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+.cart-product-item {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    width: 768px;
+    min-height: 256px;
+}
+
+.cart-item-image {
+    width: 192px;
+    height: 256px;
+    background-color: #f4f4ef;
+    border-radius: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.cart-item-image img {
+    width: 133.33%;
+    height: 100%;
+    object-fit: cover;
+    max-width: none;
+    margin-left: -16.67%;
+}
+
+.cart-item-info {
+    flex: 1;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.cart-item-tag {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.cart-item-name {
+    font-family: 'Manrope', var(--font-heading);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--text);
+    margin-top: 4.5px;
+}
+
+.cart-item-price {
+    font-family: 'Manrope', var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--primary-dark);
+}
+
+.cart-item-desc {
+    font-size: 14px;
+    color: var(--text-label);
+    line-height: 22px;
+    margin-bottom: 24px;
+}
+
+.cart-item-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.cart-qty-control {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background-color: #e8e8e3;
+    border: 1px solid rgba(194, 201, 187, 0.2);
+    padding: 5px;
+    border-radius: 9999px;
+}
+
+.cart-qty-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.cart-qty-btn:hover {
+    background-color: #eeeee9;
+}
+
+.cart-qty-symbol {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: #1a1c19;
+    user-select: none;
+}
+
+.cart-qty-value {
+    width: 39.02px;
+    font-family: 'Manrope', var(--font-heading);
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
+}
+
+.cart-remove-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-label);
+}
+
+.cart-remove-icon {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    color: #42493e;
+}
+
+/* Upsell */
+.cart-upsell-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    width: 768px;
+    min-height: 264px;
+}
+
+.upsell-card {
+    padding: 32px;
+    border-radius: 24px;
+    position: relative;
+}
+
+.bg-tan {
+    background-color: #f2ddc0;
+}
+
+.bg-pink {
+    background-color: #ffd9e4;
+}
+
+.upsell-icon {
+    width: 24px;
+    height: 24px;
+    max-width: none;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    flex-shrink: 0;
+    margin-bottom: 24px;
+}
+
+.upsell-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-darker);
+    margin-bottom: 12px;
+}
+
+.upsell-desc {
+    font-size: 14px;
+    line-height: 20px;
+    color: #42493e;
+    margin-bottom: 24px;
+}
+
+.upsell-link {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--primary-dark);
+}
+
+.upsell-badge {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #60233e;
+}
+
+/* Sidebar Summary */
+.summary-card {
+    background-color: #f4f4ef;
+    width: 352px;
+    min-height: 552px;
+    padding: 33px;
+    border: 1px solid rgba(194, 201, 187, 0.1);
+    border-radius: 24px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    margin-bottom: 24px;
+}
+
+.summary-heading {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.summary-divider {
+    height: 1px;
+    background-color: #eeeee9;
+    margin: 24px 0;
+}
+
+.summary-total-row {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-darker);
+}
+
+.summary-total-value {
+    font-size: 24px;
+}
+
+.summary-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.summary-checkout-btn {
+    height: 64px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 12px;
+}
+
+.summary-checkout-icon {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+}
+
+.summary-continue-btn {
+    height: 58px;
+    padding: 17px 1px;
+    background-color: transparent;
+    border: 1px solid #c2c9bb;
+    font-size: 14px;
+}
+
+.promo-card {
+    background-color: #eeeee9;
+    width: 352px;
+    min-height: 132px;
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.promo-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    display: block;
+}
+
+.promo-input-group {
+    display: flex;
+    gap: 14px;
+    width: 316.64px;
+}
+
+.promo-input {
+    flex: 1;
+    background-color: #fff;
+    border: none;
+    border-radius: 16px;
+    padding: 19px 16px 20px;
+    font-size: 14px;
+}
+
+.promo-apply-btn {
+    background-color: #154212;
+    color: #fff;
+    width: 88px;
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.promo-message {
+    margin-top: 10px;
+    min-height: 18px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.promo-message.success {
+    color: #166534;
+}
+
+.promo-message.error {
+    color: #b91c1c;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+    .cart-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 24px 32px;
+    }
+    .cart-product-item {
+        width: 100%;
+    }
+    .cart-upsell-grid {
+        width: 100%;
+    }
+    .summary-card {
+        width: 100%;
+        min-height: auto;
+    }
+    .promo-card {
+        width: 100%;
+    }
+    .cart-page-subtitle {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-layout-grid {
+        padding: 16px;
+        gap: 24px;
+    }
+    .cart-page-title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .cart-page-subtitle {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+    .cart-product-item {
+        gap: 16px;
+        min-height: auto;
+    }
+    .cart-item-image {
+        width: 120px;
+        height: 160px;
+    }
+    .cart-item-name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .cart-item-price {
+        font-size: 16px;
+    }
+    .cart-list {
+        gap: 24px;
+    }
+    .cart-upsell-grid {
+        grid-template-columns: 1fr;
+    }
+    .promo-input-group {
+        width: 100%;
+    }
+    .summary-heading {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-page-title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .cart-product-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .cart-item-image {
+        width: 100%;
+        height: 200px;
+    }
+    .cart-item-info {
+        height: auto;
+    }
+    .summary-checkout-btn {
+        height: auto;
+        padding: 16px;
+    }
+    .summary-continue-btn {
+        height: auto;
+        padding: 14px;
+    }
+}

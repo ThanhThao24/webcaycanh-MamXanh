@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mầm Xanh - Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/admin-products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Manrope:wght@600;700;800&family=Miama&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+    <div class="admin-sidebar-overlay"></div>
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="admin-brand">
+                <div class="logo-wrapper">
+                    <div class="logo-bg-nav"></div>
+                    <img class="logo-icon-nav" src="../assets/figma/4b9e6e0f-eb58-449f-9b44-3d39b9e665a3.png" alt="Logo">
+                </div>
+                <div class="brand-name">Mầm Xanh</div>
+            </div>
+
+            <nav class="admin-nav">
+                <a href="dashboard.html" class="admin-nav-item">
+                    <img src="../assets/figma/b6600022-a2ee-49a8-928b-9410aa6d42c0.svg" alt="Overview">
+                    <span>Tổng quan</span>
+                </a>
+                <a href="admin_products.html" class="admin-nav-item active">
+                    <img src="../assets/figma/07af821b-ac81-4bae-8f47-f818b47d3e98.svg" alt="Products">
+                    <span>Sản phẩm</span>
+                </a>
+                <a href="admin_categories.html" class="admin-nav-item">
+                    <img src="../assets/figma/83c6ec0b-fb5d-4d27-93a0-d425c9600f5e.svg" alt="Categories">
+                    <span>Danh mục</span>
+                </a>
+                <a href="admin_support.html" class="admin-nav-item">
+                    <img src="../assets/figma/2aa6aec2-0e58-442a-835d-dad60982e361.svg" alt="Messages">
+                    <span>Tin nhắn</span>
+                </a>
+                <a href="admin_orders.html" class="admin-nav-item">
+                    <img src="../assets/figma/864b8cda-47a1-4abe-9b4d-ddd750b748ee.svg" alt="Orders">
+                    <span>Đơn hàng</span>
+                </a>
+                <a href="admin_promotions.html" class="admin-nav-item">
+                    <img src="../assets/figma/a7e582e0-e53d-42ea-8824-3c51e7cc31a3.svg" alt="Promotions">
+                    <span>Khuyến mãi</span>
+                </a>
+                <a href="admin_revenue.html" class="admin-nav-item">
+                    <img src="../assets/figma/50d516d3-84fa-4b8c-83e5-96911e157b11.svg" alt="Analytics">
+                    <span>Doanh thu</span>
+                </a>
+                <a href="admin_analytics.html" class="admin-nav-item">
+                    <img src="../assets/figma/40558fb2-1fee-47df-8ada-bc271755cd38.svg" alt="Analyze">
+                    <span>Phân tích</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <!-- Header -->
+            <header class="admin-header">
+            <button class="admin-sidebar-toggle" aria-label="Menu"><span></span></button>
+                <div class="admin-search">
+                    <div class="admin-search-icon">
+                        <img src="../assets/figma/f67abaf5-c131-4a3c-801b-c77098fdd91b.svg" alt="Search">
+                    </div>
+                    <input type="text" placeholder="Tìm kiếm nhanh đơn hàng, khách hàng...">
+                </div>
+
+                <div class="admin-profile">
+                    <div class="admin-notif">
+                        <img src="../assets/figma/b222a3be-b587-49b7-b7dd-8111d3800cc5.svg" alt="Notifications">
+                        <span class="notif-dot"></span>
+                    </div>
+                    <div class="admin-user">
+                        <span class="user-role">Quản trị Mầm Xanh</span>
+                        <div class="user-avatar">
+                            <img src="../assets/figma/6d65ee8c-6291-4898-84a7-e9ba2678ef9c.jpg" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <div class="admin-content">
+                <div class="hero-title-section">
+                    <div>
+                        <span class="page-eyebrow">Cổng Quản Lý</span>
+                        <h2 class="page-heading">Quản lý sản phẩm</h2>
+                        <p class="page-subheading">Tiếp nhận và quản lý các loài thực vật quý hiếm trong bộ sưu tập Mầm Xanh.</p>
+                    </div>
+                    <button class="btn-primary-solid btn-add">
+                        <img src="../assets/figma/1d13d1c8-8c92-4d9f-aa98-8e8dfab2fecd.svg" alt="Add">
+                        Thêm sản phẩm mới
+                    </button>
+                </div>
+
+                <!-- Bento Filter Bar -->
+                <div class="product-filters">
+                    <div class="filter-box">
+                        <div class="filter-icon-wrap">
+                            <img src="../assets/figma/9f921557-e3d5-4980-a95c-454a95169131.svg" alt="Category">
+                        </div>
+                        <div class="filter-content">
+                            <label>Danh mục</label>
+                            <div class="select-wrapper">
+                                <span>Tất cả danh mục</span>
+                                <img src="../assets/figma/2c672bd1-a108-4bba-ad90-b521f74f577a.svg" alt="Down">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-box">
+                        <div class="filter-icon-wrap">
+                            <img src="../assets/figma/c8283b68-4827-4ea4-8080-a3e15b86b749.svg" alt="Price">
+                        </div>
+                        <div class="filter-content">
+                            <label>Mức giá</label>
+                            <div class="select-wrapper">
+                                <span>Mọi mức giá</span>
+                                <img src="../assets/figma/2c672bd1-a108-4bba-ad90-b521f74f577a.svg" alt="Down">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-box">
+                        <div class="filter-icon-wrap">
+                            <img src="../assets/figma/22287f0e-2bfb-4b5a-8626-0744ea33c4ec.svg" alt="Status">
+                        </div>
+                        <div class="filter-content">
+                            <label>Trạng thái</label>
+                            <div class="select-wrapper">
+                                <span>Tất cả</span>
+                                <img src="../assets/figma/2c672bd1-a108-4bba-ad90-b521f74f577a.svg" alt="Down">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table Section -->
+                <div class="table-section">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Hình ảnh</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Danh mục</th>
+                                <th>Giá bán</th>
+                                <th>Tồn kho</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1 -->
+                            <tr>
+                                <td>
+                                    <div class="product-img">
+                                        <img src="../assets/figma/5c898a50-38eb-4a36-a1ed-be7783c672bd.jpg" alt="Monstera">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="product-name-col">
+                                        <span class="product-name">Monstera Deliciosa</span>
+                                        <span class="product-sku">Mã SP: LVC-MON-001</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="category-badge">Nhiệt đới</div>
+                                </td>
+                                <td><span class="product-price">1,250,000đ</span></td>
+                                <td>
+                                    <div class="stock-info">
+                                        <div class="stock-bar">
+                                            <div class="stock-fill bg-green"></div>
+                                        </div>
+                                        <span class="stock-count">42</span>
+                                    </div>
+                                </td>
+                                <td class="actions">
+                                    <div>
+                                        <button class="action-btn" data-action="Edit" title="Sửa"><img src="../assets/figma/dbdf139c-7f3a-4a3a-95d5-40cd336e9c3e.svg" alt="Edit"></button>
+                                        <button class="action-btn" data-action="Delete" title="Xóa"><img src="../assets/figma/88eb4ffb-7ab8-4c3b-892d-d0f307d44580.svg" alt="Delete"></button>
+                                        <button class="action-btn" data-action="View" title="Xem"><img src="../assets/figma/a1735569-7705-4f84-9255-ed8ff870116b.svg" alt="View"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr>
+                                <td>
+                                    <div class="product-img">
+                                        <img src="../assets/figma/0053868c-dffe-4641-929c-c43e57fe78e3.jpg" alt="Bàng">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="product-name-col">
+                                        <span class="product-name">Cây Bàng Singapore</span>
+                                        <span class="product-sku">Mã SP: LVC-FIG-042</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="category-badge">Cây trong nhà</div>
+                                </td>
+                                <td><span class="product-price">2,800,000đ</span></td>
+                                <td>
+                                    <div class="stock-info">
+                                        <div>
+                                            <div class="stock-bar">
+                                                <div class="stock-fill bg-red"></div>
+                                            </div>
+                                            <span class="stock-count">3</span>
+                                        </div>
+                                        <span class="stock-status">Sắp hết hàng</span>
+                                    </div>
+                                </td>
+                                <td class="actions">
+                                    <div>
+                                        <button class="action-btn" data-action="Edit" title="Sửa"><img src="../assets/figma/dbdf139c-7f3a-4a3a-95d5-40cd336e9c3e.svg" alt="Edit"></button>
+                                        <button class="action-btn" data-action="Delete" title="Xóa"><img src="../assets/figma/88eb4ffb-7ab8-4c3b-892d-d0f307d44580.svg" alt="Delete"></button>
+                                        <button class="action-btn" data-action="View" title="Xem"><img src="../assets/figma/a1735569-7705-4f84-9255-ed8ff870116b.svg" alt="View"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Row 3 -->
+                            <tr>
+                                <td>
+                                    <div class="product-img">
+                                        <img src="../assets/figma/c3d6e4b9-f8cb-4f90-9b72-0f95c37db2d2.png" alt="Calathea">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="product-name-col">
+                                        <span class="product-name">Calathea Orbifolia</span>
+                                        <span class="product-sku">Mã SP: LVC-CAL-018</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="category-badge">Nhiệt đới</div>
+                                </td>
+                                <td><span class="product-price">950,000đ</span></td>
+                                <td>
+                                    <div class="stock-info">
+                                        <div class="stock-bar">
+                                            <div class="stock-fill bg-green"></div>
+                                        </div>
+                                        <span class="stock-count">28</span>
+                                    </div>
+                                </td>
+                                <td class="actions">
+                                    <div>
+                                        <button class="action-btn" data-action="Edit" title="Sửa"><img src="../assets/figma/dbdf139c-7f3a-4a3a-95d5-40cd336e9c3e.svg" alt="Edit"></button>
+                                        <button class="action-btn" data-action="Delete" title="Xóa"><img src="../assets/figma/88eb4ffb-7ab8-4c3b-892d-d0f307d44580.svg" alt="Delete"></button>
+                                        <button class="action-btn" data-action="View" title="Xem"><img src="../assets/figma/a1735569-7705-4f84-9255-ed8ff870116b.svg" alt="View"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="pagination-shell">
+                        <span class="page-info">Đang hiển thị 1 đến 10 trong tổng số 245 loại cây</span>
+                        <div class="pagination-controls">
+                            <button class="page-arrow"><img src="../assets/figma/58543b26-a1c9-4ae8-a70d-76c3e7d97759.svg" alt="P"></button>
+                            <button class="page-num active">1</button>
+                            <button class="page-num">2</button>
+                            <button class="page-num">3</button>
+                            <button class="page-arrow"><img src="../assets/figma/c163d3ae-8416-40e1-89d5-63bab8e51982.svg" alt="N"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Grid Widgets -->
+                <div class="dashboard-widgets-grid">
+                    <div class="widget-card">
+                        <span class="widget-eyebrow">Sức khỏe kho hàng</span>
+                        <h3 class="widget-value">94%</h3>
+                        <p class="widget-desc">Mức tồn kho trung bình trên tất cả các danh mục.</p>
+                    </div>
+                    <div class="widget-card">
+                        <span class="widget-eyebrow">Cảnh báo tồn kho thấp</span>
+                        <h3 class="widget-value">12</h3>
+                        <p class="widget-desc">Sản phẩm cần được nhập hàng ngay lập tức.</p>
+                    </div>
+                    <div class="widget-card">
+                        <span class="widget-eyebrow">Tăng trưởng hàng tháng</span>
+                        <h3 class="widget-value">+18%</h3>
+                        <p class="widget-desc">Sự gia tăng đa dạng các mẫu vật trong tháng này.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Floating FAB -->
+        <button class="fab-support">
+            <img src="../assets/figma/1bb4d510-16d8-45bd-a7f2-2d2b8d442f6a.svg" alt="Support">
+        </button>
+    </div>
+    <script src="../js/store.js"></script>
+    <script src="../js/admin_products.js"></script>
+    <script src="../js/admin-sidebar-toggle.js"></script>
+</body>
+</html>

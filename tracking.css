@@ -1,0 +1,598 @@
+/* Tracking Page Specific Styles */
+.tracking-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 37px 24px 80px;
+}
+
+/* Header */
+.tracking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 1232px;
+    min-height: 56px;
+    margin-bottom: 48px;
+}
+
+.tracking-order-id {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #42493e;
+}
+
+.tracking-order-id strong {
+    font-weight: 600;
+}
+
+.tracking-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #154212;
+    letter-spacing: -2.4px;
+}
+
+.tracking-status-badge {
+    background-color: rgba(45, 90, 39, 0.1);
+    border: 1px solid rgba(45, 90, 39, 0.2);
+    border-radius: 9999px;
+    width: 350.31px;
+    min-height: 50px;
+    padding: 13px 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #154212;
+    border-radius: 50%;
+}
+
+.tracking-status-badge span:not(.status-dot) {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #154212;
+}
+
+/* Layout */
+.tracking-layout {
+    display: grid;
+    grid-template-columns: 805.3334px 378.6667px;
+    gap: 48px;
+}
+
+.tracking-main-col {
+    width: 805.3334px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+/* Progress Section */
+.progress-section {
+    width: 805.3334px;
+    min-height: 236px;
+    background-color: #f4f4ef;
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.progress-section h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #154212;
+    margin: 0;
+}
+
+.progress-timeline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 741.3334px;
+    min-height: 104px;
+}
+
+.progress-line {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(194, 201, 187, 0.3);
+    z-index: 0;
+}
+
+.progress-step {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 135px;
+}
+
+.step-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.step-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.step-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+}
+
+.step-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.step-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #42493e;
+}
+
+/* Step States */
+.completed .step-icon {
+    background-color: #154212;
+}
+
+.completed .step-name {
+    color: #1a1c19;
+}
+
+.active .step-icon {
+    background-color: #2d5a27;
+}
+
+.active .active-glow::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border: 4px solid rgba(45, 90, 39, 0.1);
+    border-radius: 50%;
+}
+
+.active .step-name {
+    color: #154212;
+}
+
+.pending .step-icon {
+    background-color: #e8e8e3;
+}
+
+.pending .step-name {
+    color: #72796e;
+}
+
+/* Ordered Products Section */
+.ordered-products-section {
+    width: 805.3334px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.section-header-inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-header-inline h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #1a1c19;
+    margin: 0;
+}
+
+.item-count-badge {
+    background-color: #eeeee9;
+    color: #42493e;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.ordered-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ordered-product-card {
+    width: 805.3334px;
+    min-height: 144px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.product-img-box {
+    width: 96px;
+    height: 96px;
+    background-color: #eeeee9;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 0;
+}
+
+.product-img-box.mixed-bg {
+    background-color: #f4f4ef;
+}
+
+.product-img-box.mixed-bg img:nth-child(1) {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.product-img-box.mixed-bg img:nth-child(2) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    margin-left: 0;
+    top: 20px;
+}
+
+.product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.product-name-row h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #154212;
+    margin: 0;
+}
+
+.product-variant {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #42493e;
+}
+
+.product-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.product-qty {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1a1c19;
+}
+
+.product-price {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #154212;
+}
+
+/* Sidebar Info Cards */
+.tracking-sidebar {
+    width: 378.6667px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.info-card {
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dark-card {
+    min-height: 305.25px;
+    background-color: #2d5a27;
+    color: #fff;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    gap: 24px;
+}
+
+.light-card {
+    min-height: 282px;
+    background-color: #e8e8e3;
+    gap: 24px;
+}
+
+.white-card {
+    min-height: 274px;
+    background-color: #fff;
+    border: 1px solid rgba(194, 201, 187, 0.2);
+    gap: 16px;
+}
+
+.card-header-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0;
+}
+
+.card-header-icon img {
+    width: 18px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.card-header-icon h3,
+.white-card h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    margin: 0;
+}
+
+.light-card .card-header-icon h3,
+.white-card h3 {
+    font-size: 18px;
+}
+
+.text-dark {
+    color: #1a1c19;
+}
+
+.delivery-date-large {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.day {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -2.4px;
+    line-height: 48px;
+}
+
+.month-year {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.9;
+    margin-top: 4px;
+}
+
+.delivery-note {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.625;
+    opacity: 0.8;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15.75px;
+}
+
+.address-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.address-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.address-group label {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #42493e;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.address-group p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1a1c19;
+}
+
+.address-group:first-child p {
+    font-weight: 600;
+}
+
+.address-group:last-child p {
+    line-height: 26px;
+}
+
+.support-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #42493e;
+    line-height: 20px;
+    margin: 0;
+}
+
+.support-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.support-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: transparent;
+    border-radius: 16px;
+    padding: 12px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.support-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.support-link img {
+    width: 20px;
+    height: 20px;
+}
+
+.support-link span {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #1a1c19;
+}
+
+@media (max-width: 1024px) {
+    .tracking-container {
+        padding: 32px 24px 64px;
+    }
+
+    .tracking-header,
+    .tracking-main-col,
+    .progress-section,
+    .ordered-products-section,
+    .ordered-product-card,
+    .tracking-sidebar {
+        width: 100%;
+    }
+
+    .tracking-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tracking-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .tracking-status-badge {
+        width: auto;
+    }
+
+    .progress-timeline {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .progress-timeline {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        margin: 0;
+        padding-left: 24px;
+    }
+
+    .progress-line {
+        top: 0;
+        bottom: 0;
+        left: 47px;
+        width: 2px;
+        height: auto;
+    }
+
+    .progress-step {
+        flex-direction: row;
+        width: 100%;
+        text-align: left;
+    }
+
+    .step-info {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .tracking-title {
+        font-size: 28px;
+    }
+    .day {
+        font-size: 32px;
+    }
+    .tracking-layout {
+        padding: 0 12px !important;
+    }
+    .sidebar-card {
+        padding: 16px;
+    }
+    .ordered-product-card {
+        flex-direction: column;
+    }
+    .product-img-wrap {
+        width: 100%;
+        height: 180px;
+    }
+}

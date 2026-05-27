@@ -1,0 +1,528 @@
+/* ============================================================
+   HOME PAGE — index.html (Figma Redesign)
+   ============================================================ */
+
+/* ---------- Hero Section ---------- */
+.hero-section {
+    width: 100%;
+    background-color: var(--bg-alt);
+}
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 609px;
+    overflow: hidden;
+}
+
+.hero-bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-cover: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 269px;
+    left: 67px;
+    width: 515px;
+    z-index: 10;
+}
+
+.hero-text-wrap {
+    margin-bottom: 80px;
+}
+
+.hero-slogan-top {
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primary);
+    line-height: 29.25px;
+    margin-bottom: 0;
+}
+
+.hero-slogan-main {
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    line-height: 29.25px;
+}
+
+.btn-hero-explore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 58px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    margin-left: 97px;
+}
+
+.btn-hero-explore:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* ---------- Bento Grid ---------- */
+.bento-section {
+    margin-top: 22px;
+    padding: 96px 0 74px;
+    background-color: var(--bg-alt);
+}
+
+.section-heading-bento {
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -0.9px;
+    color: #1a1c19;
+    margin-bottom: 64px;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 160px 256px;
+    gap: 24px;
+}
+
+.bento-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bento-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bento-office .bento-img {
+    height: 501.66%;
+    top: -200.83%;
+}
+
+.bento-fengshui .bento-img {
+    height: 475%;
+    top: -187.5%;
+}
+
+.bento-overlay-dark {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.bento-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    z-index: 5;
+}
+
+.bento-office {
+    grid-column: span 8;
+    grid-row: 1;
+}
+
+.bento-easy {
+    grid-column: span 4;
+    grid-row: 1;
+}
+
+.bento-easy .bento-title {
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.bento-fengshui {
+    grid-column: span 12;
+    grid-row: 2;
+}
+
+.bento-fengshui .bento-title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+/* ---------- Product Sections ---------- */
+.products-section {
+    padding: 36px 0 45px;
+}
+
+.products-bestseller {
+    background-color: var(--card-cream);
+    min-height: 530px;
+}
+
+.products-office {
+    background-color: var(--card-cream);
+    min-height: 662px;
+}
+
+.products-desk {
+    background-color: var(--card-cream);
+    min-height: 663px;
+}
+
+.products-bestseller .section-title {
+    margin-bottom: 64px;
+}
+
+.products-office .section-title,
+.products-desk .section-title {
+    margin-bottom: 40px;
+}
+
+.products-bestseller .grid-4 {
+    grid-template-columns: repeat(4, 235px);
+    gap: 78px;
+    justify-content: center;
+}
+
+.products-bestseller .product-image {
+    height: 281.52px;
+    aspect-ratio: auto;
+}
+
+.centered-grid {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.products-office .centered-grid,
+.products-desk .centered-grid,
+.products-fengshui .centered-grid {
+    grid-template-columns: repeat(3, 307px);
+    gap: 100px;
+    justify-content: center;
+}
+
+.products-office .product-image,
+.products-desk .product-image {
+    height: 376px;
+    aspect-ratio: auto;
+}
+
+/* Glass Card for Feng Shui */
+.products-fengshui {
+    position: relative;
+    min-height: 730px;
+    display: flex;
+    align-items: center;
+    padding: 43px 0 78px;
+}
+
+.fengshui-bg-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.fengshui-bg-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.relative-z {
+    position: relative;
+    z-index: 10;
+}
+
+.card-glass .product-image {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    height: 389px;
+    aspect-ratio: auto;
+}
+
+/* ---------- News Section ---------- */
+.magazine-section {
+    padding: 40px 0 43px;
+    background-color: var(--bg-alt);
+}
+
+.magazine-title-main {
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--primary);
+    text-decoration: underline;
+    margin-bottom: 70px;
+}
+
+.magazine-layout {
+    display: grid;
+    grid-template-columns: 568px 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.magazine-media {
+    border-radius: 15px;
+    overflow: hidden;
+    height: 297px;
+}
+
+.magazine-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.magazine-heading {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.magazine-desc {
+    font-family: 'Inter';
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .bento-item {
+        grid-column: span 12;
+        height: 250px;
+    }
+    .magazine-layout {
+        grid-template-columns: 1fr;
+    }
+    .hero-content {
+        left: 32px;
+        width: calc(100% - 64px);
+    }
+
+    /* Product grids — fluid */
+    .products-bestseller .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+    .products-office .centered-grid,
+    .products-desk .centered-grid,
+    .products-fengshui .centered-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+
+    /* Magazine */
+    .magazine-heading {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .magazine-desc {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 420px;
+    }
+    .hero-content {
+        top: 120px;
+        left: 16px;
+        width: calc(100% - 32px);
+    }
+    .hero-text-wrap {
+        margin-bottom: 40px;
+    }
+    .hero-slogan-top {
+        font-size: 16px;
+    }
+    .hero-slogan-main {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .btn-hero-explore {
+        width: 160px;
+        height: 48px;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    /* Bento */
+    .bento-section {
+        padding: 48px 0 40px;
+    }
+    .section-heading-bento {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+    .bento-title {
+        font-size: 24px !important;
+    }
+    .bento-grid {
+        gap: 16px;
+    }
+    .bento-item {
+        height: 200px;
+    }
+
+    /* Product grids */
+    .products-section {
+        padding: 24px 0 32px;
+    }
+    .products-bestseller,
+    .products-office,
+    .products-desk {
+        min-height: auto;
+    }
+    .products-bestseller .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .products-bestseller .product-image {
+        height: 200px;
+    }
+    .products-office .centered-grid,
+    .products-desk .centered-grid,
+    .products-fengshui .centered-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .products-office .product-image,
+    .products-desk .product-image {
+        height: 240px;
+    }
+    .card-glass .product-image {
+        height: 260px;
+    }
+    .products-bestseller .section-title {
+        margin-bottom: 32px;
+    }
+    .products-fengshui {
+        min-height: auto;
+        padding: 32px 0 48px;
+    }
+
+    /* Magazine */
+    .magazine-section {
+        padding: 24px 0 32px;
+    }
+    .magazine-title-main {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+    .magazine-heading {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 24px;
+    }
+    .magazine-desc {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+    .magazine-media {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-banner {
+        height: 360px;
+    }
+    .hero-content {
+        top: 80px;
+    }
+    .hero-slogan-main {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .hero-text-wrap {
+        margin-bottom: 24px;
+    }
+
+    /* Bento */
+    .bento-section {
+        padding: 32px 0;
+    }
+    .section-heading-bento {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+    .bento-title {
+        font-size: 20px !important;
+    }
+    .bento-item {
+        height: 160px;
+    }
+
+    /* Products — single column */
+    .products-bestseller .grid-4 {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .products-bestseller .product-image {
+        height: 260px;
+    }
+    .products-office .centered-grid,
+    .products-desk .centered-grid,
+    .products-fengshui .centered-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .products-office .product-image,
+    .products-desk .product-image {
+        height: 300px;
+    }
+    .card-glass .product-image {
+        height: 300px;
+    }
+
+    /* Magazine */
+    .magazine-title-main {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .magazine-heading {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .magazine-desc {
+        font-size: 14px;
+    }
+    .magazine-media {
+        height: 180px;
+    }
+}

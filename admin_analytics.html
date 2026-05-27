@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mầm Xanh - Phân tích hệ thống</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/admin-analytics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;700&family=Manrope:wght@600;700;800&family=Miama&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+    <div class="admin-sidebar-overlay"></div>
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="admin-brand">
+                <div class="logo-wrapper">
+                    <div class="logo-bg-nav"></div>
+                    <img class="logo-icon-nav" src="../assets/figma/fbfdbdda-6ce0-4805-88ca-bd52589b92dd.png" alt="Logo">
+                </div>
+                <div class="brand-name">Mầm Xanh</div>
+            </div>
+
+            <nav class="admin-nav">
+                <a href="dashboard.html" class="admin-nav-item">
+                    <img src="../assets/figma/b9f259c8-d1b5-4444-a514-2e2599ea25ee.svg" alt="Overview">
+                    <span>Tổng quan</span>
+                </a>
+                <a href="admin_products.html" class="admin-nav-item">
+                    <img src="../assets/figma/6d208bf3-8baa-4cb4-a868-1a1296d840e1.svg" alt="Products">
+                    <span>Sản phẩm</span>
+                </a>
+                <a href="admin_categories.html" class="admin-nav-item">
+                    <img src="../assets/figma/77eb8fd6-a793-4a69-bb0d-076e5b512287.svg" alt="Categories">
+                    <span>Danh mục</span>
+                </a>
+                <a href="admin_support.html" class="admin-nav-item">
+                    <img src="../assets/figma/10f1e4f3-339c-42a5-83e5-3af390c871c3.svg" alt="Messages">
+                    <span>Tin nhắn</span>
+                </a>
+                <a href="admin_orders.html" class="admin-nav-item">
+                    <img src="../assets/figma/4085c5a9-a5fc-4d84-a093-361ebb176940.svg" alt="Orders">
+                    <span>Đơn hàng</span>
+                </a>
+                <a href="admin_promotions.html" class="admin-nav-item">
+                    <img src="../assets/figma/0cb662d8-8623-4860-adfc-e81e3fb216c2.svg" alt="Promotions">
+                    <span>Khuyến mãi</span>
+                </a>
+                <a href="admin_revenue.html" class="admin-nav-item">
+                    <img src="../assets/figma/5a5aced8-6642-422f-b789-794dcdfb44a1.svg" alt="Analytics">
+                    <span>Doanh thu</span>
+                </a>
+                <a href="admin_analytics.html" class="admin-nav-item active">
+                    <img src="../assets/figma/de7e3675-b25f-406f-8821-266ddc9422fe.svg" alt="Analyze">
+                    <span>Phân tích</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="admin-main">
+            <!-- Header -->
+            <header class="admin-header">
+            <button class="admin-sidebar-toggle" aria-label="Menu"><span></span></button>
+                <div class="admin-search">
+                    <div class="admin-search-icon">
+                        <img src="../assets/figma/75a9a8cf-3d1a-4ed5-8f31-7853f38b32aa.svg" alt="Search">
+                    </div>
+                    <input type="text" placeholder="Tìm kiếm dữ liệu phân tích...">
+                </div>
+                <div class="admin-profile">
+                    <div class="admin-notif">
+                        <img src="../assets/figma/b5bbc450-5409-4cc5-a332-b124165ad915.svg" alt="Notifications">
+                        <span class="notif-dot"></span>
+                    </div>
+                    <div class="admin-user">
+                        <span class="user-role">Quản trị Mầm Xanh</span>
+                        <div class="user-avatar">
+                            <img src="../assets/figma/39ce1dc7-e848-4955-a03e-421c98b8ef05.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="admin-content">
+                
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="header-title">
+                        <h1 class="title">Phân Tích Hệ Thống</h1>
+                        <span class="subtitle">Dữ liệu cập nhật đến 14:30 hôm nay, 24 Tháng 5, 2024</span>
+                    </div>
+                    
+                    <div class="header-actions">
+                        <div class="filter-dropdown">
+                            <img src="../assets/figma/a153b151-3006-4061-b56b-7fd0abb70c49.svg" alt="Calendar">
+                            <span>01/01/2024 - 31/05/2024</span>
+                        </div>
+                        <div class="filter-dropdown">
+                            <img src="../assets/figma/15d9d9f9-b7f7-4282-b158-7937440846dc.svg" alt="Filter">
+                            <span>Bộ lọc</span>
+                        </div>
+                        <button class="export-btn">
+                            <img src="../assets/figma/edac4b40-9c19-42fc-bbed-801c38a6fcce.svg" alt="Export">
+                            Xuất báo cáo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- KPI Cards -->
+                <div class="kpi-grid">
+                    <!-- Card 1: New Customers -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <div>
+                                <h3>Tổng khách hàng mới</h3>
+                                <div>1,284</div>
+                            </div>
+                            <div class="kpi-icon">
+                                <img src="../assets/figma/58f02076-e591-45cb-a572-0df4fd59d1ed.svg" alt="Icon">
+                            </div>
+                        </div>
+                        <div class="kpi-footer">
+                            <div class="trend positive">
+                                <img src="../assets/figma/f30470b5-0322-468c-a0e4-39517f050771.svg" alt="Up">
+                                <span>+12.5%</span>
+                            </div>
+                            <span>so với tháng trước</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Retention Rate -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <div>
+                                <h3>Tỷ lệ giữ chân khách</h3>
+                                <div>68.2%</div>
+                            </div>
+                            <div class="kpi-icon">
+                                <img src="../assets/figma/0a3b2989-6734-4f03-bb9a-9303761914dc.svg" alt="Icon">
+                            </div>
+                        </div>
+                        <div class="kpi-footer">
+                            <div class="trend positive">
+                                <img src="../assets/figma/f30470b5-0322-468c-a0e4-39517f050771.svg" alt="Up">
+                                <span>+2.1%</span>
+                            </div>
+                            <span>hiệu suất cao</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: LTV -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <div>
+                                <h3>Giá trị vòng đời (LTV)</h3>
+                                <div>4.2M ₫</div>
+                            </div>
+                            <div class="kpi-icon">
+                                <img src="../assets/figma/276768b1-c852-4505-b275-90b3ef48895a.svg" alt="Icon">
+                            </div>
+                        </div>
+                        <div class="kpi-footer">
+                            <div class="trend negative">
+                                <img src="../assets/figma/2ec011f7-b6fa-4995-a634-1a23a5965822.svg" alt="Down">
+                                <span>-0.8%</span>
+                            </div>
+                            <span>dao động nhẹ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Charts Row -->
+                <div class="charts-grid-main">
+                    <!-- Line Chart -->
+                    <div class="chart-card large">
+                        <div class="chart-header">
+                            <div>
+                                <h3>Tăng trưởng Doanh thu & Đơn hàng</h3>
+                                <p>Dữ liệu so sánh 5 tháng gần nhất</p>
+                            </div>
+                            <div class="chart-legend">
+                                <div>
+                                    <div></div>
+                                    <span>Doanh thu</span>
+                                </div>
+                                <div>
+                                    <div></div>
+                                    <span>Đơn hàng</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="chart-body">
+                            <img src="../assets/figma/1568c388-0360-498c-aa61-0ef74e978c0a.svg" alt="Chart">
+                            
+                            <!-- X Axis -->
+                            <div class="x-axis-labels">
+                                <span>Tháng 1</span>
+                                <span>Tháng 2</span>
+                                <span>Tháng 3</span>
+                                <span>Tháng 4</span>
+                                <span>Tháng 5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pie Chart -->
+                    <div class="chart-card">
+                        <h3>Tỷ lệ giữ chân khách</h3>
+                        <p>Tỷ lệ khách hàng quay lại mua hàng</p>
+                        
+                        <div class="donut-chart">
+                            <div>
+                                <div></div>
+                                <div>68%</div>
+                                <div>Quay lại</div>
+                            </div>
+                        </div>
+
+                        <div class="donut-legend">
+                            <div>
+                                <div>
+                                    <div></div>
+                                    <span>Khách hàng cũ</span>
+                                </div>
+                                <span>873 users</span>
+                            </div>
+                            <div>
+                                <div>
+                                    <div></div>
+                                    <span>Khách hàng mới</span>
+                                </div>
+                                <span>411 users</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Row -->
+                <div class="bottom-grid">
+                    <!-- Best Selling -->
+                    <div class="chart-card">
+                        <div class="card-header">
+                            <h3>Sản phẩm bán chạy</h3>
+                            <a href="#">Xem tất cả</a>
+                        </div>
+                        
+                        <div class="product-list">
+                            <!-- Product 1 -->
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="../assets/figma/7362ee9c-83cb-4db8-b1a7-3bef2b33f6cc.png" alt="Fiddle Leaf Fig">
+                                </div>
+                                <div class="product-info">
+                                    <h4>Fiddle Leaf Fig (L)</h4>
+                                    <p>Cây nội thất</p>
+                                </div>
+                                <div class="product-stats">
+                                    <span>245</span>
+                                    <span>Đã bán</span>
+                                </div>
+                                <div class="product-revenue">
+                                    <span>367.5M ₫</span>
+                                    <span>Doanh thu</span>
+                                </div>
+                            </div>
+
+                            <!-- Product 2 -->
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="../assets/figma/cart-trau-ba.png" alt="Monstera Deliciosa">
+                                </div>
+                                <div class="product-info">
+                                    <h4>Monstera Deliciosa</h4>
+                                    <p>Bán chạy nhất</p>
+                                </div>
+                                <div class="product-stats">
+                                    <span>198</span>
+                                    <span>Đã bán</span>
+                                </div>
+                                <div class="product-revenue">
+                                    <span>257.4M ₫</span>
+                                    <span>Doanh thu</span>
+                                </div>
+                            </div>
+
+                            <!-- Product 3 -->
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="../assets/figma/402ccd75-5842-4a4d-a2ca-6784c0e5d07a.jpg" alt="Desert Cactus Collection">
+                                </div>
+                                <div class="product-info">
+                                    <h4>Desert Cactus Collection</h4>
+                                    <p>Quà tặng</p>
+                                </div>
+                                <div class="product-stats">
+                                    <span>156</span>
+                                    <span>Đã bán</span>
+                                </div>
+                                <div class="product-revenue">
+                                    <span>124.8M ₫</span>
+                                    <span>Doanh thu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="../js/store.js"></script>
+    <script src="../js/admin_analytics.js"></script>
+    <script src="../js/admin-sidebar-toggle.js"></script>
+</body>
+</html>
